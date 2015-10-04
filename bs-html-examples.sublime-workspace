@@ -1,0 +1,600 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"o",
+				"pointer"
+			],
+			[
+				"b",
+				"before"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"pn",
+				"panel-footer"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pull",
+				"pull-right"
+			],
+			[
+				"page",
+				"page-header"
+			],
+			[
+				"rb",
+				"rb-portfolio-item"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"in",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pi",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/library.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/blog.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/infoshare.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/tip.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/_core/engine/adminpanel.engine.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/_core/engine/adminpanel/main.js",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/column.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/widgets/default/mk-menu-collapse/main.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/story.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/chic.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/pages/home-menus/life.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/layouts/bs-fc-01/_css/style.css",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/layouts/bs-fc-01/_includes/_import.head.php",
+		"/C/Users/user/Desktop/소비자와 함께/dev/httpfutureconsum.kimsq.co.kr/layouts/bs-fc-01/_css/custom.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/sftp-config.json",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/plugins/Lychee/dist/main.css",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/plugins/Lychee/dist/main.js",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/plugins/Lychee/dist/view.js",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-social/themes/dolphin/html/wrapper.html",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-social/themes/dolphin/index.html",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-social/themes/dolphin/info.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-social/includes/config.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-social/themes/dolphin/images/logo.png",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-social/themes/dolphin/style.css",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-social/sftp-config.json",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/widgets/default/sharrre/theme03.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_pages/main.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_includes/_import.head.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_css/style.css",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_includes/header.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/drawer.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_includes/modals.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_js/script.js",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_includes/drawer-menu.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_css/custom.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/skins/bs-blog-02/list.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/skins/bs-blog-02/view.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/contest.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_includes/_import.control.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_var/_var.config.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/sftp-config.json",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_var/_var.contest.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/_includes/_import.foot.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/default.php",
+		"/C/Users/user/Documents/work/사진기자협회 개편제안/kppa-www/layouts/rc-default/home.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/.htaccess",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/widgets/default/sharrre/theme02.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/widgets/default/sharrre/theme01.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/widgets/default/sharrre/theme04.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/_css/custom.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/skins/bs-blog-02/_side.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/skins/bs-blog-02/main.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/skins/bs-blog-02/main.js",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/_css/style.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/_includes/_import.head.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/main.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/_js/script.js",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/default.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/_var/_var.blog.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/_includes/header.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/plugins/sharrre/1.3.5/sharrre.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/default1/_var/_var.blog.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/clean-blog/_includes/_import.head.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/cover/_includes/_import.head.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/cover/_css/custom.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/bs-blog/_full_layout.php",
+		"/C/Users/user/work/docs.kimsq.com/layouts/docs-responsive/_pages/main.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/faq.php",
+		"/C/Users/user/work/docs.kimsq.com/layouts/docs-responsive/_includes/_import.head.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/skins/bs-portfolio-01/list.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/pageset/skins/contact_01/list.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/bs-blog-02/view.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/bs-blog-01/view.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/default1/_css/style.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/default1/_css/custom.css",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/layouts/default1/_full_layout.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/bs-blog-02/list.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/bs-blog-02/main.css",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/bs-blog-01/list.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/main.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/bs-blog-02/_side.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/bs-blog-01/_side.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/blog_01/_side.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/blog_01/list.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/portfolio_02/view.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/portfolio_02/main.css",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/portfolio_02/list.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/blog_01/view.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/var/depart.txt",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/@DB¸í¼¼¼­.txt",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/blog_01/main.css",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/pageset/skins/blog_01/readme.txt",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/var/var.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/themes/default/_login.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/themes/default/inc.newproject.php",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/name.txt",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/themes/default/name.txt",
+		"/C/Users/user/work/kimsqcom/www.kimsq.com/modules/cdms/themes/default/_main.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/bbs/theme/_pc/list01/list.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/bbs/theme/_pc/list01/view.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/modules/bbs/theme/_mobile/mobile01/view.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/sftp-config.json",
+		"/C/Users/user/work/docs.kimsq.com/_snippet/index.php",
+		"/C/Users/user/Documents/work/rb-2.0.1/_core/function/sys.func.php",
+		"/C/Users/user/work/docs.kimsq.com/_var/db.info.php",
+		"/C/Users/user/work/docs.kimsq.com/_snippet/style.css",
+		"/C/Users/user/work/docs.kimsq.com/layouts/docs-responsive/_css/style.css",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Layout.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Dev.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Module.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Widget.php",
+		"/C/Users/user/work/docs.kimsq.com/layouts/docs-responsive/_css/custom.css",
+		"/C/Users/user/Desktop/임시/q2a/qa-theme-base.php",
+		"/C/Users/user/Desktop/임시/q2a/qa-theme.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Dashboard.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Others.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Package.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/resources.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/database.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Plugin.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Core-Folder.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Core-Structure.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Core-Flow.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Core-Function.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Switch.php",
+		"/C/Users/user/work/docs.kimsq.com/pages/docs-menus/Extension.php",
+		"/C/Users/user/work/docs.kimsq.com/layouts/docs-responsive/default.php",
+		"/C/Users/user/work/docs.kimsq.com/layouts/docs-responsive/_includes/_import.foot.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"999",
+			"phpDolphin.",
+			"img-circle",
+			"^\\n",
+			"getThumbPic('48'",
+			"$_NEXT",
+			"\"",
+			"rb-tooltip",
+			"rb-blog-sidebar",
+			"#rb-body",
+			"meta_tit",
+			"$g['meta_tit']",
+			"테크빌",
+			"$_MSEO",
+			"viewlink",
+			"image.php",
+			"keyw",
+			"meta_img",
+			"tag",
+			"img",
+			"img src",
+			"TIME얻기",
+			"$my$my",
+			"[",
+			"시간관련 데이터,",
+			"호출된 ",
+			"$_HM",
+			"$g[]",
+			"$g",
+			"fa fa-file-text-o",
+			"bootstrap.min.js",
+			"샘플예제",
+			"샘플 모듈",
+			"html",
+			" data-scroll ",
+			"#mydashboard",
+			" data-scroll",
+			"mymodule",
+			"col-sm-6 col-md-4",
+			"col-sm-4 col-md-3",
+			"바로가기",
+			" data-scroll",
+			"킴스큐",
+			"버젼",
+			"mywidget",
+			"mylayout",
+			"fa-github",
+			"github",
+			"rb_bbs",
+			"rb_bbs_xtra",
+			"버젼",
+			"language-set",
+			"examples",
+			"언어셋",
+			"structure",
+			"브라우져",
+			"킴스큐",
+			"top",
+			"\n<!-- Custom JavaScript -->\n<script src=\"<?php echo $g['url_layout']?>/_js/script.js\"></script>\n",
+			" fa-lg",
+			"<mark class=\"rb-eng\">",
+			"mark",
+			"킴스큐",
+			"옵션",
+			"킴스큐",
+			"$g",
+			"$g = array()",
+			"bbs",
+			"<small>",
+			"rb-extension",
+			"viewVar_g",
+			"pre",
+			"$lang['xlayout']",
+			"여기서",
+			"modal_remote",
+			"modal_window",
+			"snippet",
+			"example",
+			"^\\n",
+			"rb-tel-num-1",
+			"^\\n",
+			".rb-widget-bbs-bs-list-02",
+			"main.css",
+			"rb-widget-bbs-bs-list-02",
+			"rb-widget-<?php echo $wdgvar['widget_id']?>",
+			"disp",
+			"getDateFormat",
+			"name.php",
+			"data-transition=\"fade\"",
+			"^\\n",
+			"rb-widget-bbs-bs-list-01",
+			"rb-widget-bbs-list-01",
+			"sbjcut",
+			"title",
+			"^\\n",
+			"/rb2/",
+			"data-src",
+			" rb-lazy-object lazy-loaded",
+			"^\\n",
+			" data-toggle=\"modal\" data-target=\"#modal-widget-list-group-02\"",
+			"rb-widget-list-group-02",
+			"dropdown",
+			"open",
+			"example1",
+			"css",
+			"footer",
+			"more",
+			"css",
+			"PhotoSwipeUI_Default",
+			"photoswipe-ui-default.min",
+			"push.js",
+			".col-md",
+			"0.84",
+			".col",
+			"float",
+			"OSEN",
+			"photoswipe-ui-default.min",
+			"author",
+			"initPhotoSwipeFromDOM",
+			"text-center",
+			"text-primary",
+			"text",
+			"webkit-tap-highlight",
+			"webkit",
+			"tab",
+			"text",
+			"href=\"\"",
+			"sr-only"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"img-rounded",
+			"",
+			"getThumbPic('96'",
+			"'",
+			"rb-blog-aside",
+			".rb-layout-default",
+			"",
+			"$my",
+			"$my[",
+			"",
+			"$_FHM",
+			"$d[]",
+			"$d",
+			"fa fa-question fa-lg",
+			"예제",
+			"",
+			"#mypackage",
+			"",
+			"mydashboard",
+			"col-md-6 col-lg-4",
+			"col-md-6 col-lg-3",
+			"",
+			"Rb",
+			"버전",
+			"myswitch",
+			"mywidget",
+			"버전",
+			"브라우저",
+			"Rb",
+			"",
+			"<mark>",
+			"Rb",
+			"<small class=\"rb-eng\">",
+			"rb-extension-thumbnails",
+			"",
+			".rb-widget-bbs-bs-list-03",
+			"rb-widget-bbs-bs-list-03",
+			"rb-widget-bbs-bs-list-02",
+			"time",
+			"main.php",
+			"data-ignore=\"push\"",
+			"",
+			"rb-widget-bbs-bs-thumbs-01",
+			"rb-widget-bbs-bs-list-01",
+			"",
+			"/rb200/",
+			"src",
+			"",
+			"rb-widget-bbs-list-01",
+			".rb-col-md",
+			"0.8",
+			".rb-col",
+			"한국일보",
+			"href=\"<?php echo RW('mod=notice-view')?>&amp;prelayout=<?php echo $d['layout']['dir']?>/blank\" data-transition=\"fade\"",
+			"blog-view",
+			"",
+			"rb-more",
+			"<?php echo $d['layout']['dir']?>",
+			"",
+			"width=230",
+			"width=214",
+			"img-responsive",
+			"function",
+			"2:1.3",
+			"col-md-3",
+			"width=600",
+			"col-sm-6 col-md-4",
+			"col-sm-4",
+			"width=350",
+			"col-md-4",
+			"rb-item",
+			"notice-post",
+			"blog-post",
+			"<?php echo RW('c=notice-view')?>",
+			"rb-post-meta",
+			"rb-post-title",
+			"width=680",
+			"width=650",
+			"rb-title",
+			"<?php echo RW('c=post-view')?>",
+			"c('mod=post-view')",
+			"http://devmpmarket.seoul.go.kr/_core/opensrc/thumb/image.php?width=250&height=&cropratio=2:1.6&image=/upload/goods/14121617270422859026.jpg\n250&amp;height=&amp;cropratio=2:1.6&amp;",
+			"http://devmpmarket.seoul.go.kr/_core/opensrc/thumb/image.php?width=250&height=&cropratio=2:1.6&image=/upload/goods/14121617270422859026.jpg\nhttp://devmpmarket.seoul.go.kr/_core/opensrc/thumb/image.php?width=250&height=&cropratio=2:1.6&image=/upload/goods/14121617270422859026.jpg",
+			"col-sm-6",
+			"<?php echo $g['url_layout']?>",
+			"<?php echo $g['img_layout']?>",
+			"../_images",
+			"<?php echo $g['img_layout']?>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 92.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/APM_Setup/htdocs/apm.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true
+}
