@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BBS-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap-select -->
+        <link rel="stylesheet" href="../../plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
+
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../css/classic.css">
+
+        <!-- BBS-style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <!-- 템플릿 시작 -->
+                    <section class="rb-bbs rb-bbs-list">
+
+                        <div class="rb-bbs-heading">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="rb-search-result">355개 (1/19 페이지)</div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="btn-toolbar" role="toolbar" aria-label="...">
+                                        <div class="btn-group btn-group-sm pull-right" role="group">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                선택하세요
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-header">카테고리 선택</li>
+                                                <li><a href="#">카테고리1</a></li>
+                                                <li><a href="#">카테고리2</a></li>
+                                                <li><a href="#">카테고리3</a></li>
+                                                <li><a href="#">카테고리4</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">전체</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                                            <a href="" class="btn btn-default" data-tooltip="tooltip" title="게시판관리"><i class="fa fa-wrench fa-lg"></i></a>
+                                            <a href="" class="btn btn-default" data-tooltip="tooltip" title="테마관리"><i class="fa fa-list-alt fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table">
+                            <colgroup> 
+                                <col width="50"> 
+                                <col> 
+                                <col width="80"> 
+                                <col width="70"> 
+                                <col width="90"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>글쓴이</th>
+                                    <th>조회</th>
+                                    <th>작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="rb-notice">
+                                    <th scope="row"><span class="label">공지</span></th>
+                                    <td class="rb-title">
+                                        <a href="view.html">Rb1- 새 우편번호 체계 적용 패치</a>
+                                        <span class="label" data-tooltip="tooltip" title="사진"><i class="fa fa-camera-retro fa-lg"></i></span>
+                                        <span class="label" data-tooltip="tooltip" title="첨부파일"><i class="fa fa-floppy-o fa-lg"></i></span>
+                                    </td>
+                                    <td class="rb-user">
+                                        <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                    </td>
+                                    <td class="rb-hit">12</td>
+                                    <td class="rb-time">2014-05-08</td>
+                                </tr>
+                                <tr class="rb-notice">
+                                    <th scope="row"><span class="label label-default">공지</span></th>
+                                    <td class="rb-title">
+                                        <a href="view.html">Rb1- 새 우편번호 체계 적용 패치</a>
+                                        <span class="label" data-tooltip="tooltip" title="비밀글"><i class="fa fa-lock fa-lg"></i></span>
+                                    </td>
+                                    <td class="rb-user">
+                                        <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                    </td>
+                                    <td class="rb-hit">12</td>
+                                    <td class="rb-time">2014-05-08</td>
+                                </tr>
+                                <tr>
+                                    <th class="rb-num" scope="row">5</th>
+                                    <td class="rb-title">
+                                        <span class="rb-category">분류1</span>
+                                        <a href="view.html">킴스큐 오픈소스 프로젝트 운영 지침 <span class="badge">42</span></a>
+                                        <span class="label" data-tooltip="tooltip" title="사진"><i class="fa fa-camera-retro fa-lg"></i></span>
+                                        <span class="label" data-tooltip="tooltip" title="첨부파일"><i class="fa fa-floppy-o fa-lg"></i></span>
+                                        <span class="rb-new"></span>
+                                    </td>
+                                    <td class="rb-user">
+                                        <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                    </td>
+                                    <td class="rb-hit">23</td>
+                                    <td class="rb-time">2014-05-08</td>
+                                </tr>
+                                <tr>
+                                    <th class="rb-num" scope="row">4</th>
+                                    <td class="rb-title">
+                                        <span class="rb-category">분류1</span>
+                                        <a href="view.html">php 5.4 이상 환경에서 Rb1 테스트 요청합니다. <span class="badge">1+1</span></a>
+                                    </td>
+                                    <td class="rb-user">
+                                        <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                    </td>
+                                    <td class="rb-hit">7</td>
+                                    <td class="rb-time">2014-05-08</td>
+                                </tr>
+                                <tr>
+                                    <th class="rb-num" scope="row">3</th>
+                                    <td class="rb-title">
+                                        <span class="rb-reply-01"><i class="fa fa-hand-o-right"></i></span>
+                                        <span class="rb-category">분류1</span>
+                                        <a href="view.html">RE:php 5.4 이상 환경에서 Rb1 테스트 요청합니다. <span class="badge">1+1</span></a>
+                                    </td>
+                                    <td class="rb-user">
+                                        <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                    </td>
+                                    <td class="rb-hit">7</td>
+                                    <td class="rb-time">2014-05-08</td>
+                                </tr>
+                                <tr>
+                                    <th class="rb-num" scope="row">2</th>
+                                    <td class="rb-title">
+                                        <span class="rb-reply-02"><i class="fa fa-hand-o-right"></i></span>
+                                        <span class="rb-category">분류1</span>
+                                        <a href="view.html">RE:RE:php 5.4 이상 환경에서 Rb1 테스트 요청합니다. <span class="badge">1+1</span></a>
+                                    </td>
+                                    <td class="rb-user">
+                                        <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                    </td>
+                                    <td class="rb-hit">7</td>
+                                    <td class="rb-time">2014-05-08</td>
+                                </tr>
+                                <tr>
+                                    <th class="rb-num" scope="row">1</th>
+                                    <td class="rb-title">
+                                        <a href="view.html">킴스큐 공식홈페이지 광장이용 가이드라인킴스큐 공식홈페이지 광장이용</a>
+                                    </td>
+                                    <td class="rb-user">
+                                        <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                    </td>
+                                    <td class="rb-hit">100</td>
+                                    <td class="rb-time">2014-05-08</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="rb-bbs-footer">
+
+                            <div class="row">
+                                <div class="col-sm-8 col-md-6 col-md-offset-3">
+                                    <nav class="rb-pagination">
+                                        <ul class="pagination pagination-sm">
+                                            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-sm-4 col-md-3">
+                                    <div class="rb-buttons">
+                                        <a href="./write.html" class="btn btn-default btn-sm">글쓰기</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <span class="rb-search">
+                                        <form>
+                                            <div class="input-group input-group-sm">
+                                                <select class="selectpicker" title='게시판 검색'>
+                                                    <option>제목+태그</option>
+                                                    <option>본문</option>
+                                                    <option>이름</option>
+                                                    <option>닉네임</option>
+                                                    <option>아이디</option>
+                                                    <option>등록일</option>
+                                                    <option data-divider="true"></option>
+                                                    <option>전체</option>
+                                                </select>
+                                                <input type="text" class="form-control" name="x" placeholder="검색어를 입력해 주세요">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section><!-- 템플릿 끝 -->
+                    
+
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="https://github.com/gitaeks">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+        <!-- Modal-Profile -->
+        <div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">홍길동</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap-selcct js -->
+        <script src="../../plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
+
+        <!-- Common js -->
+        <script src="../../js/common.js"></script>
+
+        <script type="text/javascript">
+
+            // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/
+            $('.selectpicker').addClass('input-group-btn').selectpicker('setStyle');
+
+        </script>
+    </body>
+</html>

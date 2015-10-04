@@ -1,0 +1,207 @@
+/*!
+ * Bootstrap BBS template (table-classic)
+ * Version: 1.0
+ * Author: gitaeks
+ * Homepage: https://github.com/gitaeks
+ * Licensed under MIT
+ * Based on Bootstrap v3.3.5
+*/
+
+/**
+ * 목차:
+ *
+ * 1 - Common 공통
+ * 2 - list 목록
+ * 3 - View 보기
+ * 4 - Write 쓰기
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1 - Common 공통
+ * ----------------------------------------------------------------------------
+ */
+
+.rb-bbs,
+.rb-bbs a {
+    color: #666
+}
+
+
+/**
+ * 2 - list 목록
+ * ----------------------------------------------------------------------------
+ */
+
+/*rb-bbs-heading*/
+.rb-bbs-list .rb-bbs-heading {
+    padding: 5px 0
+}
+.rb-bbs-list .rb-bbs-heading .rb-search-result {
+    line-height: 30px;
+    color: #c0c0c0
+}
+
+/*reset*/
+.rb-bbs-list .table {
+    margin-bottom: 0
+}
+.rb-bbs-list .table th,
+.rb-bbs-list .table td {
+    text-align: center
+}
+.rb-bbs-list .table td.rb-title {
+    text-align: left;
+}
+.rb-bbs-list .table th {
+    font-weight: normal;
+}
+.rb-bbs-list .table .rb-num,
+.rb-bbs-list .table .rb-hit,
+.rb-bbs-list .table .rb-time {
+    font-family: arial; 
+}
+
+/*thead*/
+.rb-bbs-list .table thead {
+    border: solid 1px #ddd
+}
+.rb-bbs-list .table > thead > tr > th {
+     border-bottom: none;
+}
+.rb-bbs-list .table thead th {
+    color: #999;
+    font-size: 11px;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
+}
+
+/*notice*/
+.rb-bbs-list .table .rb-notice th,
+.rb-bbs-list .table .rb-notice td {
+    background-color: #fafafa;
+}
+.rb-bbs-list .table .rb-notice .rb-title {
+    font-weight: bold;
+}
+
+
+/*label*/
+.rb-bbs-list .table .label {
+    padding: .2em .4em .3em;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    color: #777;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+/*category*/
+.rb-bbs-list .table .rb-category {
+    color: #999;
+    letter-spacing: -1px
+}
+.rb-bbs-list .table .rb-category:before {
+    content: '['
+}
+.rb-bbs-list .table .rb-category:after {
+    content: ']'
+}
+
+/*new*/
+.rb-bbs-list .table .rb-new {
+    font: normal 11px arial;
+    color: #ff0000;
+}
+.rb-bbs-list .table .rb-new:before {
+    content: 'new'
+}
+
+/*comments num*/
+.rb-bbs-list .table .badge {
+    padding: 3px 3px;
+    background-color: transparent;
+    color: #FC6138;
+    font: normal 11px arial;
+}
+.rb-bbs-list .table .badge:before {
+    content: '['
+}
+.rb-bbs-list .table .badge:after {
+    content: ']'
+}
+
+/*reply*/
+.rb-bbs-list .table .rb-reply-01 {
+    padding-left: 5px
+}
+.rb-bbs-list .table .rb-reply-02 {
+    padding-left: 20px
+}
+.rb-bbs-list .table .rb-reply-03 {
+    padding-left: 35px
+}
+.rb-bbs-list .table .rb-reply-04 {
+    padding-left: 50px
+}
+
+/*rb-bbs-footer*/
+.rb-bbs-list .rb-bbs-footer {
+    border-top: 1px solid #ddd;
+    text-align: center
+}
+.rb-bbs-list .rb-bbs-footer .rb-pagination {
+    padding: 25px 0;
+    text-align: center
+}
+.rb-bbs-list .rb-bbs-footer .pagination {
+    margin: 0
+}
+.rb-bbs-list .rb-bbs-footer .rb-buttons {
+    padding: 25px 0;
+    text-align: right
+}
+
+
+/*bbs search*/
+.rb-bbs-list .rb-bbs-footer .rb-search {
+    margin: 25px 0;
+}
+.rb-bbs-list .rb-bbs-footer .rb-search .input-group-btn.bootstrap-select {
+    width: 100px
+}
+.rb-bbs-list .rb-bbs-footer .rb-search .input-group-btn.bootstrap-select > .btn {
+    border-right: none;
+}
+
+/*media query*/
+@media (min-width: 992px) {
+
+    .rb-bbs .rb-bbs-heading .rb-search-result {
+        font-size: 11px
+    }
+}
+
+
+
+
+
+/**
+ * 2 - View 보기
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+
+
+/**
+ * 3 - Write 쓰기
+ * ----------------------------------------------------------------------------
+ */
