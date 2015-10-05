@@ -321,7 +321,7 @@
 /********** bbs-footer **********/
 
 .rb-bbs-footer .btn-toolbar {
-    margin: 50px 0
+    margin: 30px 0
 }
 
 .rb-bbs-view .rb-bbs-footer dl {
@@ -342,6 +342,10 @@
 
 .rb-bbs-view .rb-bbs-footer .rb-tags .badge {
     font-family: inherit;
+}
+
+.rb-bbs-view .rb-bbs-footer .rb-comments {
+    margin: 40px 0
 }
 
 @media (min-width: 767px) {
