@@ -151,6 +151,24 @@
     padding-left: 50px
 }
 
+.rb-bbs-list .rb-bbs-body {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+/*no-post*/
+.rb-bbs-list .rb-nopost {
+    padding: 30px 0;
+    text-align: center;
+    color: #999;
+    font-size: 12px
+}
+.rb-bbs-list .rb-nopost h1 {
+    font-size: 100px;
+    color: #ddd
+}
+
+
 /*rb-bbs-footer*/
 .rb-bbs-list .rb-bbs-footer {
     border-top: 1px solid #ddd;
