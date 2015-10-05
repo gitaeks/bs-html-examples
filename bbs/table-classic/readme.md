@@ -17,6 +17,6 @@
 * [쓰기 write](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/write.html)
 
 ### Screenshot
-![list](../../_assets/screenshot/bbs-table-classic-list.png)
+![list](../../assets/screenshot/bbs-table-classic-list.png)
 --
-![list-nopost](../../_assets/screenshot/bbs-table-classic-list-nopost.png)
+![list-nopost](../../assets/screenshot/bbs-table-classic-list-nopost.png)
