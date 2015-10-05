@@ -282,6 +282,15 @@
     margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+    .rb-bbs-view .rb-bbs-body p {
+        font-size: 17px;
+        line-height: 1.5;
+        color: #141414;
+        margin-bottom: 2em;
+    }
+}
+
 @media (min-width: 768px) {
     .rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
         width: 70px;
