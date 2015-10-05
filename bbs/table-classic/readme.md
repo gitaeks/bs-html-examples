@@ -15,3 +15,6 @@
 * [목록 list-nopost](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/list-nopost.html)
 * [보기 view](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/view.html)
 * [쓰기 write](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/write.html)
+
+### Screenshot
+![list](../../screenshot/bbs-table-classic-list.png)
