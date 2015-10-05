@@ -8,6 +8,10 @@ body {
     border-radius: 1px;
 }
 
+.btn-group-xs>.btn, 
+.btn-xs {
+    border-radius: 1px;
+}
 
 .btn-group-sm>.btn, 
 .btn-sm {
