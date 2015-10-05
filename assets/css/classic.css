@@ -40,6 +40,10 @@ body {
     .btn {
         margin-bottom: 10px
     }
+    .badge {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
 }
 
 @media (min-width: 992px) {
