@@ -18,3 +18,5 @@
 
 ### Screenshot
 ![list](../../screenshot/bbs-table-classic-list.png)
+--
+![list](../../screenshot/bbs-table-classic-list-nopost.png)
