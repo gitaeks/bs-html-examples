@@ -5,13 +5,10 @@
 
 ### Feature
 * Based on Bootstrap v3.3.5
-* Non-responsive 
-
 
 ### Plugins
 * [Bootstrap](http://getbootstrap.com/)
 * [Bootstrap-selcct](http://silviomoreto.github.io/bootstrap-select/)
-* 
 
 ### DEMO
 * [목록 list](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/list.html)
