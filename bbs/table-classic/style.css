@@ -181,8 +181,15 @@
 }
 
 /*media query*/
-@media (min-width: 992px) {
+@media (max-width: 480px) {
+    .rb-bbs-list .rb-user ,
+    .rb-bbs-list .rb-hit,
+    .rb-bbs-list .rb-time { 
+        display: none !important;
+    }
+}
 
+@media (min-width: 992px) {
     .rb-bbs .rb-bbs-heading .rb-search-result {
         font-size: 11px
     }
