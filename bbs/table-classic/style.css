@@ -320,10 +320,32 @@
 
 /********** bbs-footer **********/
 
+.rb-bbs-footer .btn-toolbar {
+    margin: 50px 0
+}
+
+.rb-bbs-view .rb-bbs-footer dl {
+    margin-bottom: 0;
+}
+.rb-bbs-view .rb-bbs-footer dt,
+.rb-bbs-view .rb-bbs-footer dd {
+    line-height: 2
+}
+
+.rb-bbs-view .rb-bbs-footer .badge {
+    margin-bottom: 5px;
+    font-weight: normal;
+    background-color: #eee;
+    color: #666;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.rb-bbs-view .rb-bbs-footer .rb-tags .badge {
+    font-family: inherit;
+}
+
 @media (min-width: 767px) {
-    .rb-bbs-view .rb-bbs-footer dl {
-        margin-bottom: 0;
-    }
+
     .rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
         width: 70px;
     }
