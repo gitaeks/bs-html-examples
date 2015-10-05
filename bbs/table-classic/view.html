@@ -50,7 +50,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
 
                     <!-- 템플릿 시작 -->
-                    <section class="rb-bbs rb-bbs-view">
+                    <section class="rb-bbs rb-bbs-view rb-font-sm">
 
                         <div class="rb-bbs-heading">
                             <div class="media">
@@ -76,23 +76,11 @@
                                             <a href="" class="btn btn-default btn-xs"><i class="fa fa-print"></i> 인쇄</a>
                                             <a href="" class="btn btn-default btn-xs"><i class="fa fa-star-o"></i>스크랩</a>
                                         </div>
-                                        <div class="btn-group btn-group-xs" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-default"><i class="fa fa-plus"></i></button>
-                                            <button type="button" class="btn btn-default"><i class="fa fa-minus"></i></button>
-                                            <div class="btn-group btn-group-xs hidden-xs hidden-sm" role="group">
-                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    글꼴
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li><a href="#">기본글꼴</a></li>
-                                                    <li><a href="#">맑은고딕</a></li>
-                                                    <li><a href="#">굴림</a></li>
-                                                    <li><a href="#">돋음</a></li>
-                                                    <li><a href="#">바탕</a></li>
-                                                </ul>
-                                            </div>
-
+                                        <div class="btn-group rb-resizer" role="group" aria-label="...">
+                                            <span class="rb-font-xs"><a class="btn btn-default btn-xs hidden-xs">A</a></span>
+                                            <span class="rb-font-sm"><a class="btn btn-default btn-xs">A</a></span>
+                                            <span class="rb-font-md"><a class="btn btn-default btn-xs">A</a></span>
+                                            <span class="rb-font-lg"><a class="btn btn-default btn-xs hidden-xs">A</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +89,6 @@
                         </div>
 
                         <div class="rb-bbs-body">
-
                             <p>
                             안녕하세요. 킴스큐 운영팀 입니다.
                             rb2를 릴리즈 하며 kimsQ의 모든 소스코드는 github.com 을 통해서 관리하고 있습니다.
@@ -247,16 +234,24 @@
         <!-- Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- Bootstrap-selcct js -->
-        <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
-
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
+        <!-- jQuery Text Resizer : http://trevordavis.net/blog/simple-jquery-text-resizer/ -->
+        <script type="text/javascript" src="../../assets/js/jquery-cookie.js"></script>
         <script type="text/javascript">
 
-            // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/
-            $('.selectpicker').addClass('input-group-btn').selectpicker('setStyle');
+            $(document).ready(function() {
+                if($.cookie('TEXT_SIZE')) {
+                    $('.rb-bbs-view').addClass($.cookie('TEXT_SIZE')); 
+                }
+                $('.rb-resizer a').click(function() {
+                    var textSize = $(this).parent().attr('class');
+                    $('.rb-bbs-view').removeClass('rb-font-xs rb-font-sm rb-font-md rb-font-lg').addClass(textSize);
+                    $.cookie('TEXT_SIZE',textSize, { path: '/', expires: 10000 });
+                    return false;
+                });
+            }); 
 
         </script>
     </body>

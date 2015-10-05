@@ -35,7 +35,8 @@
     color: #666
 }
 
-/*rb-bbs-heading*/
+/********** bbs-heading **********/
+
 .rb-bbs-list .rb-bbs-heading {
     padding: 5px 0
 }
@@ -43,6 +44,8 @@
     line-height: 30px;
     color: #c0c0c0
 }
+
+/********** bbs-body **********/
 
 /*reset*/
 .rb-bbs-list .table {
@@ -170,7 +173,8 @@
 }
 
 
-/*rb-bbs-footer*/
+/********** bbs-footer **********/
+
 .rb-bbs-list .rb-bbs-footer {
     border-top: 1px solid #ddd;
     text-align: center
@@ -186,7 +190,6 @@
     padding: 25px 0;
     text-align: right
 }
-
 
 /*bbs search*/
 .rb-bbs-list .rb-bbs-footer .rb-search {
@@ -216,13 +219,12 @@
 
 
 
-
-
 /**
  * 2 - View 보기
  * ----------------------------------------------------------------------------
  */
 
+/********** bbs-heading **********/
 .rb-bbs-view .rb-bbs-heading .media-object {
     width: 50px;
 }
@@ -270,35 +272,82 @@
     overflow: visible;
 }
 
-.rb-bbs-view .rb-bbs-heading .media-body .dropdown-menu {
-    min-width: 100px;
+/*font-resizer*/
+.rb-bbs-view .rb-bbs-heading .rb-resizer a {
+    margin-left: -1px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 18px
 }
+.rb-bbs-view .rb-bbs-heading .rb-resizer .rb-font-xs a {font-size: 70%}
+.rb-bbs-view .rb-bbs-heading .rb-resizer .rb-font-sm a {font-size: 100%}
+.rb-bbs-view .rb-bbs-heading .rb-resizer .rb-font-md a {font-size: 115%}
+.rb-bbs-view .rb-bbs-heading .rb-resizer .rb-font-lg a {font-size: 130%}
+.rb-bbs-view.rb-font-xs .rb-resizer .rb-font-xs a,
+.rb-bbs-view.rb-font-sm .rb-resizer .rb-font-sm a,
+.rb-bbs-view.rb-font-md .rb-resizer .rb-font-md a,
+.rb-bbs-view.rb-font-lg .rb-resizer .rb-font-lg a {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+
+/********** bbs-body **********/
+
 .rb-bbs-view .rb-bbs-body {
-    padding: 30px 0 30px 0;
-    line-height: 150%
+    padding: 20px 0 20px 0;
+    line-height: 1.5
 }
+
+/*font-size*/
+.rb-bbs-view.rb-font-xs .rb-bbs-body {
+    font-size: 11px;
+}
+.rb-bbs-view.rb-font-sm .rb-bbs-body {
+    font-size: 12px;
+}
+.rb-bbs-view.rb-font-md .rb-bbs-body {
+    font-size: 14px;
+}
+.rb-bbs-view.rb-font-lg .rb-bbs-body {
+    font-size: 16px;
+}
+
+
+/********** bbs-footer **********/
 
 .rb-bbs-view .rb-bbs-footer dl {
     margin-bottom: 0;
 }
+.rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
+    width: 70px;
+}
+.rb-bbs-view .rb-bbs-footer .dl-horizontal dd {
+    margin-left: 90px;
+}
 
 @media (max-width: 767px) {
+
+    /*font-size*/
+    .rb-bbs-view.rb-font-xs .rb-bbs-body {
+        font-size: 12px;
+    }
+    .rb-bbs-view.rb-font-sm .rb-bbs-body {
+        font-size: 14px;
+    }
+    .rb-bbs-view.rb-font-md .rb-bbs-body {
+        font-size: 16px;
+    }
+    .rb-bbs-view.rb-font-lg .rb-bbs-body {
+        font-size: 18px;
+    }
+
     .rb-bbs-view .rb-bbs-body p {
-        font-size: 17px;
-        line-height: 1.5;
-        color: #141414;
         margin-bottom: 2em;
     }
 }
 
-@media (min-width: 768px) {
-    .rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
-        width: 70px;
-    }
-    .rb-bbs-view .rb-bbs-footer .dl-horizontal dd {
-        margin-left: 90px;
-    }
-}
 
 
 /**
