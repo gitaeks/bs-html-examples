@@ -23,16 +23,17 @@
  * ----------------------------------------------------------------------------
  */
 
-.rb-bbs,
-.rb-bbs a {
-    color: #666
-}
 
 
 /**
  * 2 - list 목록
  * ----------------------------------------------------------------------------
  */
+
+.rb-bbs-list,
+.rb-bbs-list a {
+    color: #666
+}
 
 /*rb-bbs-heading*/
 .rb-bbs-list .rb-bbs-heading {
@@ -269,8 +270,25 @@
     overflow: visible;
 }
 
+.rb-bbs-view .rb-bbs-heading .media-body .dropdown-menu {
+    min-width: 100px;
+}
 .rb-bbs-view .rb-bbs-body {
-    padding: 30px 0 30px 0;    
+    padding: 30px 0 30px 0;
+    line-height: 150%
+}
+
+.rb-bbs-view .rb-bbs-footer dl {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
+        width: 70px;
+    }
+    .rb-bbs-view .rb-bbs-footer .dl-horizontal dd {
+        margin-left: 90px;
+    }
 }
 
 
