@@ -320,14 +320,16 @@
 
 /********** bbs-footer **********/
 
-.rb-bbs-view .rb-bbs-footer dl {
-    margin-bottom: 0;
-}
-.rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
-    width: 70px;
-}
-.rb-bbs-view .rb-bbs-footer .dl-horizontal dd {
-    margin-left: 90px;
+@media (min-width: 767px) {
+    .rb-bbs-view .rb-bbs-footer dl {
+        margin-bottom: 0;
+    }
+    .rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
+        width: 70px;
+    }
+    .rb-bbs-view .rb-bbs-footer .dl-horizontal dd {
+        margin-left: 90px;
+    }
 }
 
 @media (max-width: 767px) {
