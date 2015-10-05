@@ -301,6 +301,9 @@
 }
 
 /*font-size*/
+.rb-bbs-view .rb-bbs-body {
+    font-size: 12px;
+}
 .rb-bbs-view.rb-font-xs .rb-bbs-body {
     font-size: 11px;
 }
@@ -330,6 +333,9 @@
 @media (max-width: 767px) {
 
     /*font-size*/
+    .rb-bbs-view .rb-bbs-body {
+        font-size: 14px;
+    }
     .rb-bbs-view.rb-font-xs .rb-bbs-body {
         font-size: 12px;
     }
