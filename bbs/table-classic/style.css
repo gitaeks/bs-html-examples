@@ -324,6 +324,10 @@
     margin: 30px 0
 }
 
+.rb-bbs-footer .pager {
+    margin-bottom: 30px
+}
+
 .rb-bbs-view .rb-bbs-footer dl {
     margin-bottom: 0;
 }
