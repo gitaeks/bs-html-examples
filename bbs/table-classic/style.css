@@ -273,6 +273,7 @@
 }
 .rb-bbs-view .rb-bbs-heading .rb-buttons {
     float: right;
+    margin-top: 3px;
     margin-right: 5px
 }
 .rb-bbs-view .rb-bbs-heading .rb-buttons a {
@@ -428,17 +429,7 @@
     margin: 40px 0
 }
 
-@media (min-width: 767px) {
-
-    .rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
-        width: 50px;
-    }
-    .rb-bbs-view .rb-bbs-footer .dl-horizontal dd {
-        margin-left: 70px;
-    }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 639px) {
 
     .rb-bbs-view .rb-bbs-heading .rb-meta {
         float: none;
@@ -452,6 +443,10 @@
     .rb-bbs-view .rb-bbs-heading .rb-resizer {
         margin-top: -10px
     }
+}
+
+@media (max-width: 767px) {
+
 
     /*font-size*/
     .rb-bbs-view .rb-bbs-body {
@@ -479,7 +474,15 @@
     }
 }
 
+@media (min-width: 768px) {
 
+    .rb-bbs-view .rb-bbs-footer .dl-horizontal dt {
+        width: 50px;
+    }
+    .rb-bbs-view .rb-bbs-footer .dl-horizontal dd {
+        margin-left: 70px;
+    }
+}
 
 /**
  * 3 - Write 쓰기
