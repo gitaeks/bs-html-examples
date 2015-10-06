@@ -9,6 +9,7 @@
 ### Plugins
 * [Bootstrap](http://getbootstrap.com/)
 * [Bootstrap-selcct](http://silviomoreto.github.io/bootstrap-select/)
+* [jquery-cookie](https://github.com/carhartl/jquery-cookie)
 
 ### DEMO
 * [목록 list](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/list.html)
