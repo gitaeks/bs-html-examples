@@ -1,6 +1,8 @@
 # Bootstrap-html-examples
-bootstrap기반 웹서비스 html 템플릿
+**Design templates and elements for Bootstrap HTML/CSS/JS framework**
 
+Bootstrap is an HTML5 & CSS3 framework designed to help you kickstart the development of webapps and sites. 
+BS-html-examples is an template gallery for web designers and web developers, anybody who is using Bootstrap will find this website essential in their craft.
 
 ## Creator
 
