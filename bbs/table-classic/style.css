@@ -398,7 +398,7 @@
     margin-bottom: 0
 }
 .rb-bbs-view .rb-bbs-footer .rb-attach li {
-    line-height: 1.5
+    line-height: 1.8
 }
 .rb-bbs-view .rb-bbs-footer .rb-attach a {
     color: #666;
@@ -408,14 +408,11 @@
     font-size: 11px;
     font-weight: normal;
     line-height: 1;
-    color: #666;
+    color: #999;
     background-color: #eee;
     border-radius: 20px;
     text-shadow: 0 1px 0 #fff;
     font-family: Helvetica, arial
-}
-.rb-bbs-view .rb-bbs-footer .rb-attach span.rb-size {
-    color: #999;
 }
 
 /*tabs*/
