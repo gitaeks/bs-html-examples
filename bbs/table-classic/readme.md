@@ -7,8 +7,9 @@
 * Based on Bootstrap v3.3.5
 
 ### Plugins
-* [jQuery](https://jquery.com/)
+* [jquery](https://jquery.com/)
 * [Bootstrap](http://getbootstrap.com/)
+* [Font-Awesome](http://fontawesome.io/)
 * [Bootstrap-selcct](http://silviomoreto.github.io/bootstrap-select/)
 * [jquery-cookie](https://github.com/carhartl/jquery-cookie)
 
