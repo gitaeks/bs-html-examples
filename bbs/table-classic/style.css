@@ -446,9 +446,9 @@
     }
     .rb-bbs-view .rb-bbs-heading .rb-buttons {
         float: left;
-        margin-left: -60px
+        margin-left: -60px;
+        margin-top: -5px
     }
-
     .rb-bbs-view .rb-bbs-heading .rb-resizer {
         margin-top: -10px
     }
