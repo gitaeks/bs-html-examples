@@ -365,8 +365,9 @@
 }
 .rb-bbs-view .rb-bbs-footer .dl-horizontal a {
     color: #444;
-    font-size: 11px;
-    font-family: dotum
+    font-size: 12px;
+    font-family: dotum;
+    letter-spacing: -1px
 }
 .rb-bbs-view .rb-bbs-footer .dl-horizontal a:hover {
     text-decoration: underline;
