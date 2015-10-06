@@ -11,6 +11,9 @@
 * [Bootstrap-selcct](http://silviomoreto.github.io/bootstrap-select/)
 * [jquery-cookie](https://github.com/carhartl/jquery-cookie)
 
+### Reference 
+* [simple-jquery-text-resizer](http://trevordavis.net/blog/simple-jquery-text-resizer/)
+
 ### DEMO
 * [목록 list](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/list.html)
 * [목록 list-nopost](http://gitaeks.github.io/bs-html-examples/bbs/table-classic/list-nopost.html)
