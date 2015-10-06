@@ -88,6 +88,10 @@ body {
     .btn {
         margin-bottom: 10px
     }
+    .btn-group-sm>.btn, 
+    .btn-sm {
+        font-size: 12px;
+    }
     .badge {
         display: inline-block;
         margin-bottom: 5px;
