@@ -377,7 +377,8 @@
 }
 .rb-bbs-view .rb-bbs-footer .dl-horizontal ul {
     margin-left: 0; 
-    margin-bottom: 0
+    margin-bottom: 0;
+    color: #999
 }
 
 /*tag*/
