@@ -225,6 +225,11 @@
  */
 
 /********** bbs-heading **********/
+
+.rb-bbs-view .rb-bbs-heading .media, 
+.rb-bbs-view .rb-bbs-heading .media-body {
+     overflow: visible; 
+}
 .rb-bbs-view .rb-bbs-heading .media-object {
     width: 50px;
 }
@@ -236,11 +241,6 @@
     font-weight: bold;
     font-family: dotum;
     border-bottom: #dfdfdf dotted 1px;
-}
-
-.rb-bbs-view .rb-bbs-heading .btn-toolbar {
-    float: right;
-    padding-top: 7px
 }
 
 .rb-bbs-view .rb-bbs-heading .rb-meta {
@@ -268,12 +268,11 @@
     content: '|';
 }
 
-.rb-bbs-view .rb-bbs-heading .media,
-.rb-bbs-view .rb-bbs-heading .media-body {
-    overflow: visible;
+.rb-bbs-view .rb-bbs-heading .btn-toolbar {
+    padding-top: 7px
 }
-
 .rb-bbs-view .rb-bbs-heading .rb-buttons {
+    float: right;
     margin-right: 5px
 }
 .rb-bbs-view .rb-bbs-heading .rb-buttons a {
@@ -283,6 +282,9 @@
 }
 
 /*font-resizer*/
+.rb-bbs-view .rb-bbs-heading .rb-resizer {
+    float: right;
+}
 .rb-bbs-view .rb-bbs-heading .rb-resizer a {
     margin-left: -1px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -437,6 +439,20 @@
 }
 
 @media (max-width: 767px) {
+
+    .rb-bbs-view .rb-bbs-heading .rb-meta {
+        float: none;
+
+    }
+    .rb-bbs-view .rb-bbs-heading .rb-buttons {
+        float: left;
+        margin-left: -60px
+    }
+
+    .rb-bbs-view .rb-bbs-heading .rb-buttons,
+    .rb-bbs-view .rb-bbs-heading .rb-resizer {
+        margin-top: -10px
+    }
 
     /*font-size*/
     .rb-bbs-view .rb-bbs-body {
