@@ -404,22 +404,19 @@
     color: #666;
 }
 .rb-bbs-view .rb-bbs-footer .rb-attach span {
+    padding: 2px 5px;
     font-size: 11px;
-    font-family: arial;
-}
-.rb-bbs-view .rb-bbs-footer .rb-attach span:before{
-    content: '('
-}
-.rb-bbs-view .rb-bbs-footer .rb-attach span:after{
-    content: ')'
+    font-weight: normal;
+    line-height: 1;
+    color: #666;
+    background-color: #eee;
+    border-radius: 20px;
+    text-shadow: 0 1px 0 #fff;
+    font-family: Helvetica, arial
 }
 .rb-bbs-view .rb-bbs-footer .rb-attach span.rb-size {
     color: #999;
 }
-.rb-bbs-view .rb-bbs-footer .rb-attach span.rb-down {
-    color: #333;
-}
-
 
 /*tabs*/
 .rb-tabs .tab-content {
