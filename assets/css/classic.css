@@ -6,6 +6,16 @@ body {
 .dropdown-menu,
 .btn {
     border-radius: 1px;
+    letter-spacing: -1px;
+    font-family: dotum;
+}
+
+.btn-group-sm>.btn, 
+.btn-sm {
+    padding: 4px 7px;
+    font-size: 11px;
+    line-height: 1.5;
+    border-radius: 1px;
 }
 
 .btn-group-xs>.btn, 
@@ -13,9 +23,33 @@ body {
     border-radius: 1px;
 }
 
-.btn-group-sm>.btn, 
-.btn-sm {
-    border-radius: 1px;
+/*nav*/
+.nav>li>a {
+    padding: 8px 12px;
+}
+
+/*tab*/
+.nav-tabs>li>a {
+    border-radius: 2px 2px 0 0;
+}
+
+.btn-default {
+    position: relative;
+    border-top: #DFDFDF solid 1px;
+    border-left: #DFDFDF solid 1px;
+    border-right: #DFDFDF solid 1px;
+    border-bottom: #C0C0C0 solid 1px;
+    background: #EFEFEF;
+    color: #444;
+}
+
+.btn-default:before {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top: #FFFFFF solid 1px;
 }
 
 .input-group-sm>.form-control, 
@@ -34,6 +68,18 @@ body {
 .pagination-sm>li:last-child>span {
     border-top-right-radius: 1px;
     border-bottom-right-radius: 1px;
+}
+
+
+/*badge*/
+.badge {
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: #f5f5f5;
+    color: #999;
+    border-radius: 10px;
+    font-family: arial
 }
 
 @media (max-width: 767px) {
