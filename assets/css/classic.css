@@ -52,6 +52,16 @@ body {
     border-top: #FFFFFF solid 1px;
 }
 
+.form-control {
+    border-radius: 1px
+}
+
+/*input*/
+.input-sm {
+    border-radius: 1px;
+}
+
+
 .input-group-sm>.form-control, 
 .input-group-sm>.input-group-addon, 
 .input-group-sm>.input-group-btn>.btn {
@@ -71,6 +81,11 @@ body {
 }
 
 
+/*panel*/
+.panel {
+    border-radius: 1px;
+}
+
 /*badge*/
 .badge {
     padding: 2px 5px;
@@ -82,6 +97,20 @@ body {
     border-radius: 20px;
     text-shadow: 0 1px 0 #fff;
     font-family: Helvetica, arial
+}
+
+/*form*/
+.form-horizontal .checkbox, 
+.form-horizontal .checkbox-inline, 
+.form-horizontal .radio, 
+.form-horizontal .radio-inline {
+    padding-top: 0;
+}
+
+input[type=checkbox], 
+input[type=radio] {
+    margin: 2px 0 0;
+
 }
 
 @media (max-width: 767px) {

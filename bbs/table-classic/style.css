@@ -489,3 +489,38 @@
  * 3 - Write 쓰기
  * ----------------------------------------------------------------------------
  */
+
+.rb-bbs-write .rb-attach-photo {
+    margin-top: -1px
+}
+.rb-bbs-write .rb-attach-photo .list-group-item {
+    line-height: 48px
+}
+.rb-bbs-write .rb-attach-photo .list-group-item .media {
+    margin-top: 0;
+} 
+
+@media (min-width: 768px) {
+
+    .rb-bbs-write .col-sm-2 {
+        width: 11%;
+        padding-right: 0;
+    }
+    .rb-bbs-write .col-sm-offset-2 {
+        margin-left: 11%;
+    }
+    .rb-bbs-write .col-sm-offset-2.col-sm-10,
+    .rb-bbs-write .col-sm-10 {
+        width: 89%;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+     .rb-bbs-write .control-label {
+        font-weight: bold;
+        color: #444444;
+        letter-spacing: -1px;
+        text-align: left;
+     }
+
+ }
