@@ -12,6 +12,7 @@
 * [Font-Awesome](http://fontawesome.io/)
 * [Bootstrap-selcct](http://silviomoreto.github.io/bootstrap-select/)
 * [jquery-cookie](https://github.com/carhartl/jquery-cookie)
+* [placehold](http://placehold.it/)
 
 ### Reference 
 * [simple-jquery-text-resizer](http://trevordavis.net/blog/simple-jquery-text-resizer/)
