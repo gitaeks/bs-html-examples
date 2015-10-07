@@ -15,6 +15,9 @@
         <!-- Bootstrap-select -->
         <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
 
+        <!-- dropzone -->
+        <link rel="stylesheet" href="../../assets/plugins/dropzone-4.0.1/dropzone.css">
+
         <!-- Common-style -->
         <link rel="stylesheet" href="../../assets/css/classic.css">
 
@@ -87,18 +90,12 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group hidden">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <a href="" class="btn btn-default btn-sm"><i class="fa fa-picture-o fa-fw"></i> 사진삽입</a>
-                                    <a href="" class="btn btn-default btn-sm"><i class="fa fa-paperclip fa-fw"></i> 파일첨부</a>
-                                </div>
-                            </div>
                             <div class="form-group">
-                                <label class="sr-only" for="exampleInputAmount">내용</label>
+                                <label class="sr-only">내용</label>
                                 <div class="col-sm-12">
 
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading hidden-xs" style="padding: 5px">
+                                    <div class="panel panel-default rb-editor">
+                                        <div class="panel-heading hidden-xs rb-editor-toolbar">
                                             <div class="btn-group">
                                                 <button type="button" class="btn btn-default" data-tooltip="tooltip" title="Bold">
                                                     <i class="fa fa-bold"></i>
@@ -163,13 +160,81 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <textarea class="form-control" rows="15" style="border: none">
-
-                                        </textarea>
-                                        <div class="panel-body">
-                                            Attach files by dragging & dropping,  <a href="">파일 선택</a> selecting them, or pasting from the clipboard.
+                                        <div class="rb-editor-body">
+                                            <textarea class="form-control" rows="15"></textarea>
                                         </div>
-                                        <div class="list-group rb-attach rb-attach-file">
+
+                                        <div class="panel-body rb-dropzone">
+                                           
+                                                
+                                                업로드를 위해 파일을 끌어 넣거나 <a href="">선택</a>해 주세요
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="rb-attach">
+                                        <ul class="list-group rb-attach-photo">
+                                            <li class="list-group-item">
+                                                <span class="pull-right">
+                                                    <div class="btn-group btn-group-xs">
+                                                        <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
+                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                            <li><a href="#">대표이미지 설정</a></li>
+                                                            <li><a href="#">숨김</a></li>
+                                                            <li><a href="#">삭제</a></li>
+                                                            <li class="divider"></li>
+                                                            <li role="presentation" class="dropdown-header">순서조정</li>
+                                                            <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
+                                                            <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </span>
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placehold.it/48x48/" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <span class="label label-default">대표</span>
+                                                        <a href="">00111.jpg</a>
+                                                        <span class="rb-size">446.1KB</span> 
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="pull-right">
+                                                    <div class="btn-group btn-group-xs">
+                                                        <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
+                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                            <li><a href="#">대표이미지 설정</a></li>
+                                                            <li><a href="#">숨김</a></li>
+                                                            <li><a href="#">삭제</a></li>
+                                                            <li class="divider"></li>
+                                                            <li role="presentation" class="dropdown-header">순서조정</li>
+                                                            <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
+                                                            <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </span>
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placehold.it/48x48/" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="">00111.jpg</a>
+                                                        <span class="rb-size">446.1KB</span> 
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-group rb-attach rb-attach-file">
                                             <li class="list-group-item">
                                                 <i class="fa fa-floppy-o fa-fw"></i> 
                                                 <a href="">STP-SWOT 분석-2010.05.hwp</a> 
@@ -276,67 +341,6 @@
                                                     </ul>
                                                 </div>
                                             </li>
-                                        </div>
-                                        <ul class="list-group rb-attach rb-attach-photo">
-                                            <li class="list-group-item clearfix">
-                                                <span class="pull-right">
-                                                    <div class="btn-group btn-group-xs">
-                                                        <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
-                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                            <span class="caret"></span>
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                            <li><a href="#">대표이미지 설정</a></li>
-                                                            <li><a href="#">숨김</a></li>
-                                                            <li><a href="#">삭제</a></li>
-                                                            <li class="divider"></li>
-                                                            <li role="presentation" class="dropdown-header">순서조정</li>
-                                                            <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
-                                                            <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </span>
-                                                <div class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="http://placehold.it/48x48/" alt="">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <span class="label label-default">대표</span>
-                                                        <a href="">00111.jpg</a>
-                                                        <span class="rb-size">446.1KB</span> 
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item clearfix">
-                                                <span class="pull-right">
-                                                    <div class="btn-group btn-group-xs">
-                                                        <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
-                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                            <span class="caret"></span>
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                            <li><a href="#">대표이미지 설정</a></li>
-                                                            <li><a href="#">숨김</a></li>
-                                                            <li><a href="#">삭제</a></li>
-                                                            <li class="divider"></li>
-                                                            <li role="presentation" class="dropdown-header">순서조정</li>
-                                                            <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
-                                                            <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </span>
-                                                <div class="media">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="media-object" src="http://placehold.it/48x48/" alt="">
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a href="">00111.jpg</a>
-                                                        <span class="rb-size">446.1KB</span> 
-                                                    </div>
-                                                </div>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -427,12 +431,22 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
+        <!-- dropzone -->
+        <script src="../../assets/plugins/dropzone-4.0.1/dropzone.js"></script>
+
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
-        <!-- Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/ -->
         <script type="text/javascript">
+            // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select
             $('.selectpicker').selectpicker();
+
+            // dropzone https://github.com/enyo/dropzone
+            $("#dropzone").dropzone({ url: "/file/post" });
+
+
+
+
         </script>
     </body>
 </html>
