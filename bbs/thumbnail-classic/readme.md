@@ -24,6 +24,12 @@
 * [쓰기 write](http://gitaeks.github.io/bs-html-examples/bbs/thumbnail-classic/write.html)
 
 ### Screenshot
+#### Desktop
+![list](../../assets/screenshot/bbs-thumbnail-classic-list.png)
+--
+#### Mobile
+![list-mobile](../../assets/screenshot/bbs-thumbnail-classic-list-mobile.png)
+
 
 ## Creator
 
