@@ -156,13 +156,13 @@
 }
 
 .rb-bbs-list .rb-bbs-body {
-    padding: 15px;
-    border-top: 1px solid #ddd;
+    padding: 0;
 }
 
 /*no-post*/
 .rb-bbs-list .rb-bbs-body.rb-nopost {
     padding: 30px 0;
+    border-top: 1px solid #ddd;
     text-align: center;
     color: #999;
     font-size: 12px
