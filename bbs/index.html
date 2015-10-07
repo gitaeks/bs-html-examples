@@ -40,7 +40,7 @@
             <h1>BBS</h1>
 
             <section>
-                <h2>table-classic</h2>
+                <h2>Table-classic</h2>
                 <ul>
                     <li><a href="./table-classic/list.html">list 목록</a></li>
                     <li><a href="./table-classic/list-nopost.html">list-nopost 목록-게시물 없음</a></li>
@@ -48,9 +48,64 @@
                     <li><a href="./table-classic/write.html">write 쓰기</a></li>
                 </ul>
             </section>
-
             <section>
-                <h2>thumbnail-classic</h2>
+                <h4>Structure</h4>
+<div class="row">
+    <div class="col-sm-4">
+        <h5><span class="label label-default">List</span></h5>
+    <pre>
+    bbs-list
+    ├── bbs-heading
+    │   ├── search-result
+    │   └── toolbar
+    ├── bbs-body
+    │   └── table
+    └── bbs-footer
+        ├── pagination
+        ├── toolbar
+        └── search
+    </pre>
+    </div>
+    <div class="col-sm-4">
+        <h5><span class="label label-default">View</span></h5>
+    <pre>
+    bbs-view
+    ├── bbs-heading
+    │   ├── user photo
+    │   ├── meta data
+    │   └── toolbar
+    ├── bbs-body
+    └── bbs-footer
+        ├── tag
+        ├── attach
+        ├── toolbar
+        ├── comment
+        └── trackback
+    </pre>
+    </div>
+    <div class="col-sm-4">
+        <h5><span class="label label-default">Write</span></h5>
+    <pre>
+    bbs-write
+    ├── category
+    ├── title
+    ├── option
+    ├── toolbar
+    ├── editor
+    ├── attach-file
+    ├── attach-photo
+    ├── tag
+    ├── option
+    └── toolbar
+
+    </pre>
+    </div>
+</div>
+</section>
+
+<hr>
+            <section>
+                <h2>Thumbnail-classic</h2>
                 <ul>
                     <li><a href="./thumbnail-classic/list.html">list 목록</a></li>
                     <li><a href="./thumbnail-classic/list-nopost.html">list-nopost 목록-게시물 없음</a></li>
@@ -59,6 +114,63 @@
                 </ul>
             </section>
 
+            <section>
+                <h4>Structure</h4>
+<div class="row">
+    <div class="col-sm-4">
+        <h5><span class="label label-default">List</span></h5>
+    <pre>
+    bbs-list
+    ├── bbs-heading
+    │   ├── search-result
+    │   └── toolbar
+    ├── bbs-body
+    │   ├── table
+    │   └── thumbnail-list
+    └── bbs-footer
+        ├── pagination
+        ├── toolbar
+        └── search
+    </pre>
+    </div>
+    <div class="col-sm-4">
+        <h5><span class="label label-default">View</span></h5>
+    <pre>
+    bbs-view
+    ├── bbs-heading
+    │   ├── user photo
+    │   ├── meta data
+    │   └── toolbar
+    ├── bbs-body
+    └── bbs-footer
+        ├── tag
+        ├── attach
+        ├── toolbar
+        ├── comment
+        └── trackback
+    </pre>
+    </div>
+    <div class="col-sm-4">
+        <h5><span class="label label-default">Write</span></h5>
+    <pre>
+    bbs-write
+    ├── category
+    ├── title
+    ├── option
+    ├── toolbar
+    ├── editor
+    ├── attach-file
+    ├── attach-photo
+    ├── tag
+    ├── option
+    └── toolbar
+
+    </pre>
+    </div>
+</div>
+</section>
+
+<hr>
             <!-- FOOTER  -->
             <footer>
                 <hr>
