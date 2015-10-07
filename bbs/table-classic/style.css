@@ -120,6 +120,7 @@
 
 /*new*/
 .rb-bbs-list .rb-bbs-body .rb-new {
+    padding-left: 2px;
     font: normal 11px arial;
     color: #ff0000;
 }
