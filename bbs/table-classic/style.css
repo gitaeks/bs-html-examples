@@ -97,7 +97,7 @@
 
 
 /*label*/
-.rb-bbs-list .table .label {
+.rb-bbs-list .rb-bbs-body .label {
     padding: .2em .4em .3em;
     background-color: #fff;
     border: solid 1px #ddd;
@@ -107,37 +107,37 @@
 }
 
 /*category*/
-.rb-bbs-list .table .rb-category {
+.rb-bbs-list .rb-bbs-body .rb-category {
     color: #999;
     letter-spacing: -1px
 }
-.rb-bbs-list .table .rb-category:before {
+.rb-bbs-list .rb-bbs-body .rb-category:before {
     content: '['
 }
-.rb-bbs-list .table .rb-category:after {
+.rb-bbs-list .rb-bbs-body .rb-category:after {
     content: ']'
 }
 
 /*new*/
-.rb-bbs-list .table .rb-new {
+.rb-bbs-list .rb-bbs-body .rb-new {
     font: normal 11px arial;
     color: #ff0000;
 }
-.rb-bbs-list .table .rb-new:before {
+.rb-bbs-list .rb-bbs-body .rb-new:before {
     content: 'new'
 }
 
 /*comments num*/
-.rb-bbs-list .table .badge {
+.rb-bbs-list .rb-bbs-body .badge {
     padding: 3px 3px;
     background-color: transparent;
     color: #FC6138;
     font: normal 11px arial;
 }
-.rb-bbs-list .table .badge:before {
+.rb-bbs-list .rb-bbs-body .badge:before {
     content: '['
 }
-.rb-bbs-list .table .badge:after {
+.rb-bbs-list .rb-bbs-body .badge:after {
     content: ']'
 }
 
