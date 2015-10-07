@@ -80,6 +80,10 @@ body {
     border-bottom-right-radius: 1px;
 }
 
+/*image*/
+.img-thumbnail {
+    border-radius: 1px;
+}
 
 /*panel*/
 .panel {

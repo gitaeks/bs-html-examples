@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>BBS-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap-select -->
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
+
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/classic.css">
+
+        <!-- BBS-style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/table-classic" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <!-- 템플릿 시작 -->
+                    <section class="rb-bbs rb-bbs-list">
+
+                        <div class="rb-bbs-heading">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="rb-search-result">0개 (0/0 페이지)</div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="btn-toolbar" role="toolbar" aria-label="...">
+                                        <div class="btn-group btn-group-sm pull-right" role="group">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                선택하세요
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-header">카테고리 선택</li>
+                                                <li><a href="#">카테고리1</a></li>
+                                                <li><a href="#">카테고리2</a></li>
+                                                <li><a href="#">카테고리3</a></li>
+                                                <li><a href="#">카테고리4</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">전체</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                                            <a href="" class="btn btn-default" data-tooltip="tooltip" title="게시판관리"><i class="fa fa-wrench fa-lg"></i></a>
+                                            <a href="" class="btn btn-default" data-tooltip="tooltip" title="테마관리"><i class="fa fa-list-alt fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rb-bbs-body rb-nopost">
+                            <h1><i class="fa fa-exclamation-circle"></i></h1>
+                            <p>등록된 자료가 없습니다.</p>
+                        </div>
+
+                        <div class="rb-bbs-footer">
+
+                            <div class="row">
+                                <div class="col-sm-8 col-md-6 col-md-offset-3">
+                                    <nav class="rb-pagination">
+                                        <ul class="pagination pagination-sm">
+                                            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                            <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-sm-4 col-md-3">
+                                    <div class="rb-buttons">
+                                        <a href="./write.html" class="btn btn-default btn-sm">글쓰기</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <span class="rb-search">
+                                        <form>
+                                            <div class="input-group input-group-sm">
+                                                <select class="selectpicker" title='게시판 검색'>
+                                                    <option>제목+태그</option>
+                                                    <option>본문</option>
+                                                    <option>이름</option>
+                                                    <option>닉네임</option>
+                                                    <option>아이디</option>
+                                                    <option>등록일</option>
+                                                    <option data-divider="true"></option>
+                                                    <option>전체</option>
+                                                </select>
+                                                <input type="text" class="form-control" name="x" placeholder="검색어를 입력해 주세요">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section><!-- 템플릿 끝 -->
+                    
+
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+        <!-- Modal-Profile -->
+        <div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">홍길동</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap-selcct js -->
+        <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
+
+        <!-- Common js -->
+        <script src="../../assets/js/common.js"></script>
+
+        <script type="text/javascript">
+
+            // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/
+            $('.selectpicker').addClass('input-group-btn').selectpicker('setStyle');
+
+        </script>
+    </body>
+</html>
