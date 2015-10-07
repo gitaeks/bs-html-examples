@@ -38,7 +38,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/thumbnail-classic" target="_blank">View on GitHub</a></li>
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/table-classic" target="_blank">View on GitHub</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -53,7 +53,7 @@
                     <section class="rb-bbs rb-bbs-write">
 
                         <form class="form-horizontal">
-                            <div class="form-group">
+                            <div class="form-group rb-category">
                                 <label for="" class="col-sm-2 control-label">카테고리</label>
                                 <div class="col-sm-10">
                                     <span class="rb-category">
@@ -65,14 +65,16 @@
                                             <option data-subtext="(3)">카테고리5</option>
                                             <option data-subtext="(2)">카테고리6</option>
                                         </select>
-                                        <a href="" class="btn btn-default" data-tooltip="tooltip" title="추가" style="margin-left: -5px"><i class="fa fa-plus fa-lg"></i></a>
+                                        <a href="" class="btn btn-default" data-tooltip="tooltip" title="추가" style="margin-left: -5px">
+                                            <i class="fa fa-plus"></i>
+                                        </a>
                                     </span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="" class="col-sm-2 control-label">제목</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="" placeholder="">
+                                    <input type="text" class="form-control" id="" placeholder="제목을 입력하세요.">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -85,7 +87,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group hidden">
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <a href="" class="btn btn-default btn-sm"><i class="fa fa-picture-o fa-fw"></i> 사진삽입</a>
                                     <a href="" class="btn btn-default btn-sm"><i class="fa fa-paperclip fa-fw"></i> 파일첨부</a>
@@ -162,23 +164,18 @@
                                             </div>
                                         </div>
                                         <textarea class="form-control" rows="15" style="border: none">
-안녕하세요. 킴스큐 운영팀 입니다. rb2를 릴리즈 하며 kimsQ의 모든 소스코드는 github.com 을 통해서 관리하고 있습니다. 관련하여 운영 가이드를 공지합니다.
 
-https://github.com/kimsQ/rb/wiki
-
-꾸준한 학습과 시행착오의 과정을 통해 이제는 익숙졌지만, Git과 Github.com을 통한 소스코드 관리와 협업은 저희 코어개발팀/운영팀에게도 생소하고 어려운 과정이었습니다.
-
-초반 학습에 대한 진입장벽이 만만치 않지만 저희의 경험으로도 체계적이며 효율적이고 강력한 오픈소스 프로젝트 운영 도구임에는 틀림이 없다고 판단하고 있습니다.
-
-또한 이러한 오픈소스 프로젝트 운영은 국외는 물론 국내에서도 표준적인 방법으로 정착 되고 있습니다.
-
-일반 참여자의 참여방법은 두가지 입니다.
                                         </textarea>
-                                        <div class="list-group rb-attach-file">
+                                        <div class="panel-body">
+                                            Attach files by dragging & dropping,  <a href="">파일 선택</a> selecting them, or pasting from the clipboard.
+                                        </div>
+                                        <div class="list-group rb-attach rb-attach-file">
                                             <li class="list-group-item">
-                                                <i class="fa fa-file-text-o"></i> <a href="">STP-SWOT 분석-2010.05.hwp</a> <small class="text-muted">(105.3KB)</small> 
+                                                <i class="fa fa-floppy-o fa-fw"></i> 
+                                                <a href="">STP-SWOT 분석-2010.05.hwp</a> 
+                                                <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" title="" data-toggle="tooltip" data-original-title="삭제"><i class="fa fa-times"></i></a>
+                                                    <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -194,11 +191,13 @@ https://github.com/kimsQ/rb/wiki
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li class="list-group-item">
+                                            <li class="list-group-item rb-hidden">
                                                 <span class="label label-default">숨김</span> 
-                                                <i class="fa fa-file-excel-o text-muted"></i> <a href="" class="text-muted">131227-포상 공감대상자 명단(공개검증).xlsx</a> <small class="text-muted">(105.3KB)</small> 
+                                                <i class="fa fa-floppy-o fa-fw"></i> 
+                                                <a href="" class="text-muted">131227-포상 공감대상자 명단(공개검증).xlsx</a> 
+                                                <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" title="" data-toggle="tooltip" data-original-title="삭제"><i class="fa fa-times"></i></a>
+                                                    <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -215,9 +214,11 @@ https://github.com/kimsQ/rb/wiki
                                                 </div>
                                             </li>
                                             <li class="list-group-item">
-                                                <i class="fa fa-file-pdf-o"></i> <a href="">공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서.pdf</a> <small class="text-muted">(105.3KB)</small> 
+                                                <i class="fa fa-floppy-o fa-fw"></i> 
+                                                <a href="">공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서.pdf</a> 
+                                                <span class="rb-size">446.1KB</span> 
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" title="" data-toggle="tooltip" data-original-title="삭제"><i class="fa fa-times"></i></a>
+                                                    <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -234,9 +235,11 @@ https://github.com/kimsQ/rb/wiki
                                                 </div>
                                             </li>
                                             <li class="list-group-item">
-                                                <i class="fa fa-file-archive-o"></i> <a href="">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.zip</a> <small class="text-muted">(105.3KB)</small> 
+                                                <i class="fa fa-floppy-o fa-fw"></i> 
+                                                <a href="">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.zip</a> 
+                                                <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" title="삭제" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                                    <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -253,9 +256,11 @@ https://github.com/kimsQ/rb/wiki
                                                 </div>
                                             </li>
                                             <li class="list-group-item">
-                                                <i class="fa fa-file-word-o"></i> <a href="">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.docx</a> <small class="text-muted">(105.3KB)</small> 
+                                                <i class="fa fa-floppy-o fa-fw"></i> 
+                                                <a href="">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.docx</a> 
+                                                <span class="rb-size">446.1KB</span> 
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" title="" data-toggle="tooltip" data-original-title="삭제"><i class="fa fa-times"></i></a>
+                                                    <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -272,11 +277,11 @@ https://github.com/kimsQ/rb/wiki
                                                 </div>
                                             </li>
                                         </div>
-                                        <ul class="list-group rb-attach-photo">
+                                        <ul class="list-group rb-attach rb-attach-photo">
                                             <li class="list-group-item clearfix">
                                                 <span class="pull-right">
                                                     <div class="btn-group btn-group-xs">
-                                                        <a href="" class="btn btn-default" title="삭제" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                                        <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
                                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                             <span class="caret"></span>
                                                             <span class="sr-only">Toggle Dropdown</span>
@@ -297,14 +302,16 @@ https://github.com/kimsQ/rb/wiki
                                                         <img class="media-object" src="http://placehold.it/48x48/" alt="">
                                                     </a>
                                                     <div class="media-body">
-                                                        <span class="label label-primary">대표</span> <a href="">00111.jpg</a>
+                                                        <span class="label label-default">대표</span>
+                                                        <a href="">00111.jpg</a>
+                                                        <span class="rb-size">446.1KB</span> 
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="list-group-item clearfix">
                                                 <span class="pull-right">
                                                     <div class="btn-group btn-group-xs">
-                                                        <a href="" class="btn btn-default" title="삭제" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                                        <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
                                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                             <span class="caret"></span>
                                                             <span class="sr-only">Toggle Dropdown</span>
@@ -326,6 +333,7 @@ https://github.com/kimsQ/rb/wiki
                                                     </a>
                                                     <div class="media-body">
                                                         <a href="">00111.jpg</a>
+                                                        <span class="rb-size">446.1KB</span> 
                                                     </div>
                                                 </div>
                                             </li>
@@ -333,6 +341,7 @@ https://github.com/kimsQ/rb/wiki
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label for="" class="col-sm-2 control-label">검색태그</label>
                                 <div class="col-sm-10">
@@ -358,7 +367,7 @@ https://github.com/kimsQ/rb/wiki
                             <hr>
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <p class="form-control-static"><strong>게시물 등록(수정/답변) 후</strong></p>
+                                    <p class="form-control-static"><span class="text-muted">게시물 등록(수정/답변) 후</span></p>
                                     <label class="radio-inline">
                                         <input type="radio" name="backtype" id="" value="option1" checked="checked"> 목록으로 이동
                                     </label>
