@@ -166,6 +166,11 @@
 
                                         <div class="panel-body rb-dropzone">
                                            
+                                        <form action="/file-upload" class="dropzone" id="bbs-dropzone">
+                                        <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                        </div>
+                                        </form>
                                                 
                                                 업로드를 위해 파일을 끌어 넣거나 <a href="">선택</a>해 주세요
                                             
@@ -237,7 +242,7 @@
                                         <ul class="list-group rb-attach rb-attach-file">
                                             <li class="list-group-item">
                                                 <i class="fa fa-floppy-o fa-fw"></i> 
-                                                <a href="">STP-SWOT 분석-2010.05.hwp</a> 
+                                                <a href="" class="list-group-item-text">STP-SWOT 분석-2010.05.hwp</a> 
                                                 <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
                                                     <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
@@ -259,7 +264,7 @@
                                             <li class="list-group-item rb-hidden">
                                                 <span class="label label-default">숨김</span> 
                                                 <i class="fa fa-floppy-o fa-fw"></i> 
-                                                <a href="" class="text-muted">131227-포상 공감대상자 명단(공개검증).xlsx</a> 
+                                                <a href="" class="list-group-item-text">131227-포상 공감대상자 명단(공개검증).xlsx</a> 
                                                 <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
                                                     <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
@@ -280,7 +285,7 @@
                                             </li>
                                             <li class="list-group-item">
                                                 <i class="fa fa-floppy-o fa-fw"></i> 
-                                                <a href="">공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서.pdf</a> 
+                                                <a href="" class="list-group-item-text">공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서.pdf</a> 
                                                 <span class="rb-size">446.1KB</span> 
                                                 <div class="btn-group btn-group-xs pull-right">
                                                     <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
@@ -301,7 +306,7 @@
                                             </li>
                                             <li class="list-group-item">
                                                 <i class="fa fa-floppy-o fa-fw"></i> 
-                                                <a href="">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.zip</a> 
+                                                <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.zip</a> 
                                                 <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
                                                     <a href="" class="btn btn-default" title="삭제" data-tooltip="tooltip"><i class="fa fa-times"></i></a>
@@ -322,7 +327,7 @@
                                             </li>
                                             <li class="list-group-item">
                                                 <i class="fa fa-floppy-o fa-fw"></i> 
-                                                <a href="">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.docx</a> 
+                                                <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.docx</a> 
                                                 <span class="rb-size">446.1KB</span> 
                                                 <div class="btn-group btn-group-xs pull-right">
                                                     <a href="" class="btn btn-default" data-tooltip="tooltip" title="삭제"><i class="fa fa-times"></i></a>
@@ -442,7 +447,7 @@
             $('.selectpicker').selectpicker();
 
             // dropzone https://github.com/enyo/dropzone
-            $("#dropzone").dropzone({ url: "/file/post" });
+            $("#bbs-dropzone").dropzone({ url: "/file/post" });
 
 
 

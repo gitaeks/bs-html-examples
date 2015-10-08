@@ -539,6 +539,9 @@
 .rb-bbs-write .rb-attach .list-group-item a {
     color: #666
 }
+.rb-bbs-write .rb-attach .list-group-item .list-group-item-text {
+    line-height: 1.6;
+}
 .rb-bbs-write .rb-attach .list-group-item.rb-hidden,
 .rb-bbs-write .rb-attach .list-group-item.rb-hidden a {
     color: #B7B7B7;
