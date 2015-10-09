@@ -15,9 +15,6 @@
         <!-- Bootstrap-select -->
         <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
 
-        <!-- dropzone -->
-        <link rel="stylesheet" href="../../assets/plugins/dropzone-4.0.1/dropzone.css">
-
         <!-- Common-style -->
         <link rel="stylesheet" href="../../assets/css/classic.css">
 
@@ -164,15 +161,11 @@
                                             <textarea class="form-control" rows="15"></textarea>
                                         </div>
 
-                                        <div class="panel-body rb-dropzone">
+                                        <div class="panel-body rb-dropzone dropzone" id="bbs-dropzone">
                                            
-                                        <form action="/file-upload" class="dropzone" id="bbs-dropzone">
-                                        <div class="fallback">
-                                        <input name="file" type="file" multiple />
-                                        </div>
-                                        </form>
-                                                
-                                                업로드를 위해 파일을 끌어 넣거나 <a href="">선택</a>해 주세요
+                                            <div class="fallback">
+                                                <input name="file" type="file" multiple />
+                                            </div>
                                             
                                         </div>
                                     </div>
@@ -399,7 +392,6 @@
 
                     </section><!-- 템플릿 끝 -->
                     
-
                 </div>
             </div>
 
@@ -436,21 +428,12 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
-        <!-- dropzone -->
-        <script src="../../assets/plugins/dropzone-4.0.1/dropzone.js"></script>
-
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
         <script type="text/javascript">
             // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select
             $('.selectpicker').selectpicker();
-
-            // dropzone https://github.com/enyo/dropzone
-            $("#bbs-dropzone").dropzone({ url: "/file/post" });
-
-
-
 
         </script>
     </body>

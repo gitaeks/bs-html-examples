@@ -540,13 +540,6 @@
     border: none;
 }
 
-/*dropzone*/
-.rb-bbs-write .rb-dropzone {
-    border-top: 1px dashed #ddd;
-    font-size: 13px;
-    line-height: 26px;
-    color: #767676;
-}
 
 /*attach*/
 .rb-bbs-write .rb-attach .list-group-item {
