@@ -15,6 +15,10 @@
         <!-- Bootstrap-select -->
         <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
 
+        <!-- Bootstrap-fileinput -->
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-fileinput-4.2.7/css/fileinput.css">
+
+
         <!-- Common-style -->
         <link rel="stylesheet" href="../../assets/css/classic.css">
 
@@ -52,7 +56,7 @@
                     <!-- 템플릿 시작 -->
                     <section class="rb-bbs rb-bbs-write">
 
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" enctype="multipart/form-data">
                             <div class="form-group rb-category">
                                 <label for="" class="col-sm-2 control-label">카테고리</label>
                                 <div class="col-sm-10">
@@ -161,12 +165,8 @@
                                             <textarea class="form-control" rows="15"></textarea>
                                         </div>
 
-                                        <div class="panel-body rb-dropzone dropzone" id="bbs-dropzone">
-                                           
-                                            <div class="fallback">
-                                                <input name="file" type="file" multiple />
-                                            </div>
-                                            
+                                        <div class="panel-body rb-fileinput">
+                                            <input id="bbs-fileinput" type="file" multiple class="file" data-overwrite-initial="false">
                                         </div>
                                     </div>
 
@@ -391,7 +391,8 @@
                         </form>
 
                     </section><!-- 템플릿 끝 -->
-                    
+            
+
                 </div>
             </div>
 
@@ -428,6 +429,15 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
+        <!-- Bootstrap-fileinput js -->
+        <script src="../../assets/plugins/bootstrap-fileinput-4.2.7/js/fileinput.min.js"></script>
+
+        <!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
+             This must be loaded before fileinput.min.js -->
+        <script src="../../assets/plugins/bootstrap-fileinput-4.2.7/js/plugins/canvas-to-blob.min.js"></script>
+
+        <script src="../../assets/plugins/bootstrap-fileinput-4.2.7/js/fileinput_locale_ko.js"></script>
+
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
@@ -435,6 +445,27 @@
             // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select
             $('.selectpicker').selectpicker();
 
+            // Bootstrap-fileinput - https://github.com/kartik-v/bootstrap-fileinput
+
+            $("#bbs-fileinput").fileinput({
+                language: 'ko',
+                uploadUrl: '#', // you must set a valid URL here else you will get an error
+                allowedFileExtensions : ['jpg', 'png','gif','pdf','pptx'],
+                overwriteInitial: false,
+                maxFileSize: 100000,
+                maxFilesNum: 10,
+                //allowedFileTypes: ['image', 'video', 'flash'],
+                slugCallback: function(filename) {
+                    return filename.replace('(', '_').replace(']', '_');
+                }
+            });
         </script>
+
+
+            <script>
+
+
+
+    </script>
     </body>
 </html>

@@ -513,7 +513,46 @@
     border: none;
 }
 
-/*attach*/
+/*file-input*/
+
+.rb-bbs-write .rb-fileinput {
+    padding: 0;
+    background-color: #FAFAFA
+}
+
+.rb-bbs-write .file-input {
+    padding: 0
+}
+.rb-bbs-write .file-drop-zone {
+    border: 1px dashed #aaa;
+    border-width: 1px 0 0;
+    height: 100%;
+    text-align: center;
+    border-radius: 0;
+    vertical-align: middle;
+    margin: 0;
+    padding: 15px 5px ;
+}
+
+.fileinput-remove {
+    margin-top: 5px;
+    margin-right: 10px
+}
+.rb-bbs-write .file-input .file-preview {
+    border-radius: 0; 
+    border: none; 
+    padding: 0;
+    width: 100%;;
+    margin-bottom: 5px;
+}
+
+.rb-bbs-write .file-drop-zone-title {
+    color: #aaa;
+    font-size: 13px;
+    padding: 35px 10px;
+}
+
+/*attach list*/
 .rb-bbs-write .rb-attach .list-group-item {
     background-color: #FAFAFA
 }
