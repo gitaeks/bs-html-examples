@@ -13,6 +13,7 @@
 * [Bootstrap-selcct](http://silviomoreto.github.io/bootstrap-select/)
 * [jquery-cookie](https://github.com/carhartl/jquery-cookie)
 * [placehold](http://placehold.it/)
+* [Bootstrap-fileinput](https://github.com/kartik-v/bootstrap-fileinput)
 
 ### Reference 
 * [simple-jquery-text-resizer](http://trevordavis.net/blog/simple-jquery-text-resizer/)
