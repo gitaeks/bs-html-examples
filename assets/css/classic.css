@@ -141,11 +141,8 @@ input[type=radio] {
 
 
 @media (max-width: 767px) {
-    .btn {
+    .btn-toolbar .btn-group {
         margin-bottom: 10px
-    }
-    .open>.dropdown-menu {
-        margin-top: -9px;
     }
     .btn-group-sm>.btn, 
     .btn-sm {
