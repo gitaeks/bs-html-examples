@@ -30,7 +30,7 @@
     font-family: inherit;
 }
 .rb-bbs .popover.rb-profile .media  {
-        position: relative;
+
     padding: 0;
     border: 0;
 }
@@ -39,14 +39,18 @@
     height: 100px !important
 }
 
+.rb-bbs .popover.rb-profile .media-body {
+    letter-spacing: -1px
+}
+.rb-bbs .popover.rb-profile .media-body small {
+    font-size: 11px
+}
 .rb-bbs .popover.rb-profile .media-body .rb-relation {
-    position: absolute;
-    bottom: 0;
-    left: 110px;
     font-size: 12px;
     margin: 0
 }
 .rb-bbs .popover.rb-profile .media-heading {
+    padding-top: 5px;
     font-size: 14px;
     font-weight: bold;
 }
@@ -54,11 +58,11 @@
     font-size: 12px;
     padding: 0;
 }
-
 .rb-bbs .popover.rb-profile .popover-content {
 
 }
 .rb-bbs .popover.rb-profile .popover-footer {
+    padding: 6px;
     background-color: #F2F2F2;
     border-top: solid 1px #CCCCCC
 }
