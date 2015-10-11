@@ -144,8 +144,8 @@ input[type=radio] {
     .btn {
         margin-bottom: 10px
     }
-    .btn.dropdown-toggle {
-        margin-bottom: 0
+    .open>.dropdown-menu {
+        margin-top: -9px;
     }
     .btn-group-sm>.btn, 
     .btn-sm {
