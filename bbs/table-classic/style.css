@@ -24,6 +24,57 @@
  */
 
 
+ /* popover */
+.rb-bbs .popover.rb-profile  {
+    min-width: 310px;
+    font-family: inherit;
+}
+.rb-bbs .popover.rb-profile .media  {
+        position: relative;
+    padding: 0;
+    border: 0;
+}
+.rb-bbs .popover.rb-profile .media-object {
+    width: 100px !important;
+    height: 100px !important
+}
+
+.rb-bbs .popover.rb-profile .media-body .rb-relation {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    font-size: 12px;
+    margin: 0
+}
+.rb-bbs .popover.rb-profile .media-heading {
+    font-size: 14px;
+    font-weight: bold;
+}
+.rb-bbs .popover.rb-profile {
+    font-size: 12px;
+    padding: 0;
+}
+
+.rb-bbs .popover.rb-profile .popover-content {
+
+}
+.rb-bbs .popover.rb-profile .popover-footer {
+    background-color: #F2F2F2;
+    border-top: solid 1px #CCCCCC
+}
+.rb-bbs .popover.rb-profile.top>.arrow:after {
+    border-top-color: #F2F2F2;
+}
+
+
+/* tooltip */
+.rb-bbs .tooltip .tooltip-inner {
+    font-size: 11px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+
 
 /**
  * 2 - list 목록
@@ -65,6 +116,11 @@
 .rb-bbs-list .table .rb-hit,
 .rb-bbs-list .table .rb-time {
     font-family: arial; 
+}
+
+.rb-bbs-list .table .btn {
+    padding: 0;
+    font-size: inherit;
 }
 
 /*thead*/
@@ -515,15 +571,14 @@
 
 /*file-input*/
 
-.rb-bbs-write .rb-fileinput {
-    padding: 0;
-    background-color: #FAFAFA
-}
-
-.rb-bbs-write .file-input {
+.modal .rb-fileinput {
     padding: 0
 }
-.rb-bbs-write .file-drop-zone {
+
+.modal .file-input {
+    /*padding: 0*/
+}
+.modal .file-drop-zone2 {
     border: 1px dashed #aaa;
     border-width: 1px 0 0;
     height: 100%;
@@ -534,22 +589,29 @@
     padding: 15px 5px ;
 }
 
-.fileinput-remove {
-    margin-top: 5px;
-    margin-right: 10px
+.modal .close.fileinput-remove {
+    display: none;
 }
-.rb-bbs-write .file-input .file-preview {
+.modal .file-input .file-preview {
     border-radius: 0; 
     border: none; 
     padding: 0;
     width: 100%;;
     margin-bottom: 5px;
 }
-
-.rb-bbs-write .file-drop-zone-title {
+.modal .file-drop-zone-title2 {
     color: #aaa;
     font-size: 13px;
     padding: 35px 10px;
+}
+
+.modal .file-drop-zone {
+    overflow: auto;
+    height: 300px;
+    border: 1px dashed #aaa;
+    border-radius: 4px;
+    margin: 12px 0 12px 0; 
+    padding: 5px;
 }
 
 /*attach list*/
@@ -573,8 +635,7 @@
 .rb-bbs-write .rb-attach .list-group-item .list-group-item-text {
     line-height: 1.7;
 }
-.rb-bbs-write .rb-attach .list-group-item.rb-hidden,
-.rb-bbs-write .rb-attach .list-group-item.rb-hidden a {
+.rb-bbs-write .rb-attach .list-group-item.rb-hidden .list-group-item-text {
     color: #B7B7B7;
 }
 .rb-bbs-write .rb-attach .list-group-item.rb-hidden .btn {
@@ -619,3 +680,61 @@
     }
 
  }
+
+
+ /* Tabs panel */
+.tabbable-panel {
+  padding: 0;
+}
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #A5C3DD;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #337AB7;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}

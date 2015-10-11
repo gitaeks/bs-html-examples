@@ -2626,7 +2626,7 @@
     $.fn.fileinputLocales.en = {
         fileSingle: 'file',
         filePlural: 'files',
-        browseLabel: 'Browse &hellip;',
+        browseLabel: '파일찾기 &hellip;',
         removeLabel: 'Remove',
         removeTitle: 'Clear selected files',
         cancelLabel: 'Cancel',

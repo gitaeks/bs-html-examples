@@ -127,6 +127,19 @@ input[type=radio] {
     border-bottom-left-radius: 1px;
 }
 
+
+/*popover*/
+.popover {
+    border-radius: 1px;
+    font-size: 12px
+}
+
+/*modal*/
+.modal-content {
+    border-radius: 2px;
+}
+
+
 @media (max-width: 767px) {
     .btn {
         margin-bottom: 10px
@@ -147,3 +160,4 @@ input[type=radio] {
 		font-size: 12px
 	}
 }
+

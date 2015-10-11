@@ -110,7 +110,7 @@
                                             <span class="label" data-tooltip="tooltip" title="첨부파일"><i class="fa fa-floppy-o fa-lg"></i></span>
                                         </td>
                                         <td class="rb-user">
-                                            <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                            <a class="btn btn-link" tabindex="0" role="button" data-bbs="popover">홍길동</a>
                                         </td>
                                         <td class="rb-hit">12</td>
                                         <td class="rb-time">2014-05-08</td>
@@ -122,7 +122,7 @@
                                             <span class="label" data-tooltip="tooltip" title="비밀글"><i class="fa fa-lock fa-lg"></i></span>
                                         </td>
                                         <td class="rb-user">
-                                            <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                            <a class="btn btn-link" tabindex="0" role="button" data-bbs="popover">홍길동</a>
                                         </td>
                                         <td class="rb-hit">12</td>
                                         <td class="rb-time">2014-05-08</td>
@@ -137,7 +137,7 @@
                                             <span class="rb-new"></span>
                                         </td>
                                         <td class="rb-user">
-                                            <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                            <a class="btn btn-link" tabindex="0" role="button" data-bbs="popover">홍길동</a>
                                         </td>
                                         <td class="rb-hit">23</td>
                                         <td class="rb-time">2014-05-08</td>
@@ -149,7 +149,7 @@
                                             <a href="view.html">php 5.4 이상 환경에서 Rb1 테스트 요청합니다. <span class="badge">1+1</span></a>
                                         </td>
                                         <td class="rb-user">
-                                            <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                            <a class="btn btn-link" tabindex="0" role="button" data-bbs="popover">홍길동</a>
                                         </td>
                                         <td class="rb-hit">7</td>
                                         <td class="rb-time">2014-05-08</td>
@@ -162,7 +162,7 @@
                                             <a href="view.html">RE:php 5.4 이상 환경에서 Rb1 테스트 요청합니다. <span class="badge">1+1</span></a>
                                         </td>
                                         <td class="rb-user">
-                                            <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                            <a class="btn btn-link" tabindex="0" role="button" data-bbs="popover">홍길동</a>
                                         </td>
                                         <td class="rb-hit">7</td>
                                         <td class="rb-time">2014-05-08</td>
@@ -175,7 +175,7 @@
                                             <a href="view.html">RE:RE:php 5.4 이상 환경에서 Rb1 테스트 요청합니다. <span class="badge">1+1</span></a>
                                         </td>
                                         <td class="rb-user">
-                                            <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                            <a class="btn btn-link" tabindex="0" role="button" data-bbs="popover">홍길동</a>
                                         </td>
                                         <td class="rb-hit">7</td>
                                         <td class="rb-time">2014-05-08</td>
@@ -186,7 +186,7 @@
                                             <a href="view.html">킴스큐 공식홈페이지 광장이용 가이드라인킴스큐 공식홈페이지 광장이용</a>
                                         </td>
                                         <td class="rb-user">
-                                            <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">홍길동</a>
+                                            <a class="btn btn-link" tabindex="0" role="button" data-bbs="popover">홍길동</a>
                                         </td>
                                         <td class="rb-hit">100</td>
                                         <td class="rb-time">2014-05-08</td>
@@ -260,12 +260,12 @@
         </div>
 
         <!-- Modal-Profile -->
-        <div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="modal-profile" tabindex="-1" role="dialog" aria-labelledby="modal-profile">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">홍길동</h4>
+                        <h4 class="modal-title">홍길동</h4>
                     </div>
                     <div class="modal-body">
                         ...
@@ -289,8 +289,32 @@
         <script type="text/javascript">
 
             // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/
-            $('.selectpicker').addClass('input-group-btn').selectpicker('setStyle');
+            $('.rb-bbs .selectpicker').addClass('input-group-btn').selectpicker('setStyle');
+
+            $('[data-bbs="popover"]').popover({
+                placement : 'auto',
+                html: 'true',
+                container: '.rb-bbs',
+                content: '<div class="media"><a class="pull-left" href="#"><img class="media-object" src="../../assets/img/noavatar-blue.png"></a><div class="media-body"><h4 class="media-heading">홍길동(대한이)</h4><p class="text-muted">서울특별시</p><p class="rb-relation">함께아는 친구 <strong>16명</strong></p></div></div>',
+                template: '<div class="popover rb-profile" role="tooltip"><div class="arrow"></div><div class="popover-content"></div><div class="popover-footer"><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-profile">자세히</button><div class="btn-group btn-group-sm" role="group" aria-label="..."><div class="btn-group" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">팔로잉<span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#">Dropdown link</a></li><li><a href="#">Dropdown link</a></li></ul></div><button type="button" class="btn btn-default">메시지</button></div></div></div>'
+            });
+
+
+            // https://jsfiddle.net/mattdlockyer/C5GBU/2/
+            // http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/
+            $('body').on('click', function (e) {
+                $('[data-bbs="popover"]').each(function () {
+                    //the 'is' for buttons that trigger popups
+                    //the 'has' for icons within a button that triggers a popup
+                    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                        $(this).popover('hide');
+                    }
+                });
+            });
+
 
         </script>
+
+
     </body>
 </html>

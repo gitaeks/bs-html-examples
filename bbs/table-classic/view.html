@@ -55,9 +55,9 @@
                         <div class="rb-bbs-heading">
                             <div class="media">
                                 <div class="media-left">
-                                    <a href="" data-toggle="modal" data-target="#profile" data-popover="popover" data-content="요약 프로필">
-                                        <img class="media-object" src="../../assets/img/avatar-180.gif" alt="...">
-                                    </a>
+                                    <button type="" data-bbs="popover">
+                                        <img class="media-object" src="../../assets/img/noavatar-blue.png" alt="...">
+                                    </button>
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">킴스큐 오픈소스 프로젝트 운영 지침</h4>
@@ -254,6 +254,29 @@
                     return false;
                 });
             }); 
+
+            // popover
+            $('.rb-bbs').popover({
+                selector: '[data-bbs=popover]',
+                placement : 'auto',
+                html: 'true',
+                trigger: 'click',
+                container: '.rb-bbs',
+                content: '<div class="media"><a class="pull-left" href="#"><img class="media-object" src="../../assets/img/noavatar-blue.png"></a><div class="media-body"><h4 class="media-heading">홍길동(대한이)</h4><p class="text-muted">서울특별시</p><p class="rb-relation">함께아는 친구 <strong>16명</strong></p></div></div>',
+
+            });
+
+            // https://jsfiddle.net/mattdlockyer/C5GBU/2/
+            // http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/
+            $('body').on('click', function (e) {
+                $('[data-bbs="popover"]').each(function () {
+                    //the 'is' for buttons that trigger popups
+                    //the 'has' for icons within a button that triggers a popup
+                    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                        $(this).popover('hide');
+                    }
+                });
+            });
 
         </script>
     </body>

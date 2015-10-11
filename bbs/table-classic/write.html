@@ -166,7 +166,8 @@
                                         </div>
 
                                         <div class="panel-body rb-fileinput">
-                                            <input id="bbs-fileinput" type="file" multiple class="file" data-overwrite-initial="false">
+                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-tooltip="tooltip" data-target="#modal-insertPhoto" title="사진 삽입" ><i class="fa fa-camera-retro fa-lg"></i></a>
+                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-tooltip="tooltip" data-target="#modal-attachFile" title="파일 첨부" ><i class="fa fa-floppy-o fa-lg"></i></a>
                                         </div>
                                     </div>
 
@@ -182,6 +183,7 @@
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-right" role="menu">
                                                             <li><a href="#">대표이미지 설정</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal-attach-photo-meta" data-filename="국화"  data-filetype="jpg" data-caption="국화 사진 캡션 입니다.">정보수정</a></li>
                                                             <li><a href="#">숨김</a></li>
                                                             <li><a href="#">삭제</a></li>
                                                             <li class="divider"></li>
@@ -197,7 +199,7 @@
                                                     </a>
                                                     <div class="media-body">
                                                         <span class="label label-default">대표</span>
-                                                        <a href="">00111.jpg</a>
+                                                        <a href="">국화.jpg</a>
                                                         <span class="rb-size">446.1KB</span> 
                                                     </div>
                                                 </div>
@@ -212,6 +214,7 @@
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-right" role="menu">
                                                             <li><a href="#">대표이미지 설정</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal-attach-photo-meta" data-filename="사막"  data-filetype="gif" data-caption="사막사진 캡션 입니다.">정보수정</a></li>
                                                             <li><a href="#">숨김</a></li>
                                                             <li><a href="#">삭제</a></li>
                                                             <li class="divider"></li>
@@ -226,7 +229,7 @@
                                                         <img class="media-object" src="http://placehold.it/48x48/" alt="">
                                                     </a>
                                                     <div class="media-body">
-                                                        <a href="">00111.jpg</a>
+                                                        <a href="">사막.jpg</a>
                                                         <span class="rb-size">446.1KB</span> 
                                                     </div>
                                                 </div>
@@ -244,7 +247,7 @@
                                                         <span class="sr-only">Toggle Dropdown</span>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-meta">정보수정</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="STP-SWOT 분석-2010.05"  data-filetype="hwp" data-caption="캡션 입니다.">정보수정</a></li>
                                                         <li><a href="#">숨김</a></li>
                                                         <li><a href="#">삭제</a></li>
                                                         <li class="divider"></li>
@@ -266,7 +269,7 @@
                                                         <span class="sr-only">Toggle Dropdown</span>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-meta">정보수정</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="31227-포상 공감대상자 명단(공개검증)"  data-filetype="xlsx" data-caption="캡션 입니다.">정보수정</a></li>
                                                         <li><a href="#">보이기</a></li>
                                                         <li><a href="#">삭제</a></li>
                                                         <li class="divider"></li>
@@ -287,7 +290,7 @@
                                                         <span class="sr-only">Toggle Dropdown</span>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-meta">정보수정</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서"  data-filetype="pdf" data-caption="캡션 입니다.">정보수정</a></li>
                                                         <li><a href="#">숨김</a></li>
                                                         <li><a href="#">삭제</a></li>
                                                         <li class="divider"></li>
@@ -308,7 +311,7 @@
                                                         <span class="sr-only">Toggle Dropdown</span>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-meta">정보수정</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령"  data-filetype="zip" data-caption="캡션 입니다.">정보수정</a></li>
                                                         <li><a href="#">숨김</a></li>
                                                         <li><a href="#">삭제</a></li>
                                                         <li class="divider"></li>
@@ -329,7 +332,7 @@
                                                         <span class="sr-only">Toggle Dropdown</span>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-meta">정보수정</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령"  data-filetype="docx" data-caption="캡션 입니다.">정보수정</a></li>
                                                         <li><a href="#">숨김</a></li>
                                                         <li><a href="#">삭제</a></li>
                                                         <li class="divider"></li>
@@ -350,9 +353,12 @@
                                     <div class="input-group input-group-sm">
                                         <input type="text" class="form-control" placeholder="콤마(,)로 구분해서 입력해 주세요.">
                                             <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button" data-popover="popover" data-content="이 게시물을 가장 잘 표현할 수 있는 단어를 콤마(,)로 구분해서 입력해 주세요." title="<i class='fa fa-question-circle fa-lg'></i>  검색태그"><i class="fa fa-question fa-lg"></i></button>
+                                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#help-tag"><i class="fa fa-question fa-lg"></i></button>
                                         </span>
                                     </div>
+                                    <span class="collapse help-block" id="help-tag">
+                                        이 게시물을 가장 잘 표현할 수 있는 단어를 콤마(,)로 구분해서 입력해 주세요.
+                                    </span>
                                 </div>
                             </div>
                              <div class="form-group">
@@ -361,9 +367,12 @@
                                     <div class="input-group input-group-sm">
                                         <input type="text" class="form-control" placeholder="">
                                             <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button"  data-popover="popover" data-content="이 게시물을 보낼 트랙백주소를 입력해 주세요." title="<i class='fa fa-question-circle fa-lg'></i>  엮을주소"><i class="fa fa-question fa-lg"></i></button>
+                                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#help-trackback"><i class="fa fa-question fa-lg"></i></button>
                                         </span>
                                     </div>
+                                    <span class="collapse help-block" id="help-trackback">
+                                        이 게시물을 보낼 트랙백주소를 입력해 주세요.
+                                    </span>
                                 </div>
                             </div>
                             <hr>
@@ -405,16 +414,144 @@
 
         </div>
 
-        <!-- Modal-Profile -->
-        <div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <!-- Modal-fileinput -->
+        <div class="modal fade" id="modal-insertPhoto" tabindex="-1" role="dialog" aria-labelledby="fileinput">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="fileinput">
+                            <i class="fa fa-camera-retro"></i> 사진삽입 
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="tabbable-panel">
+                            <div class="tabbable-line">
+                                <ul class="nav nav-tabs ">
+                                    <li class="active">
+                                        <a href="#tab_default_1" data-toggle="tab">
+                                        업로드 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab_default_2" data-toggle="tab">
+                                        사진</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab_default_3" data-toggle="tab">
+                                        앨범</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab_default_1">
+                                        <span class="label label-default">용량 : 0B / 10MB</span>  
+                                        <span class="label label-default">개수 : 0개 / 20개 </span>
+                                        <input id="bbs-insertPhoto" type="file" multiple class="file-loading" data-overwrite-initial="false" accept="image/*">
+                                    </div>
+                                    <div class="tab-pane" id="tab_default_2">
+                                        <p>준비중 입니다.</p>
+                                    </div>
+                                    <div class="tab-pane" id="tab_default_3">
+                                        <p>준비중 입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 파일첨부 -->
+        <div class="modal fade" id="modal-attachFile" tabindex="-1" role="dialog" aria-labelledby="fileinput">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="fileinput">
+                            <i class="fa fa-floppy-o fa-fw"></i> 파일첨부 
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <span class="label label-default">용량 : 0B / 10MB</span>  
+                        <span class="label label-default">개수 : 0개 / 20개 </span>
+                        <input id="bbs-attachFile" type="file" multiple class="file-loading" data-overwrite-initial="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 첨부 사진 메타정보 수정 -->
+        <div class="modal fade rb-modal-attach-meta" id="modal-attach-photo-meta" tabindex="-1" role="dialog" aria-labelledby="">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">홍길동</h4>
+                        <h4 class="modal-title" id=""><i class="fa fa-camera-retro"></i> 사진 정보수정</h4>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="row">
+                            <div class="col-md-4"><p><img class="img-thumbnail" src="http://placehold.it/180x180/" alt=""></p></div>
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="file-name" class="control-label">파일명:</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="file-name">
+                                            <span class="input-group-addon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="file-caption" class="control-label">캡셥:</label>
+                                        <textarea class="form-control" id="file-caption"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">취소하기</button>
+                        <button type="button" class="btn btn-primary">저장하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 첨부 파일 메타정보 수정 -->
+        <div class="modal fade rb-modal-attach-meta" id="modal-attach-file-meta" tabindex="-1" role="dialog" aria-labelledby="">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id=""><i class="fa fa-floppy-o"></i> 첨부파일 정보수정</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4"><h1 class="text-center"><i class="fa fa-floppy-o fa-4x"></i></h1></div>
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="file-name" class="control-label">파일명:</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="file-name">
+                                            <span class="input-group-addon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="file-caption" class="control-label">캡셥:</label>
+                                        <textarea class="form-control" id="file-caption"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">취소하기</button>
+                        <button type="button" class="btn btn-primary">저장하기</button>
                     </div>
                 </div>
             </div>
@@ -446,26 +583,103 @@
             $('.selectpicker').selectpicker();
 
             // Bootstrap-fileinput - https://github.com/kartik-v/bootstrap-fileinput
-
-            $("#bbs-fileinput").fileinput({
+            $("#bbs-insertPhoto").fileinput({
                 language: 'ko',
-                uploadUrl: '#', // you must set a valid URL here else you will get an error
+                uploadUrl: "http://localhost/file-upload-single/2", // server upload action
+                uploadAsync: true,
                 allowedFileExtensions : ['jpg', 'png','gif','pdf','pptx'],
                 overwriteInitial: false,
                 maxFileSize: 100000,
+                maxFileCount: 10,
                 maxFilesNum: 10,
-                //allowedFileTypes: ['image', 'video', 'flash'],
+                browseClass: "btn btn-primary",
+                removeClass: "btn btn-default",
+                uploadClass: "btn btn-primary",
+                showUpload: false,
+                showCaption: false,
+                browseLabel: "찾아보기..",
+                removeLabel: "전체삭제",
+                removeIcon: "<i class=\"glyphicon glyphicon-trash\"></i> ",
+                uploadClass: "btn btn-info",
+                uploadLabel: "Upload",
+                uploadIcon: "<i class=\"glyphicon glyphicon-upload\"></i> ",
+                allowedFileExtensions: ["jpg", "png", "gif"],
+
+                layoutTemplates: {
+                    main1: "{preview}\n" +
+                    "<div class=\'input-group {class}\'>\n" +
+                    "   <div class=\'input-group-btn\'>\n" +
+                    "       {browse}\n" +
+                    "       {upload}\n" +
+                    "       {remove}\n" +
+                    "   </div>\n" +
+                    "   {caption}\n" +
+                    "</div>"
+                },
+
+                allowedFileTypes: ['image', 'video', 'flash'],
                 slugCallback: function(filename) {
                     return filename.replace('(', '_').replace(']', '_');
                 }
             });
+
+            $("#bbs-attachFile").fileinput({
+                language: 'ko',
+                uploadUrl: "http://localhost/file-upload-single/2", // server upload action
+                uploadAsync: true,
+                allowedFileExtensions : ['zip', 'png','gif','pdf','pptx'],
+                overwriteInitial: false,
+                maxFileSize: 100000,
+                maxFileCount: 10,
+                maxFilesNum: 10,
+                browseClass: "btn btn-primary",
+                removeClass: "btn btn-default",
+                uploadClass: "btn btn-primary",
+                showUpload: false,
+                showCaption: false,
+                browseLabel: "찾아보기..",
+                removeLabel: "전체삭제",
+                removeIcon: "<i class=\"glyphicon glyphicon-trash\"></i> ",
+                uploadClass: "btn btn-info",
+                uploadLabel: "Upload",
+                uploadIcon: "<i class=\"glyphicon glyphicon-upload\"></i> ",
+                allowedFileExtensions: ["jpg", "png", "gif"],
+
+                layoutTemplates: {
+                    main1: "{preview}\n" +
+                    "<div class=\'input-group {class}\'>\n" +
+                    "   <div class=\'input-group-btn\'>\n" +
+                    "       {browse}\n" +
+                    "       {upload}\n" +
+                    "       {remove}\n" +
+                    "   </div>\n" +
+                    "   {caption}\n" +
+                    "</div>"
+                },
+
+                allowedFileTypes: ['image', 'video', 'flash'],
+                slugCallback: function(filename) {
+                    return filename.replace('(', '_').replace(']', '_');
+                }
+            });
+
+
+            // 첨부파일 메타정보 수정 http://getbootstrap.com/javascript/#modals
+            $('.rb-modal-attach-meta').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var filename = button.data('filename') // Extract info from data-* attributes
+                var filetype = button.data('filetype') // Extract info from data-* attributes
+                var caption = button.data('caption') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this)
+                modal.find('.modal-body .input-group-addon').text('.'+filetype)
+                modal.find('.modal-body input').val(filename)
+                modal.find('.modal-body textarea').val(caption)
+            })
         </script>
 
 
-            <script>
 
-
-
-    </script>
     </body>
 </html>
