@@ -3,6 +3,5 @@ $('body').tooltip({
 	placement : 'auto top',
 	html: 'true',
 	container: 'body',
-
 });
 
