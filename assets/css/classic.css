@@ -80,6 +80,11 @@ body {
     border-bottom-right-radius: 1px;
 }
 
+/*input-group*/
+.input-group-addon {
+    border-radius: 1px;
+}
+
 /*image*/
 .img-thumbnail {
     border-radius: 1px;
