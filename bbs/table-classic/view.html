@@ -239,6 +239,9 @@
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
+        <!-- bbs js -->
+        <script src="./script.js"></script>
+
         <!-- jQuery Text Resizer : http://trevordavis.net/blog/simple-jquery-text-resizer/ -->
         <script type="text/javascript" src="../../assets/js/jquery-cookie.js"></script>
         <script type="text/javascript">
@@ -256,8 +259,7 @@
             }); 
 
             // popover
-            $('.rb-bbs').popover({
-                selector: '[data-bbs=popover]',
+            $('[data-bbs="popover"]').popover({
                 placement : 'auto',
                 html: 'true',
                 trigger: 'click',

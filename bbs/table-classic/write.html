@@ -166,8 +166,8 @@
                                         </div>
 
                                         <div class="panel-body rb-fileinput">
-                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#modal-insertPhoto" title="사진 삽입" ><i class="fa fa-camera-retro fa-lg"></i></a>
-                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#modal-attachFile" title="파일 첨부" ><i class="fa fa-floppy-o fa-lg"></i></a>
+                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-insertPhoto"><i class="fa fa-camera-retro fa-lg fa-fw"></i> 사진삽입</a>
+                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attachFile"><i class="fa fa-floppy-o fa-lg fa-fw"></i> 파일첨부</a>
                                         </div>
                                     </div>
 
@@ -578,9 +578,13 @@
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
+        <!-- bbs js -->
+        <script src="./script.js"></script>
+
         <script type="text/javascript">
-            // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select
-            $('.selectpicker').selectpicker();
+
+            // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/
+            $('.rb-bbs .selectpicker').addClass('input-group-btn').selectpicker('setStyle');
 
             // Bootstrap-fileinput - https://github.com/kartik-v/bootstrap-fileinput
             $("#bbs-insertPhoto").fileinput({
