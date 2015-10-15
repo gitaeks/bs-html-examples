@@ -165,6 +165,9 @@
 .rb-bbs-list .rb-popover-x .close {
     margin-top: -3px
 }
+.rb-bbs-list .rb-popover-x .form-control {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 /*label*/
 .rb-bbs-list .rb-bbs-body .label {
