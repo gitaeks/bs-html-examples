@@ -158,6 +158,13 @@
     font-weight: bold;
 }
 
+/*Permisson Check*/
+.rb-bbs-list .rb-popover-x {
+    font-family: inherit;
+}
+.rb-bbs-list .rb-popover-x .close {
+    margin-top: -3px
+}
 
 /*label*/
 .rb-bbs-list .rb-bbs-body .label {

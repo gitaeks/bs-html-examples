@@ -15,6 +15,9 @@
         <!-- Bootstrap-select -->
         <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
 
+        <!-- Bootstrap-select -->
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-popover-x-1.4.1/css/bootstrap-popover-x.css">
+
         <!-- Common-style -->
         <link rel="stylesheet" href="../../assets/css/classic.css">
 
@@ -115,10 +118,12 @@
                                         <td class="rb-hit">12</td>
                                         <td class="rb-time">2014-05-08</td>
                                     </tr>
+
+                                    <!-- 비밀글 -->
                                     <tr class="rb-notice">
                                         <th class="rb-num" scope="row"><span class="label label-default">공지</span></th>
                                         <td class="rb-title">
-                                            <a href="view.html">Rb1- 새 우편번호 체계 적용 패치</a>
+                                            <a href="#" data-toggle="popover-x" data-target="#permCheck" data-placement="bottom bottom-left">Rb1- 새 우편번호 체계 적용 패치</a>
                                             <span class="label" data-toggle="tooltip" title="비밀글"><i class="fa fa-lock fa-lg"></i></span>
                                         </td>
                                         <td class="rb-user">
@@ -127,6 +132,23 @@
                                         <td class="rb-hit">12</td>
                                         <td class="rb-time">2014-05-08</td>
                                     </tr>
+                                    <!-- 비밀글 content -->
+                                    <div id="permCheck" class="popover popover-warning rb-popover-x">
+                                        <div class="arrow"></div>
+                                        <h3 class="popover-title"><span class="close pull-right" data-dismiss="popover-x">&times;</span> <i class="fa fa-exclamation-circle fa-lg"></i> 비밀번호 확인</h3>
+                                        <div class="popover-content">
+                                            <p>게시물 등록시에 입력했던 비밀번호를 입력해 주세요.</p>
+                                            <form>
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </form>
+                                        </div>
+                                        <div class="popover-footer">
+                                            <button type="submit" class="btn btn-sm btn-primary">확인</button>
+                                            <button type="button" class="btn btn-sm btn-default"  data-dismiss="popover-x">취소</button>
+                                        </div>
+                                    </div>
+                                    <!-- /비밀글 -->
+
                                     <tr>
                                         <th class="rb-num" scope="row">5</th>
                                         <td class="rb-title">
@@ -274,6 +296,7 @@
             </div>
         </div>
 
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -282,6 +305,9 @@
 
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
+
+        <!-- bootstrap-popover-x js -->
+        <script src="../../assets/plugins/bootstrap-popover-x-1.4.1/js/bootstrap-popover-x.js"></script>
 
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
