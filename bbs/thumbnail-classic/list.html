@@ -15,9 +15,6 @@
         <!-- Bootstrap-select -->
         <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
 
-        <!-- Bootstrap-popover -->
-        <link rel="stylesheet" href="../../assets/plugins/bootstrap-popover-x-1.4.1/css/bootstrap-popover-x.css">
-        
         <!-- Common-style -->
         <link rel="stylesheet" href="../../assets/css/classic.css">
 
@@ -108,7 +105,7 @@
                                     <tr class="rb-notice">
                                         <th class="rb-num" scope="row"><span class="label label-default">공지</span></th>
                                         <td class="rb-title">
-                                            <a href="view.html">Rb1- 새 우편번호 체계 적용 패치</a>
+                                            <a href="#" data-toggle="modal" data-target="#modal-permCheck">Rb1- 새 우편번호 체계 적용 패치</a>
                                             <span class="label" data-tooltip="tooltip" title="비밀글"><i class="fa fa-lock fa-lg"></i></span>
                                             <span class="rb-new"></span>
                                         </td>
@@ -123,7 +120,7 @@
 
                             <div class="rb-thumbnail-list">
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -138,35 +135,22 @@
                                     </div>
 
                                     <!-- 비밀글 -->
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
-                                            <a href="#" data-toggle="popover-x" data-target="#permCheck" data-placement="bottom"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
+                                            <a href="#" data-toggle="modal" data-target="#modal-permCheck"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
                                                 <h3>
                                                     <span class="label" data-tooltip="tooltip" title="비밀글"><i class="fa fa-lock fa-lg"></i></span>
                                                     <span class="rb-new"></span>
-                                                    <a href="#"  data-toggle="popover-x" data-target="#permCheck" data-placement="bottom">php 5.4 이상 환경에서 Rb1 테스트 요청합니다.<span class="badge">1+1</span></a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-permCheck">php 5.4 이상 환경에서 Rb1 테스트 요청합니다.<span class="badge">1+1</span></a>
                                                 </h3>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="permCheck" class="popover popover-warning rb-popover-x">
-                                        <form>
-                                        <div class="arrow"></div>
-                                        <h3 class="popover-title"><span class="close pull-right" data-dismiss="popover-x">&times;</span> <i class="fa fa-exclamation-circle fa-lg"></i> 비밀번호 확인</h3>
-                                        <div class="popover-content">
-                                            <p>게시물 등록시에 입력했던 비밀번호를 입력해 주세요.</p>
-                                                <input type="password" class="form-control" placeholder="Password">
-                                        </div>
-                                        <div class="popover-footer">
-                                            <button type="submit" class="btn btn-sm btn-primary">확인</button>
-                                            <button type="button" class="btn btn-sm btn-default"  data-dismiss="popover-x">취소</button>
-                                        </div>
-                                        </form>
-                                    </div>
+
                                     <!-- /비밀글 -->
 
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -178,7 +162,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -188,7 +172,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -201,7 +185,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -213,7 +197,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -225,7 +209,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -235,7 +219,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -248,7 +232,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -260,7 +244,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -272,7 +256,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
                                         <div class="thumbnail">
                                             <a href="view.html"><img src="http://placehold.it/280x180/" alt="..." class="img-thumbnail"></a>
                                             <div class="caption">
@@ -283,6 +267,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
 
@@ -371,6 +357,33 @@
             </div>
         </div>
 
+        <!-- Modal-비밀글 -->
+        <div class="modal" id="modal-permCheck" tabindex="-1" role="dialog" aria-labelledby="modal-permCheck">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"><i class="fa fa-exclamation-circle fa-lg"></i> 비밀번호 확인</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>게시물 등록시에 입력했던 비밀번호를 입력해 주세요.</p>
+
+                        <form>
+                            <div class="form-group">
+                                <label class="sr-only" for="permCheck1-pw">Password</label>
+                                <input type="password" class="form-control" id="permCheck1-pw" placeholder="Password">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+                        <button type="submit" class="btn btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -380,9 +393,6 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
-        <!-- Bootstrap-popover-x js -->
-        <script src="../../assets/plugins/bootstrap-popover-x-1.4.1/js/bootstrap-popover-x.js"></script>
-
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
@@ -390,6 +400,10 @@
 
             // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/
             $('.selectpicker').addClass('input-group-btn').selectpicker('setStyle');
+
+            $('#modal-permCheck').on('shown.bs.modal', function () {
+                $('#permCheck1-pw').focus();
+            })
 
         </script>
     </body>
