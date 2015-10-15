@@ -139,6 +139,11 @@ input[type=radio] {
     font-size: 12px
 }
 
+/*popover-X*/
+.popover-title {
+    border-radius: 1px 1px 0 0;
+}
+
 /*modal*/
 .modal-content {
     border-radius: 2px;
