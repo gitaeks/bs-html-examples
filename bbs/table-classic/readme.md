@@ -14,6 +14,7 @@
 * [jquery-cookie](https://github.com/carhartl/jquery-cookie)
 * [placehold](http://placehold.it/)
 * [Bootstrap-fileinput](https://github.com/kartik-v/bootstrap-fileinput)
+* [Bootstrap-popover-x](https://github.com/kartik-v/bootstrap-popover-x)
 
 ### Reference 
 * [simple-jquery-text-resizer](http://trevordavis.net/blog/simple-jquery-text-resizer/)
