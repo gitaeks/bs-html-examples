@@ -30,7 +30,6 @@
     font-family: inherit;
 }
 .rb-bbs .popover.rb-profile .media  {
-
     padding: 0;
     border: 0;
 }
@@ -38,7 +37,6 @@
     width: 100px !important;
     height: 100px !important
 }
-
 .rb-bbs .popover.rb-profile .media-body {
     letter-spacing: -1px
 }
@@ -50,7 +48,7 @@
     margin: 0
 }
 .rb-bbs .popover.rb-profile .media-heading {
-    padding-top: 5px;
+    margin-top: 5px;
     font-size: 14px;
     font-weight: bold;
 }
@@ -58,8 +56,13 @@
     font-size: 12px;
     padding: 0;
 }
-.rb-bbs .popover.rb-profile .popover-content {
-
+.rb-bbs .popover.rb-profile .rb-presence {
+    padding: 0 0 0 5px;
+    color: #ccc;
+    font-size: 0.5em;
+}
+.rb-bbs .popover.rb-profile .rb-presence.active {
+    color: #93cc93;
 }
 .rb-bbs .popover.rb-profile .popover-footer {
     padding: 6px;
@@ -687,6 +690,7 @@
 
 
  /* Tabs panel */
+ /*http://bootsnipp.com/snippets/featured/bootstrap-line-tabs-by-keenthemes*/
 .tabbable-panel {
   padding: 0;
 }
