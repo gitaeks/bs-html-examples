@@ -123,7 +123,7 @@
                                     <tr class="rb-notice">
                                         <th class="rb-num" scope="row"><span class="label label-default">공지</span></th>
                                         <td class="rb-title">
-                                            <a href="#" data-toggle="popover-x" data-target="#permCheck" data-placement="bottom bottom-left">Rb1- 새 우편번호 체계 적용 패치</a>
+                                            <a href="#" data-toggle="popover-x" data-target="#popover-permCheck" data-placement="bottom bottom-left">Rb1- 새 우편번호 체계 적용 패치</a>
                                             <span class="label" data-toggle="tooltip" title="비밀글"><i class="fa fa-lock fa-lg"></i></span>
                                         </td>
                                         <td class="rb-user">
@@ -133,18 +133,21 @@
                                         <td class="rb-time">2014-05-08</td>
                                     </tr>
                                     <!-- 비밀글 content -->
-                                    <div id="permCheck" class="popover popover-warning rb-popover-x">
+                                    <div id="popover-permCheck" class="popover popover-warning rb-popover-x">
                                         <form>
-                                        <div class="arrow"></div>
-                                        <h3 class="popover-title"><span class="close pull-right" data-dismiss="popover-x">&times;</span> <i class="fa fa-exclamation-circle fa-lg"></i> 비밀번호 확인</h3>
-                                        <div class="popover-content">
-                                            <p>게시물 등록시에 입력했던 비밀번호를 입력해 주세요.</p>
-                                                <input type="password" class="form-control" placeholder="Password">
-                                        </div>
-                                        <div class="popover-footer">
-                                            <button type="submit" class="btn btn-sm btn-primary">확인</button>
-                                            <button type="button" class="btn btn-sm btn-default"  data-dismiss="popover-x">취소</button>
-                                        </div>
+                                            <div class="arrow"></div>
+                                            <h3 class="popover-title"><span class="close pull-right" data-dismiss="popover-x">&times;</span> <i class="fa fa-exclamation-circle fa-lg"></i> 비밀번호 확인</h3>
+                                            <div class="popover-content">
+                                                <p>게시물 등록시에 입력했던 비밀번호를 입력해 주세요.</p>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="popover-permCheck-pw">Password</label>
+                                                    <input type="password" class="form-control" id="popover-permCheck-pw" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="popover-footer">
+                                                <button type="submit" class="btn btn-sm btn-primary">확인</button>
+                                                <button type="button" class="btn btn-sm btn-default"  data-dismiss="popover-x">취소</button>
+                                            </div>
                                         </form>
                                     </div>
                                     <!-- /비밀글 -->
@@ -314,6 +317,15 @@
 
         <!-- bbs js -->
         <script src="./script.js"></script>
+
+        <script type="text/javascript">
+            $('#popover-permCheck').on('shown.bs.modal', function () {
+                $('#popover-permCheck-pw').focus();
+            })
+
+        </script>
+
+
 
     </body>
 </html>
