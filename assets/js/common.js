@@ -5,4 +5,3 @@ $('body').tooltip({
 	html: 'true',
 	container: 'body',
 });
-
