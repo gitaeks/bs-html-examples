@@ -159,6 +159,59 @@
   color: #ddd
 }
 
+/*tab*/
+.rb-blog-list .tab-content {
+    padding: 30px 0
+}
+
+/* table */
+.rb-blog-list,
+.rb-blog-list a {
+    color: #666
+}
+.rb-blog-list .table {
+    margin-bottom: 0
+}
+.rb-blog-list .table th,
+.rb-blog-list .table td {
+    text-align: center
+}
+.rb-blog-list .table td.rb-title {
+    text-align: left;
+}
+.rb-blog-list .table th {
+    font-weight: normal;
+}
+.rb-blog-list .table .rb-num,
+.rb-blog-list .table .rb-hit,
+.rb-blog-list .table .rb-time {
+    font-family: arial; 
+}
+
+.rb-blog-list .table .btn {
+    padding: 0;
+    font-size: inherit;
+}
+
+.rb-blog-list .table thead {
+    border: solid 1px #ddd
+}
+.rb-blog-list .table > thead > tr > th {
+     border-bottom: none;
+}
+.rb-blog-list .table thead th {
+    color: #999;
+    font-size: 11px;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
+}
+
+
 /********** blog-footer **********/
 
 .rb-blog-list .rb-blog-footer {
@@ -171,6 +224,7 @@
 }
 
 .rb-blog-list .rb-blog-footer .rb-buttons {
+    text-align: left;
     padding: 25px 0;
 }
 
