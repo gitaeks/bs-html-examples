@@ -51,49 +51,88 @@
             <div class="row">
                 <div class="rb-blog-main col-sm-9" role="main">
 
-                    <div class="well well-sm  btn-toolbar clearfix" role="toolbar" aria-label="..." style="margin-bottom: 15px">
-                        <div class="btn-group btn-group-sm" data-toggle="buttons">
-                            <label class="btn btn-default">
-                                <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
-                            </label>
-                            <label class="btn btn-default active">
-                                <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="sort" id="sort4" autocomplete="off"> 공유순
-                            </label>
+                    <section class="rb-blog rb-blog-list">
+
+                        <div class="rb-blog-heading">
+                            <div class="well well-sm  btn-toolbar clearfix" role="toolbar" aria-label="..." style="margin-bottom: 15px">
+                                <div class="btn-group btn-group-sm" data-toggle="buttons">
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
+                                    </label>
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="sort" id="sort4" autocomplete="off"> 공유순
+                                    </label>
+                                </div>
+                                <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
+                                    <label class="btn btn-default active" data-toggle="tooltip" title="미디어형">
+                                        <input type="radio" name="viewskin" id="viewskin2" autocomplete="off" checked=""> <i class="fa fa-th-list fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="박스형">
+                                        <input type="radio" name="viewskin" id="viewskin1" autocomplete="off"> <i class="fa fa-th fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="리스트형">
+                                        <input type="radio" name="viewskin" id="viewskin3" autocomplete="off"> <i class="fa fa-bars fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="갤러리형">
+                                        <input type="radio" name="viewskin" id="viewskin4" autocomplete="off"> <i class="fa fa-picture-o fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="지도형">
+                                        <input type="radio" name="viewskin" id="viewskin5" autocomplete="off"> <i class="fa fa-map-marker fa-lg"></i>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
-                            <label class="btn btn-default" data-toggle="tooltip" title="박스형">
-                                <input type="radio" name="viewskin" id="viewskin1" autocomplete="off" checked=""> <i class="fa fa-th fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default" data-toggle="tooltip" title="미디어형">
-                                <input type="radio" name="viewskin" id="viewskin2" autocomplete="off"> <i class="fa fa-th-list fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default active" data-toggle="tooltip" title="리스트형">
-                                <input type="radio" name="viewskin" id="viewskin3" autocomplete="off"> <i class="fa fa-bars fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default" data-toggle="tooltip" title="갤러리형">
-                                <input type="radio" name="viewskin" id="viewskin4" autocomplete="off"> <i class="fa fa-picture-o fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default" data-toggle="tooltip" title="지도형">
-                                <input type="radio" name="viewskin" id="viewskin5" autocomplete="off"> <i class="fa fa-map-marker fa-lg"></i>
-                            </label>
+
+                        <!-- blog-body -->
+                        <div class="rb-blog-body">
+                            <ul class="media-list">
+                                <li class="media rb-blog-item">
+                                    <div class="media-left">
+                                        <a href="view.html">
+                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90/" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading rb-title">
+                                            <a href="view.html">킴스큐 공식블로그를 시작합니다.</a>
+                                        </h4>
+                                        <p>안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
+                                        <ul class="rb-meta list-inline">
+                                            <li><abbr class="rb-date updated"><span class="glyphicon glyphicon-calendar"></span> <time class="timeago rb-tooltip rb-help" title="2015.06.08">4달 전</time></abbr></li>
+                                            <li><span class="rb-popover rb-help" data-placement="top" data-content="" title=""><span class="glyphicon glyphicon-user"></span> 벽돌공장</span></li>
+                                            <li><a href="#" class="rb-tooltip" title="분류"><span class="glyphicon glyphicon-folder-close"></span> 운영팀소식</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="media rb-blog-item">
+                                    <div class="media-left">
+                                        <a href="view.html">
+                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90/" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading rb-title">
+                                            <a href="view.html">킴스큐 공식블로그를 시작합니다.</a>
+                                        </h4>
+                                        <p>안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
+                                        <ul class="rb-meta list-inline">
+                                            <li><abbr class="rb-date updated"><span class="glyphicon glyphicon-calendar"></span> <time class="timeago rb-tooltip rb-help" title="2015.06.08">4달 전</time></abbr></li>
+                                            <li><span class="rb-popover rb-help" data-placement="top" data-content="" title=""><span class="glyphicon glyphicon-user"></span> 벽돌공장</span></li>
+                                            <li><a href="#" class="rb-tooltip" title="분류"><span class="glyphicon glyphicon-folder-close"></span> 운영팀소식</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                        <!-- / blog-body -->
 
-
-                    <div class="rb-nopost">
-                        <h2 class=""><i class="fa fa-exclamation-circle fa-4x"></i></h2>
-                        <p>등록된 자료가 없습니다.</p>
-                    </div>
-
-                    <hr>
-                    <div class="row">    
-                        <div class="col-xs-6">
+                        <div class="rb-blog-footer">
                             <nav>
                                 <ul class="pagination" style="margin: 0">
                                     <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
@@ -106,41 +145,9 @@
                                  </ul>
                             </nav>
                         </div>
-                        <div class="col-xs-6">
-                            <div class="input-group">
-                                <div class="input-group-btn search-panel dropup">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                      <span id="search_concept">검색조건</span> <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#01">제목+본문</a></li>
-                                        <li><a href="#02">제목</a></li>
-                                        <li><a href="#03">등록자 이름</a></li>
-                                        <li><a href="#04">요약정보</a></li>
-                                        <li><a href="#05">태그</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#all">전체</a></li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" name="search_param" value="all" id="search_param">         
-                                <input type="text" class="form-control" name="x" placeholder="검색어를 입력해 주세요">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                                </span>
-                            </div>
-                            <script type="text/javascript">
-                            $(document).ready(function(e){
-                                $('.search-panel .dropdown-menu').find('a').click(function(e) {
-                                e.preventDefault();
-                                var param = $(this).attr("href").replace("#","");
-                                var concept = $(this).text();
-                                $('.search-panel span#search_concept').text(concept);
-                                $('.input-group #search_param').val(param);
-                              });
-                            });
-                            </script>
-                        </div>
-                    </div>
+
+                    </section>
+
 
                 </div>
                 <div class="rb-blog-aside col-sm-3 hidden-print" role="navigation">

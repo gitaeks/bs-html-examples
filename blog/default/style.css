@@ -26,19 +26,89 @@
 
 
 
+.rb-blog-aside .rb-avatar img {
+    width: 120px;
+}
+
+
+
 /**
  * 2 - list 목록
  * ----------------------------------------------------------------------------
  */
 
+/********** blog-heading **********/
+
+
+
 
 
 /********** blog-body **********/
 
-/*reset*/
+
+.rb-blog-list .rb-blog-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEEEEE
+}
+
+.rb-blog-list .rb-blog-item:last-child {
+    border-bottom: none;
+}
+
+.rb-blog-list .rb-blog-item .rb-title {
+    margin-top: 0;
+    font-weight: bold;
+    line-height: 1.3
+}
+
+.rb-blog-list .rb-blog-item .media-object {
+    width: 150px
+}
 
 
-/*thead*/
+
+.rb-blog-list .rb-blog-item .rb-meta {
+  margin: 0 0 15px;
+  color: #999;
+  font-size: 12px
+}
+
+.rb-blog-list .rb-blog-item .rb-meta a {
+    color: #999
+}
+
+.rb-blog-list .rb-blog-item .rb-tags {
+  margin-top: 30px;
+  margin-bottom: 15px
+}
+
+.rb-blog-list .rb-blog-item .rb-author {
+  margin-top: 50px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*label*/
 .rb-blog-list .rb-blog-body .label {
@@ -120,16 +190,6 @@
     padding: 25px 0;
 }
 
-/*blog search*/
-.rb-blog-list .rb-blog-footer .rb-search {
-    margin: 25px 0;
-}
-.rb-blog-list .rb-blog-footer .rb-search .input-group-btn.bootstrap-select {
-    width: 100px
-}
-.rb-blog-list .rb-blog-footer .rb-search .input-group-btn.bootstrap-select > .btn {
-    border-right: none;
-}
 
 /*media query*/
 @media (max-width: 480px) {
@@ -153,7 +213,35 @@
  * ----------------------------------------------------------------------------
  */
 
+
 /********** blog-heading **********/
+
+
+.rb-blog-view .page-header h1 {
+    margin-top: 3px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.rb-blog-view .page-header h1 .rb-blog-home {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 100;
+    margin-right: 10px;
+    margin-left: -25px;
+    vertical-align: middle;
+}
+
+.rb-blog-view .page-header h1 .rb-blog-home:hover {
+    color: #333
+}
+
+.page-header h1 a {
+    color: #333
+}
+
+
 
 .rb-blog-view .rb-blog-heading .media, 
 .rb-blog-view .rb-blog-heading .media-body {

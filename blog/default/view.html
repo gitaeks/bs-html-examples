@@ -51,95 +51,24 @@
             <div class="row">
                 <div class="rb-blog-main col-sm-9" role="main">
 
-                    <div class="well well-sm  btn-toolbar clearfix" role="toolbar" aria-label="..." style="margin-bottom: 15px">
-                        <div class="btn-group btn-group-sm" data-toggle="buttons">
-                            <label class="btn btn-default">
-                                <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
-                            </label>
-                            <label class="btn btn-default active">
-                                <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="sort" id="sort4" autocomplete="off"> 공유순
-                            </label>
-                        </div>
-                        <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
-                            <label class="btn btn-default active" data-toggle="tooltip" title="미디어형">
-                                <input type="radio" name="viewskin" id="viewskin2" autocomplete="off" checked=""> <i class="fa fa-th-list fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default" data-toggle="tooltip" title="박스형">
-                                <input type="radio" name="viewskin" id="viewskin1" autocomplete="off"> <i class="fa fa-th fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default" data-toggle="tooltip" title="리스트형">
-                                <input type="radio" name="viewskin" id="viewskin3" autocomplete="off"> <i class="fa fa-bars fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default" data-toggle="tooltip" title="갤러리형">
-                                <input type="radio" name="viewskin" id="viewskin4" autocomplete="off"> <i class="fa fa-picture-o fa-lg"></i>
-                            </label>
-                            <label class="btn btn-default" data-toggle="tooltip" title="지도형">
-                                <input type="radio" name="viewskin" id="viewskin5" autocomplete="off"> <i class="fa fa-map-marker fa-lg"></i>
-                            </label>
-                        </div>
-                    </div>
+                    <section class="rb-blog rb-blog-view">
 
-                    <div class="rb-nopost">
-                        <h2 class=""><i class="fa fa-exclamation-circle fa-4x"></i></h2>
-                        <p>등록된 자료가 없습니다.</p>
-                    </div>
+                        <div class="rb-blog-heading">
 
-                    <hr>
-                    <div class="row">    
-                        <div class="col-xs-6">
-                            <nav>
-                                <ul class="pagination" style="margin: 0">
-                                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                                 </ul>
-                            </nav>
                         </div>
-                        <div class="col-xs-6">
-                            <div class="input-group">
-                                <div class="input-group-btn search-panel dropup">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                      <span id="search_concept">검색조건</span> <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#01">제목+본문</a></li>
-                                        <li><a href="#02">제목</a></li>
-                                        <li><a href="#03">등록자 이름</a></li>
-                                        <li><a href="#04">요약정보</a></li>
-                                        <li><a href="#05">태그</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#all">전체</a></li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" name="search_param" value="all" id="search_param">         
-                                <input type="text" class="form-control" name="x" placeholder="검색어를 입력해 주세요">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                                </span>
-                            </div>
-                            <script type="text/javascript">
-                            $(document).ready(function(e){
-                                $('.search-panel .dropdown-menu').find('a').click(function(e) {
-                                e.preventDefault();
-                                var param = $(this).attr("href").replace("#","");
-                                var concept = $(this).text();
-                                $('.search-panel span#search_concept').text(concept);
-                                $('.input-group #search_param').val(param);
-                              });
-                            });
-                            </script>
+
+                        <!-- blog-body -->
+                        <div class="rb-blog-body">
+                            내용보기
                         </div>
-                    </div>
+                        <!-- / blog-body -->
+
+                        <div class="rb-blog-footer">
+                            <a href="list.html" class="btn btn-default">목록보기</a>
+                        </div>
+
+                    </section>
+
 
                 </div>
                 <div class="rb-blog-aside col-sm-3 hidden-print" role="navigation">
