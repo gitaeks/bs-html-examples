@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>Blog-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap-select -->
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
+
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/classic.css">
+
+        <!-- Blog-style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > Blog</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/Blog/table-classic" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <!-- 템플릿 시작 -->
+
+            <div class="row">
+                <div class="rb-blog-main col-sm-9" role="main">
+
+                    <div class="well well-sm  btn-toolbar clearfix" role="toolbar" aria-label="..." style="margin-bottom: 15px">
+                        <div class="btn-group btn-group-sm" data-toggle="buttons">
+                            <label class="btn btn-default">
+                                <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
+                            </label>
+                            <label class="btn btn-default active">
+                                <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="sort" id="sort4" autocomplete="off"> 공유순
+                            </label>
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
+                            <label class="btn btn-default" data-toggle="tooltip" title="박스형">
+                                <input type="radio" name="viewskin" id="viewskin1" autocomplete="off" checked=""> <i class="fa fa-th fa-lg"></i>
+                            </label>
+                            <label class="btn btn-default" data-toggle="tooltip" title="미디어형">
+                                <input type="radio" name="viewskin" id="viewskin2" autocomplete="off"> <i class="fa fa-th-list fa-lg"></i>
+                            </label>
+                            <label class="btn btn-default active" data-toggle="tooltip" title="리스트형">
+                                <input type="radio" name="viewskin" id="viewskin3" autocomplete="off"> <i class="fa fa-bars fa-lg"></i>
+                            </label>
+                            <label class="btn btn-default" data-toggle="tooltip" title="갤러리형">
+                                <input type="radio" name="viewskin" id="viewskin4" autocomplete="off"> <i class="fa fa-picture-o fa-lg"></i>
+                            </label>
+                            <label class="btn btn-default" data-toggle="tooltip" title="지도형">
+                                <input type="radio" name="viewskin" id="viewskin5" autocomplete="off"> <i class="fa fa-map-marker fa-lg"></i>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="rb-nopost">
+                        <h2 class=""><i class="fa fa-exclamation-circle fa-4x"></i></h2>
+                        <p>등록된 자료가 없습니다.</p>
+                    </div>
+
+                    <hr>
+                    <div class="row">    
+                        <div class="col-xs-6">
+                            <nav>
+                                <ul class="pagination" style="margin: 0">
+                                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                 </ul>
+                            </nav>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel dropup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                      <span id="search_concept">검색조건</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#01">제목+본문</a></li>
+                                        <li><a href="#02">제목</a></li>
+                                        <li><a href="#03">등록자 이름</a></li>
+                                        <li><a href="#04">요약정보</a></li>
+                                        <li><a href="#05">태그</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#all">전체</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input type="text" class="form-control" name="x" placeholder="검색어를 입력해 주세요">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
+                            <script type="text/javascript">
+                            $(document).ready(function(e){
+                                $('.search-panel .dropdown-menu').find('a').click(function(e) {
+                                e.preventDefault();
+                                var param = $(this).attr("href").replace("#","");
+                                var concept = $(this).text();
+                                $('.search-panel span#search_concept').text(concept);
+                                $('.input-group #search_param').val(param);
+                              });
+                            });
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="rb-blog-aside col-sm-3 hidden-print" role="navigation">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">About</h3>
+                        </div>
+                        <div class="panel-body text-center rb-avatar">
+                            <p><img src="http://placehold.it/130x130/" alt="..." class="img-circle"></p>
+                            <p>킴스큐 공식블로그</p>    
+                        </div>
+                        <div class="panel-footer">
+                            <span>Rb 업데이트, 마켓,라이브 및 참여자 소식등 모든 소식을 전합니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Blog Search</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form action="" method="get">
+                                <div class="input-group">
+                                    <input type="text" name="" class="form-control" value="">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Blog Categories</h3>
+                        </div>
+                        <div class="list-group">
+                            <a href="" class="list-group-item"><span class="badge">1</span> 운영팀소식</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Blog Archive</h3>
+                        </div>
+                        <div class="list-group">
+                            <a href="list.html" class="list-group-item">2015년 10월</a>
+                            <a href="list.html" class="list-group-item">2015년 09월</a>
+                            <a href="list.html" class="list-group-item">2015년 08월</a>
+                            <a href="list.html" class="list-group-item">2015년 07월</a>
+                            <a href="list.html" class="list-group-item"><span class="badge">1</span> 2015년 06월</a>
+                            <a href="list.html" class="list-group-item">2015년 05월</a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="archive.html">전체보기</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- / 템플릿 시작 -->
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+        <!-- Modal-Profile -->
+        <div class="modal fade" id="modal-profile" tabindex="-1" role="dialog" aria-labelledby="modal-profile">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">홍길동</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap-selcct js -->
+        <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
+
+        <!-- Bootstrap-popover-x js -->
+        <script src="../../assets/plugins/bootstrap-popover-x-1.4.1/js/bootstrap-popover-x.js"></script>
+
+        <!-- Common js -->
+        <script src="../../assets/js/common.js"></script>
+
+        <!-- Blog js -->
+        <script src="./script.js"></script>
+
+        <script type="text/javascript">
+            $('#popover-permCheck').on('shown.bs.modal', function () {
+                $('#popover-permCheck-pw').focus();
+            })
+
+        </script>
+
+
+
+    </body>
+</html>
