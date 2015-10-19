@@ -159,6 +159,10 @@ input[type=radio] {
     border-radius: 2px;
 }
 
+/* tooltip */
+.tooltip .tooltip-inner {
+    font-size: 12px;
+}
 
 @media (max-width: 767px) {
     .btn-toolbar .btn-group {
