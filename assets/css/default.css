@@ -1,5 +1,5 @@
 body {
-    font-size: 12px;
+    font-size: 14px;
     font-family: dotum;
 }
 
@@ -33,25 +33,6 @@ body {
     border-radius: 2px 2px 0 0;
 }
 
-.btn-default {
-    position: relative;
-    border-top: #DFDFDF solid 1px;
-    border-left: #DFDFDF solid 1px;
-    border-right: #DFDFDF solid 1px;
-    border-bottom: #C0C0C0 solid 1px;
-    background: #EFEFEF;
-    color: #444;
-}
-
-.btn-default:before {
-    position: absolute;
-    content: " ";
-    left: 0;
-    top: 0;
-    width: 100%;
-    border-top: #FFFFFF solid 1px;
-}
-
 .form-control {
     border-radius: 1px
 }
@@ -61,19 +42,23 @@ body {
     border-radius: 1px;
 }
 
-
 .input-group-sm>.form-control, 
 .input-group-sm>.input-group-addon, 
 .input-group-sm>.input-group-btn>.btn {
     border-radius: 1px;
 }
 
+/*pagination*/
+.pagination>li:first-child>a, 
+.pagination>li:first-child>span,
 .pagination-sm>li:first-child>a,
 .pagination-sm>li:first-child>span {
     border-top-left-radius: 1px;
     border-bottom-left-radius: 1px;
 }
 
+.pagination>li:last-child>a, 
+.pagination>li:last-child>span,
 .pagination-sm>li:last-child>a, 
 .pagination-sm>li:last-child>span {
     border-top-right-radius: 1px;
@@ -130,6 +115,12 @@ input[type=radio] {
 .list-group-item:last-child {
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
+}
+
+/*well*/
+.well,
+.well-sm {
+    border-radius: 1px;
 }
 
 
