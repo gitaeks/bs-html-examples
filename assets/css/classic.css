@@ -99,6 +99,10 @@ body {
 .panel {
     border-radius: 1px;
 }
+.panel-heading {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
 
 /*badge*/
 .badge {
