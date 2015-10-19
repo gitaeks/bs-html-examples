@@ -54,15 +54,15 @@
                     <section class="rb-blog rb-blog-list">
 
                         <div class="rb-blog-heading">
-                            <div class="well well-sm  btn-toolbar clearfix" role="toolbar" aria-label="..." style="margin-bottom: 15px">
+                            <div class="btn-toolbar clearfix" role="toolbar" aria-label="..." style="margin-bottom: 15px">
                                 <div class="btn-group btn-group-sm" data-toggle="buttons">
-                                    <label class="btn btn-default">
+                                    <label class="btn btn-default active">
                                         <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
                                     </label>
                                     <label class="btn btn-default">
                                         <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
                                     </label>
-                                    <label class="btn btn-default active">
+                                    <label class="btn btn-default">
                                         <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
                                     </label>
                                     <label class="btn btn-default">
@@ -95,7 +95,7 @@
                                 <li class="media rb-blog-item">
                                     <div class="media-left">
                                         <a href="view.html">
-                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90/" alt="...">
+                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90?text=사진" alt="...">
                                         </a>
                                     </div>
                                     <div class="media-body">
@@ -104,16 +104,27 @@
                                         </h4>
                                         <p>안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
                                         <ul class="rb-meta list-inline">
-                                            <li><abbr class="rb-date updated"><span class="glyphicon glyphicon-calendar"></span> <time class="timeago rb-tooltip rb-help" title="2015.06.08">4달 전</time></abbr></li>
-                                            <li><span class="rb-popover rb-help" data-placement="top" data-content="" title=""><span class="glyphicon glyphicon-user"></span> 벽돌공장</span></li>
-                                            <li><a href="#" class="rb-tooltip" title="분류"><span class="glyphicon glyphicon-folder-close"></span> 운영팀소식</a></li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-calendar"></span> 
+                                                <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015.10.20 12:11</time>
+                                            </li>
+                                            <li
+
+                                                <span class="glyphicon glyphicon-user"></span> 벽돌공장
+
+                                            </li>
+                                            <li>
+                                                <a href="list.html" data-toggle="tooltip" title="분류">
+                                                    <span class="glyphicon glyphicon-folder-close"></span> 운영팀소식
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="media rb-blog-item">
                                     <div class="media-left">
                                         <a href="view.html">
-                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90/" alt="...">
+                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90?text=사진" alt="...">
                                         </a>
                                     </div>
                                     <div class="media-body">
@@ -134,7 +145,7 @@
 
                         <div class="rb-blog-footer">
                             <nav>
-                                <ul class="pagination" style="margin: 0">
+                                <ul class="pagination">
                                     <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
                                     <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
                                     <li><a href="#">2</a></li>
@@ -154,6 +165,18 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
+                            <h3 class="panel-title">홍길동님 안녕하세요</h3>
+                        </div>
+                        <div class="list-group">
+                            <a class="list-group-item" href="write.html"><i class="fa fa-pencil fa-fw"></i>&nbsp; 포스트 작성</a>
+                            <a class="list-group-item" href="list-temp.html"><span class="badge">1</span> <i class="fa fa-floppy-o fa-fw"></i>&nbsp; 임시보관함</a>
+                            <a class="list-group-item" href="list-confirm.html"><span class="badge">3</span> <i class="fa fa-check fa-fw"></i>&nbsp; 승인함</a>
+                            <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp; 설정</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
                             <h3 class="panel-title">About</h3>
                         </div>
                         <div class="panel-body text-center rb-avatar">
@@ -167,7 +190,7 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Blog Search</h3>
+                            <h3 class="panel-title">Search</h3>
                         </div>
                         <div class="panel-body">
                             <form action="" method="get">
@@ -185,16 +208,17 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Blog Categories</h3>
+                            <h3 class="panel-title">Categories</h3>
                         </div>
                         <div class="list-group">
-                            <a href="" class="list-group-item"><span class="badge">1</span> 운영팀소식</a>
+                            <a href="list.html" class="list-group-item"><span class="badge">11</span> 전체보기</a>
+                            <a href="list-cate.html" class="list-group-item"><span class="badge">1</span> 운영팀소식</a>
                         </div>
                     </div>
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Blog Archive</h3>
+                            <h3 class="panel-title">Archive</h3>
                         </div>
                         <div class="list-group">
                             <a href="list.html" class="list-group-item">2015년 10월</a>
@@ -209,6 +233,17 @@
                         </div>
                     </div>
 
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Tag</h3>
+                        </div>
+                        <div class="panel-body">
+                            태그 클라우드 적용예정
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="tag.html">전체보기</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- / 템플릿 시작 -->
@@ -247,8 +282,9 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
-        <!-- Bootstrap-popover-x js -->
-        <script src="../../assets/plugins/bootstrap-popover-x-1.4.1/js/bootstrap-popover-x.js"></script>
+        <!-- jquery-timeago -->
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
@@ -257,9 +293,15 @@
         <script src="./script.js"></script>
 
         <script type="text/javascript">
-            $('#popover-permCheck').on('shown.bs.modal', function () {
-                $('#popover-permCheck-pw').focus();
-            })
+
+            $(document).ready(function() {
+                
+                $('#popover-permCheck').on('shown.bs.modal', function () {
+                    $('#popover-permCheck-pw').focus();
+                })
+
+                $("time.timeago").timeago();
+            });
 
         </script>
 

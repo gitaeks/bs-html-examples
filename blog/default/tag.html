@@ -51,20 +51,20 @@
             <div class="row">
                 <div class="rb-blog-main col-sm-9" role="main">
 
-                    <section class="rb-blog rb-blog-view">
+                    <section class="rb-blog rb-blog-list">
 
                         <div class="rb-blog-heading">
-
+                            <h1>태그 <small>Tag</small></h1>
                         </div>
 
                         <!-- blog-body -->
                         <div class="rb-blog-body">
-                            내용보기
+
                         </div>
                         <!-- / blog-body -->
 
                         <div class="rb-blog-footer">
-                            <a href="list.html" class="btn btn-default">목록보기</a>
+
                         </div>
 
                     </section>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="rb-blog-aside col-sm-3 hidden-print" role="navigation">
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default hidden">
                         <div class="panel-heading">
                             <h3 class="panel-title">홍길동님 안녕하세요</h3>
                         </div>
@@ -192,8 +192,9 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
-        <!-- Bootstrap-popover-x js -->
-        <script src="../../assets/plugins/bootstrap-popover-x-1.4.1/js/bootstrap-popover-x.js"></script>
+        <!-- jquery-timeago -->
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
@@ -202,9 +203,15 @@
         <script src="./script.js"></script>
 
         <script type="text/javascript">
-            $('#popover-permCheck').on('shown.bs.modal', function () {
-                $('#popover-permCheck-pw').focus();
-            })
+
+            $(document).ready(function() {
+                
+                $('#popover-permCheck').on('shown.bs.modal', function () {
+                    $('#popover-permCheck-pw').focus();
+                })
+
+                $("time.timeago").timeago();
+            });
 
         </script>
 

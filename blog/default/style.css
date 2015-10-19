@@ -39,8 +39,10 @@
 
 /********** blog-heading **********/
 
-
-
+.rb-blog-heading {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
 
 
 /********** blog-body **********/
@@ -66,8 +68,6 @@
     width: 150px
 }
 
-
-
 .rb-blog-list .rb-blog-item .rb-meta {
   margin: 0 0 15px;
   color: #999;
@@ -90,25 +90,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rb-blog-list .rb-blog-item .rb-meta {
+  margin: 0 0 15px;
+  color: #999;
+  font-size: 12px
+}
 
 /*label*/
 .rb-blog-list .rb-blog-body .label {
@@ -183,9 +169,7 @@
     padding: 25px 0;
     text-align: center
 }
-.rb-blog-list .rb-blog-footer .pagination {
-    margin: 0
-}
+
 .rb-blog-list .rb-blog-footer .rb-buttons {
     padding: 25px 0;
 }
@@ -193,6 +177,10 @@
 
 /*media query*/
 @media (max-width: 480px) {
+    .rb-blog-list .rb-blog-item .media-object {
+        width: 100px;
+        height: 100px
+    }
     .rb-blog-list .rb-user ,
     .rb-blog-list .rb-hit,
     .rb-blog-list .rb-time { 

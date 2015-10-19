@@ -51,20 +51,63 @@
             <div class="row">
                 <div class="rb-blog-main col-sm-9" role="main">
 
-                    <section class="rb-blog rb-blog-view">
+                    <section class="rb-blog rb-blog-list">
 
                         <div class="rb-blog-heading">
-
+                            <h1>운영팀 소식</h1>
+                            <div class="btn-toolbar clearfix" role="toolbar" aria-label="..." style="margin-bottom: 15px">
+                                <div class="btn-group btn-group-sm" data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="sort" id="sort4" autocomplete="off"> 공유순
+                                    </label>
+                                </div>
+                                <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
+                                    <label class="btn btn-default active" data-toggle="tooltip" title="미디어형">
+                                        <input type="radio" name="viewskin" id="viewskin2" autocomplete="off" checked=""> <i class="fa fa-th-list fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="박스형">
+                                        <input type="radio" name="viewskin" id="viewskin1" autocomplete="off"> <i class="fa fa-th fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="리스트형">
+                                        <input type="radio" name="viewskin" id="viewskin3" autocomplete="off"> <i class="fa fa-bars fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="갤러리형">
+                                        <input type="radio" name="viewskin" id="viewskin4" autocomplete="off"> <i class="fa fa-picture-o fa-lg"></i>
+                                    </label>
+                                    <label class="btn btn-default" data-toggle="tooltip" title="지도형">
+                                        <input type="radio" name="viewskin" id="viewskin5" autocomplete="off"> <i class="fa fa-map-marker fa-lg"></i>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- blog-body -->
                         <div class="rb-blog-body">
-                            내용보기
+
                         </div>
                         <!-- / blog-body -->
 
                         <div class="rb-blog-footer">
-                            <a href="list.html" class="btn btn-default">목록보기</a>
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                 </ul>
+                            </nav>
                         </div>
 
                     </section>
@@ -73,7 +116,7 @@
                 </div>
                 <div class="rb-blog-aside col-sm-3 hidden-print" role="navigation">
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default hidden">
                         <div class="panel-heading">
                             <h3 class="panel-title">홍길동님 안녕하세요</h3>
                         </div>
@@ -192,8 +235,9 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
-        <!-- Bootstrap-popover-x js -->
-        <script src="../../assets/plugins/bootstrap-popover-x-1.4.1/js/bootstrap-popover-x.js"></script>
+        <!-- jquery-timeago -->
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
@@ -202,9 +246,15 @@
         <script src="./script.js"></script>
 
         <script type="text/javascript">
-            $('#popover-permCheck').on('shown.bs.modal', function () {
-                $('#popover-permCheck-pw').focus();
-            })
+
+            $(document).ready(function() {
+                
+                $('#popover-permCheck').on('shown.bs.modal', function () {
+                    $('#popover-permCheck-pw').focus();
+                })
+
+                $("time.timeago").timeago();
+            });
 
         </script>
 
