@@ -102,7 +102,7 @@
                                         <h4 class="media-heading rb-title">
                                             <a href="view.html">킴스큐 공식블로그를 시작합니다.</a>
                                         </h4>
-                                        <p>안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
+                                        <p class="rb-description">안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
                                         <ul class="rb-meta list-inline">
                                             <li>
                                                 <span class="glyphicon glyphicon-calendar"></span> 
@@ -129,7 +129,7 @@
                                         <h4 class="media-heading rb-title">
                                             <a href="view.html">킴스큐 공식블로그를 시작합니다.</a>
                                         </h4>
-                                        <p>안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
+                                        <p class="rb-description">안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
                                         <ul class="rb-meta list-inline">
                                             <li>
                                                 <span class="glyphicon glyphicon-calendar"></span> 
@@ -293,6 +293,9 @@
         <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
         <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
+        <!-- jquery.shorten -->
+        <script src="../../assets/plugins/jquery-shorten-1.0.0/jquery.shorten.js"></script>
+
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
@@ -308,6 +311,14 @@
                 })
 
                 $("time.timeago").timeago();
+
+                $(".rb-description").shorten({
+                    showChars: 110,
+                    moreText: 'more',
+                    lessText: ''
+                });
+
+
             });
 
         </script>
