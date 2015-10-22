@@ -61,18 +61,34 @@
 
                             <div class="row">
                                 <div class="col-sm-8">
-                                    <ul class="rb-post-meta list-inline">
+                                    <ul class="rb-meta list-inline">
                                         <li>
                                             <span class="glyphicon glyphicon-calendar"></span> 
                                             <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015.10.20 12:11</time>
                                         </li>
-                                        <li><span class="glyphicon glyphicon-user"></span> <span class="rb-popover rb-help" title="">벽돌공장</span></li>
-                                        <li><a href="" data-toggle="tooltip" title="분류"><span class="glyphicon glyphicon-folder-close"></span> 운영팀소식</a></li>
-                                        <li><span data-toggle="tooltip" title="조회수"><span class="glyphicon glyphicon-eye-open"></span>  139</span></li>
+                                        <li>
+                                            <span class="glyphicon glyphicon-user"></span> 
+                                            <span class="rb-popover rb-help" title="">벽돌공장</span>
+                                        </li>
+                                        <li>
+                                            <a href="list.html" data-toggle="tooltip" title="분류">
+                                                <span class="glyphicon glyphicon-folder-close"></span> 운영팀소식
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span data-toggle="tooltip" title="조회수">
+                                                <span class="glyphicon glyphicon-eye-open"></span> 139
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#comment" data-scroll data-toggle="tooltip" title="댓글">
+                                                <span class="glyphicon glyphicon-comment"></span> 42
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-4">
-                                     <div class="btn-toolbar">
+                                     <div class="btn-toolbar clearfix">
                                         <div class="btn-group rb-resizer" role="group" aria-label="...">
                                             <span class="rb-font-xs"><a class="btn btn-default btn-xs hidden-xs">A</a></span>
                                             <span class="rb-font-sm"><a class="btn btn-default btn-xs">A</a></span>
@@ -136,13 +152,22 @@
 
                             <div class="btn-toolbar" role="toolbar">
                                 <div class="btn-group btn-group-sm">
-                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="페이스북 공유"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="트위터 공유"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="구글+ 공유"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="mailto:?subject=킴스큐 오픈소스 프로젝트 운영 지침&amp;body=Check out this post:%20http://www.abc.com/blog/192680" onclick="return confirm('메일로 본 게시물의 링크를 보내시겠습니까??');" class="btn btn-default" data-toggle="tooltip" title="메일 공유"><i class="fa fa-envelope fa-lg"></i></a>
+                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="페이스북 공유">
+                                        <i class="fa fa-facebook fa-lg"></i>
+                                        <span>42</span>
+                                    </a>
+                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="트위터 공유">
+                                        <i class="fa fa-twitter fa-lg"></i>
+                                        <span>2</span>
+                                    </a>
+                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="구글+ 공유">
+                                        <i class="fa fa-google-plus fa-lg"></i>
+                                        <span>2</span>
+                                     </a>
+                                    <a href="mailto:?subject=킴스큐 오픈소스 프로젝트 운영 지침&amp;body=Check out this post:%20http://www.abc.com/blog/192680" onclick="return confirm('메일로 본 게시물의 링크를 보내시겠습니까??');" class="btn btn-default" data-toggle="tooltip" title="메일 공유">
+                                        <i class="fa fa-envelope fa-lg"></i>
+                                    </a>
                                 </div>
-
-    
 
                                 <div class="btn-group btn-group-sm pull-right">
                                     <a href="" class="btn btn-default">복사</a>
@@ -188,10 +213,6 @@
                                 </div>
                             </div>
 
-   
-
-
-
                             <nav class="text-center">
                                 <ul class="pager">
                                     <li class="previous disabled"><a href="#.">← 이전</a></li>
@@ -202,7 +223,6 @@
                         </div>
 
                     </section>
-
 
                 </div>
                 <div class="rb-blog-aside col-sm-4 hidden-print" role="navigation">
@@ -330,15 +350,15 @@
         <!-- Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- Bootstrap-selcct js -->
-        <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
-
         <!-- jquery-timeago -->
         <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
         <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
         <!-- jQuery Text Resizer : http://trevordavis.net/blog/simple-jquery-text-resizer/ -->
         <script type="text/javascript" src="../../assets/js/jquery-cookie.js"></script>
+
+        <!-- smooth-scroll : https://github.com/cferdinandi/smooth-scroll -->
+        <script src="../../assets/plugins/smooth-scroll-3.3/smooth-scroll.js"></script>
 
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>

@@ -252,7 +252,7 @@
 
 /********** blog-heading **********/
 
-.rb-blog-heading {
+.rb-blog-view .rb-blog-heading {
     margin-bottom: 10px;
 }
 
@@ -263,21 +263,20 @@
 }
 
 .rb-blog-view .rb-blog-heading .rb-meta {
-    float: left;
-    padding-top: 7px;
-    color: #c0c0c0;
-    font-family: dotum;
-    font-size: 11px;
-    line-height: 20px
+    margin-bottom: 5px;
+    color: #999;
+    line-height: 1.7
+}
+.rb-blog-view .rb-blog-heading .rb-meta a {
+    color: inherit;
 }
 .rb-blog-view .rb-blog-heading .rb-meta ul {
     margin-left: 0
 }
 .rb-blog-view .rb-blog-heading .rb-meta li {
-    padding-right: 2px;
-    padding-left: 2px
+    padding-right: 5px;
+    padding-left: 5px
 }
-
 
 /*font-resizer*/
 
@@ -429,10 +428,7 @@
 
 @media (max-width: 639px) {
 
-    .rb-blog-view .rb-blog-heading .rb-meta {
-        float: none;
 
-    }
     .rb-blog-view .rb-blog-heading .rb-buttons {
         float: left;
         margin-left: -60px;
