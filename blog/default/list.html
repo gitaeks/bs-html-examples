@@ -49,7 +49,7 @@
             <!-- 템플릿 시작 -->
 
             <div class="row">
-                <div class="rb-blog-main col-sm-9" role="main">
+                <div class="rb-blog-main col-sm-8" role="main">
 
                     <section class="rb-blog rb-blog-list">
 
@@ -168,16 +168,17 @@
 
 
                 </div>
-                <div class="rb-blog-aside col-sm-3 hidden-print" role="navigation">
+                <div class="rb-blog-aside col-sm-4 hidden-print" role="navigation">
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">홍길동님 안녕하세요</h3>
+                            <h3 class="panel-title">홍길동님의 포스트</h3>
                         </div>
                         <div class="list-group">
                             <a class="list-group-item" href="write.html"><i class="fa fa-pencil fa-fw"></i>&nbsp; 포스트 작성</a>
-                            <a class="list-group-item" href="list-temp.html"><span class="badge">1</span> <i class="fa fa-floppy-o fa-fw"></i>&nbsp; 임시보관함</a>
-                            <a class="list-group-item" href="list-confirm.html"><span class="badge">3</span> <i class="fa fa-check fa-fw"></i>&nbsp; 승인함</a>
+                            <a class="list-group-item" href="list-temp.html"><span class="badge">1</span> <i class="fa fa-folder-o fa-fw"></i>&nbsp; 전체 보관함</a>
+                            <a class="list-group-item" href="list-temp.html"><span class="badge">1</span> <i class="fa fa-folder-o fa-fw"></i>&nbsp; 임시보관함</a>
+                            <a class="list-group-item" href="list-confirm.html"><span class="badge">3</span> <i class="fa fa-folder-o fa-fw"></i>&nbsp; 승인함</a>
                             <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp; 설정</a>
                         </div>
                     </div>
@@ -251,6 +252,24 @@
                             <a href="tag.html">전체보기</a>
                         </div>
                     </div>
+
+
+
+
+<!-- Split button -->
+<div class="btn-group btn-group-xs">
+  <button type="button" class="btn btn-primary">대시보드</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right">
+    <li><a href="#">서비스 취소</a></li>
+  </ul>
+</div>
+
+
+
                 </div>
             </div>
             <!-- / 템플릿 시작 -->
@@ -317,7 +336,6 @@
                     moreText: 'more',
                     lessText: ''
                 });
-
 
             });
 

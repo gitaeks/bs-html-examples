@@ -252,48 +252,14 @@
 
 /********** blog-heading **********/
 
+.rb-blog-heading {
+    margin-bottom: 10px;
+}
 
-.rb-blog-view .page-header h1 {
-    margin-top: 3px;
-    margin-bottom: 0;
+.rb-blog-view .rb-blog-heading h1 {
+    margin: 0 0 25px;
     font-size: 24px;
     font-weight: bold;
-}
-
-.rb-blog-view .page-header h1 .rb-blog-home {
-    color: #ccc;
-    font-size: 14px;
-    font-weight: 100;
-    margin-right: 10px;
-    margin-left: -25px;
-    vertical-align: middle;
-}
-
-.rb-blog-view .page-header h1 .rb-blog-home:hover {
-    color: #333
-}
-
-.page-header h1 a {
-    color: #333
-}
-
-
-
-.rb-blog-view .rb-blog-heading .media, 
-.rb-blog-view .rb-blog-heading .media-body {
-     overflow: visible; 
-}
-.rb-blog-view .rb-blog-heading .media-object {
-    width: 50px;
-}
-
-.rb-blog-view .rb-blog-heading .media-heading {
-    padding: 4px 0 8px 0;
-    margin: 0;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: dotum;
-    border-bottom: #dfdfdf dotted 1px;
 }
 
 .rb-blog-view .rb-blog-heading .rb-meta {
@@ -311,29 +277,7 @@
     padding-right: 2px;
     padding-left: 2px
 }
-.rb-blog-view .rb-blog-heading .rb-meta .rb-divider {
-    padding: 0;
-    color: #dfdfdf;
-    font-size: 10px;
-    text-align: center
-}
-.rb-blog-view .rb-blog-heading .rb-meta .rb-divider:before {
-    content: '|';
-}
 
-.rb-blog-view .rb-blog-heading .btn-toolbar {
-    padding-top: 7px
-}
-.rb-blog-view .rb-blog-heading .rb-buttons {
-    float: right;
-    margin-top: 3px;
-    margin-right: 5px
-}
-.rb-blog-view .rb-blog-heading .rb-buttons a {
-    padding: 1px 3px;
-    color: #666;
-    font-size: 11px
-}
 
 /*font-resizer*/
 .rb-blog-view .rb-blog-heading .rb-resizer {
@@ -378,9 +322,7 @@
 }
 
 /*font-size*/
-.rb-blog-view .rb-blog-body {
-    font-size: 12px;
-}
+
 .rb-blog-view.rb-font-xs .rb-blog-body {
     font-size: 11px;
 }

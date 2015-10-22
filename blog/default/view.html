@@ -49,29 +49,163 @@
             <!-- 템플릿 시작 -->
 
             <div class="row">
-                <div class="rb-blog-main col-sm-9" role="main">
+                <div class="rb-blog-main col-sm-8" role="main">
 
                     <section class="rb-blog rb-blog-view">
 
                         <div class="rb-blog-heading">
+                            <h1 class="rb-title">
+                                킴스큐 공식블로그를 시작합니다.
+                            </h1>
 
+
+                            <div class="btn-toolbar">
+                                <div class="btn-group rb-resizer" role="group" aria-label="...">
+                                    <span class="rb-font-xs"><a class="btn btn-default btn-xs hidden-xs">A</a></span>
+                                    <span class="rb-font-sm"><a class="btn btn-default btn-xs">A</a></span>
+                                    <span class="rb-font-md"><a class="btn btn-default btn-xs">A</a></span>
+                                    <span class="rb-font-lg"><a class="btn btn-default btn-xs">A</a></span>
+                                </div>
+                                <div class="btn-group rb-buttons" role="group" aria-label="...">
+                                    <a href="" class="btn btn-link btn-xs"><i class="fa fa-meh-o fa-lg fa-fw"></i> 신고</a>
+                                    <a href="" class="btn btn-link btn-xs"><i class="fa fa-print fa-lg fa-fw"></i> 인쇄</a>
+                                    <a href="" class="btn btn-link btn-xs"><i class="fa fa-star-o fa-lg fa-fw"></i> 스크랩</a>
+                                </div>
+                            </div>
+
+                            <ul class="rb-post-meta list-inline">
+                                <li>
+                                    <span class="glyphicon glyphicon-calendar"></span> 
+                                    <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015.10.20 12:11</time>
+                                </li>
+                                <li><span class="glyphicon glyphicon-user"></span> <span class="rb-popover rb-help" title="">벽돌공장</span></li>
+                                <li><a href="" data-toggle="tooltip" title="분류"><span class="glyphicon glyphicon-folder-close"></span> 운영팀소식</a></li>
+                                <li><span data-toggle="tooltip" title="조회수"><span class="glyphicon glyphicon-eye-open"></span>  139</span></li>
+                            </ul>
                         </div>
 
                         <!-- blog-body -->
                         <div class="rb-blog-body">
-                            내용보기
+                            <p>PHP의 버전이 5.0으로 업그레이드 되고, MySQL 4.1이 소개 되면서 PHP와 MySQL의 연결하는 방식에 있어 기본연결 방식(original MySQL extension)보다 개선된 연결 방식(MySQLi 또는 PDO)의 사용을 권장하고 있습니다.</p>
+                            <p>PHP 5.4 이상 버전부터는  MySQL 기본 연결방식과 관련하여 Rb에서 경고문이 출력 됩니다.(현재,Rb1/Rb2는 php 5.2 버전에 최적화되어 있음)</p> 
+                            <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
+                            <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
                         </div>
                         <!-- / blog-body -->
 
                         <div class="rb-blog-footer">
-                            <a href="list.html" class="btn btn-default">목록보기</a>
+
+                                                        <dl class="dl-horizontal rb-tag">
+                                <dt>태그</dt>
+                                <dd>
+                                    <ul class="list-inline">
+                                        <li>#<a href="">킴스큐</a></li>
+                                        <li>#<a href="">개발자센터</a></li>
+                                        <li>#<a href="">커뮤니티</a></li>
+                                        <li>#<a href="">임시홈페이지</a></li>
+                                        <li>#<a href="">킴스큐</a></li>
+                                        <li>#<a href="">개발자센터</a></li>
+                                        <li>#<a href="">커뮤니티</a></li>
+                                    </ul>
+
+                                </dd>
+                            </dl>
+ 
+                            <dl class="dl-horizontal rb-attach">
+                                <dt>첨부</dt>
+                                <dd>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="">STP-SWOT 분석-2010.05.hwp</a> 
+                                            <span class="rb-size">446.1KB</span>
+                                            <span class="rb-down" data-toggle="tooltip" title="다운로드 수">0</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="">킴스큐 소개서.pdf</a> 
+                                            <span class="rb-size">446.1KB</span>
+                                            <span class="rb-down" data-toggle="tooltip" title="다운로드 수">0</span>
+                                        </li>
+                                    </ul>
+                               </dd>
+                            </dl>
+ 
+
+                         <div class="panel panel-default rb-author">
+                                <div class="panel-heading hidden">작성자</div>
+                                <div class="panel-body">
+
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img class="media-object img-rounded" src="http://placehold.it/64x64?text=사진" alt="...">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">홍길동 <span class="text-muted">(길동이)</span></h4>
+                                            <ul class="list-inline">
+                                                <li>break@kimsq.com</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="btn-toolbar" role="toolbar">
+                                <div class="btn-group btn-group-sm">
+                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="페이스북 공유"><i class="fa fa-facebook fa-lg"></i></a>
+                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="트위터 공유"><i class="fa fa-twitter fa-lg"></i></a>
+                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="구글+ 공유"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    <a href="mailto:?subject=킴스큐 오픈소스 프로젝트 운영 지침&amp;body=Check out this post:%20http://www.abc.com/blog/192680" onclick="return confirm('메일로 본 게시물의 링크를 보내시겠습니까??');" class="btn btn-default" data-toggle="tooltip" title="메일 공유"><i class="fa fa-envelope fa-lg"></i></a>
+                                </div>
+
+    
+
+                                <div class="btn-group btn-group-sm pull-right">
+                                    <a href="" class="btn btn-default">복사</a>
+                                    <a href="" class="btn btn-default">이동</a>
+                                </div>
+                                <div class="btn-group btn-group-sm pull-right">
+                                    <a href="" class="btn btn-default">수정</a>
+                                    <a href="" class="btn btn-default">삭제</a>
+                                </div>
+                            </div>
+
+
+                            <div class="rb-tabs">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#comment" data-toggle="tab">댓글 <span class="badge">0</span></a></li>
+                                    <li><a href="#trackback" data-toggle="tab">엮인글  <span class="badge">0</span></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="comment">
+                                        댓글 목록 
+                                    </div>
+                                    <div class="tab-pane" id="trackback">
+                                        트래백 목록
+                                    </div>
+                                </div>
+                            </div>
+
+   
+
+
+
+                            <nav class="text-center">
+                                <ul class="pager">
+                                    <li class="previous disabled"><a href="#.">← 이전</a></li>
+                                    <li><a href="list.html">목록</a></li>
+                                    <li class="next disabled"><a href="#.">다음 →</a></li>
+                                </ul>
+                            </nav>
                         </div>
 
                     </section>
 
 
                 </div>
-                <div class="rb-blog-aside col-sm-3 hidden-print" role="navigation">
+                <div class="rb-blog-aside col-sm-4 hidden-print" role="navigation">
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -192,8 +326,9 @@
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
-        <!-- Bootstrap-popover-x js -->
-        <script src="../../assets/plugins/bootstrap-popover-x-1.4.1/js/bootstrap-popover-x.js"></script>
+        <!-- jquery-timeago -->
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
@@ -202,9 +337,11 @@
         <script src="./script.js"></script>
 
         <script type="text/javascript">
-            $('#popover-permCheck').on('shown.bs.modal', function () {
-                $('#popover-permCheck-pw').focus();
-            })
+            $(document).ready(function() {
+
+                $("time.timeago").timeago();
+
+            });
 
         </script>
 
