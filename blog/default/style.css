@@ -257,7 +257,7 @@
 }
 
 .rb-blog-view .rb-blog-heading h1 {
-    margin: 0 0 25px;
+    margin: 0 0 15px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -280,9 +280,11 @@
 
 
 /*font-resizer*/
+
 .rb-blog-view .rb-blog-heading .rb-resizer {
     float: right;
 }
+
 .rb-blog-view .rb-blog-heading .rb-resizer a {
     margin-left: -1px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;

@@ -59,35 +59,38 @@
                             </h1>
 
 
-                            <div class="btn-toolbar">
-                                <div class="btn-group rb-resizer" role="group" aria-label="...">
-                                    <span class="rb-font-xs"><a class="btn btn-default btn-xs hidden-xs">A</a></span>
-                                    <span class="rb-font-sm"><a class="btn btn-default btn-xs">A</a></span>
-                                    <span class="rb-font-md"><a class="btn btn-default btn-xs">A</a></span>
-                                    <span class="rb-font-lg"><a class="btn btn-default btn-xs">A</a></span>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <ul class="rb-post-meta list-inline">
+                                        <li>
+                                            <span class="glyphicon glyphicon-calendar"></span> 
+                                            <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015.10.20 12:11</time>
+                                        </li>
+                                        <li><span class="glyphicon glyphicon-user"></span> <span class="rb-popover rb-help" title="">벽돌공장</span></li>
+                                        <li><a href="" data-toggle="tooltip" title="분류"><span class="glyphicon glyphicon-folder-close"></span> 운영팀소식</a></li>
+                                        <li><span data-toggle="tooltip" title="조회수"><span class="glyphicon glyphicon-eye-open"></span>  139</span></li>
+                                    </ul>
                                 </div>
-                                <div class="btn-group rb-buttons" role="group" aria-label="...">
-                                    <a href="" class="btn btn-link btn-xs"><i class="fa fa-meh-o fa-lg fa-fw"></i> 신고</a>
-                                    <a href="" class="btn btn-link btn-xs"><i class="fa fa-print fa-lg fa-fw"></i> 인쇄</a>
-                                    <a href="" class="btn btn-link btn-xs"><i class="fa fa-star-o fa-lg fa-fw"></i> 스크랩</a>
+                                <div class="col-sm-4">
+                                     <div class="btn-toolbar">
+                                        <div class="btn-group rb-resizer" role="group" aria-label="...">
+                                            <span class="rb-font-xs"><a class="btn btn-default btn-xs hidden-xs">A</a></span>
+                                            <span class="rb-font-sm"><a class="btn btn-default btn-xs">A</a></span>
+                                            <span class="rb-font-md"><a class="btn btn-default btn-xs">A</a></span>
+                                            <span class="rb-font-lg"><a class="btn btn-default btn-xs">A</a></span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <ul class="rb-post-meta list-inline">
-                                <li>
-                                    <span class="glyphicon glyphicon-calendar"></span> 
-                                    <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015.10.20 12:11</time>
-                                </li>
-                                <li><span class="glyphicon glyphicon-user"></span> <span class="rb-popover rb-help" title="">벽돌공장</span></li>
-                                <li><a href="" data-toggle="tooltip" title="분류"><span class="glyphicon glyphicon-folder-close"></span> 운영팀소식</a></li>
-                                <li><span data-toggle="tooltip" title="조회수"><span class="glyphicon glyphicon-eye-open"></span>  139</span></li>
-                            </ul>
+                            </div>
                         </div>
 
                         <!-- blog-body -->
                         <div class="rb-blog-body">
                             <p>PHP의 버전이 5.0으로 업그레이드 되고, MySQL 4.1이 소개 되면서 PHP와 MySQL의 연결하는 방식에 있어 기본연결 방식(original MySQL extension)보다 개선된 연결 방식(MySQLi 또는 PDO)의 사용을 권장하고 있습니다.</p>
-                            <p>PHP 5.4 이상 버전부터는  MySQL 기본 연결방식과 관련하여 Rb에서 경고문이 출력 됩니다.(현재,Rb1/Rb2는 php 5.2 버전에 최적화되어 있음)</p> 
+                            <p>PHP 5.4 이상 버전부터는  MySQL 기본 연결방식과 관련하여 Rb에서 경고문이 출력 됩니다.(현재,Rb1/Rb2는 php 5.2 버전에 최적화되어 있음)</p>
+
+                            <p><img class="img-responsive" src="http://placehold.it/650x400?text=사진" alt="..."></p>
                             <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
                             <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
                         </div>
@@ -95,7 +98,7 @@
 
                         <div class="rb-blog-footer">
 
-                                                        <dl class="dl-horizontal rb-tag">
+                            <dl class="dl-horizontal rb-tag">
                                 <dt>태그</dt>
                                 <dd>
                                     <ul class="list-inline">
@@ -130,27 +133,6 @@
                                     </ul>
                                </dd>
                             </dl>
- 
-
-                         <div class="panel panel-default rb-author">
-                                <div class="panel-heading hidden">작성자</div>
-                                <div class="panel-body">
-
-                                    <div class="media">
-                                        <div class="media-left media-middle">
-                                            <img class="media-object img-rounded" src="http://placehold.it/64x64?text=사진" alt="...">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">홍길동 <span class="text-muted">(길동이)</span></h4>
-                                            <ul class="list-inline">
-                                                <li>break@kimsq.com</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
 
                             <div class="btn-toolbar" role="toolbar">
                                 <div class="btn-group btn-group-sm">
@@ -172,6 +154,24 @@
                                 </div>
                             </div>
 
+                            <div class="panel panel-default rb-author">
+                                <div class="panel-heading hidden">작성자</div>
+                                <div class="panel-body">
+
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img class="media-object img-rounded" src="http://placehold.it/64x64?text=사진" alt="...">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">홍길동 <span class="text-muted">(길동이)</span></h4>
+                                            <ul class="list-inline">
+                                                <li>break@kimsq.com</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
 
                             <div class="rb-tabs">
                                 <ul class="nav nav-tabs">
@@ -209,12 +209,13 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">홍길동님 안녕하세요</h3>
+                            <h3 class="panel-title">홍길동님의 포스트</h3>
                         </div>
                         <div class="list-group">
                             <a class="list-group-item" href="write.html"><i class="fa fa-pencil fa-fw"></i>&nbsp; 포스트 작성</a>
-                            <a class="list-group-item" href="list-temp.html"><span class="badge">1</span> <i class="fa fa-floppy-o fa-fw"></i>&nbsp; 임시보관함</a>
-                            <a class="list-group-item" href="list-confirm.html"><span class="badge">3</span> <i class="fa fa-check fa-fw"></i>&nbsp; 승인함</a>
+                            <a class="list-group-item" href="list-temp.html"><span class="badge">1</span> <i class="fa fa-folder-o fa-fw"></i>&nbsp; 전체 보관함</a>
+                            <a class="list-group-item" href="list-temp.html"><span class="badge">1</span> <i class="fa fa-folder-o fa-fw"></i>&nbsp; 임시보관함</a>
+                            <a class="list-group-item" href="list-confirm.html"><span class="badge">3</span> <i class="fa fa-folder-o fa-fw"></i>&nbsp; 승인함</a>
                             <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp; 설정</a>
                         </div>
                     </div>
@@ -330,6 +331,9 @@
         <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
         <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
+        <!-- jQuery Text Resizer : http://trevordavis.net/blog/simple-jquery-text-resizer/ -->
+        <script type="text/javascript" src="../../assets/js/jquery-cookie.js"></script>
+
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
@@ -338,6 +342,16 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
+
+                if($.cookie('TEXT_SIZE')) {
+                    $('.rb-blog-view').addClass($.cookie('TEXT_SIZE')); 
+                }
+                $('.rb-resizer a').click(function() {
+                    var textSize = $(this).parent().attr('class');
+                    $('.rb-blog-view').removeClass('rb-font-xs rb-font-sm rb-font-md rb-font-lg').addClass(textSize);
+                    $.cookie('TEXT_SIZE',textSize, { path: '/', expires: 10000 });
+                    return false;
+                });
 
                 $("time.timeago").timeago();
 
