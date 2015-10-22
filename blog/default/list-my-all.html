@@ -54,16 +54,106 @@
                     <section class="rb-blog rb-blog-list">
 
                         <div class="rb-blog-heading">
-                            <h2><i class="fa fa-cog"></i> 설정</h2>
+                            <h2><i class="fa fa-folder-o"></i> 전체 보관함</h2>
                         </div>
 
                         <!-- blog-body -->
                         <div class="rb-blog-body">
+
+                            <table class="table">
+                                <colgroup>
+                                    <col width="10">
+                                    <col width="40"> 
+                                    <col> 
+                                    <col width="150"> 
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="rb-check"><i class="fa fa-check"></i></th>
+                                        <th class="rb-num">번호</th>
+                                        <th class="rb-title">제목</th>
+                                        <th class="rb-time">최종저장일시</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <th><input type="checkbox" value=""></th>
+                                        <th class="rb-num" scope="row">5</th>
+                                        <td class="rb-title">
+                                            <span class="label label-default">임시저장</span>
+                                            <span class="rb-category">분류1</span>
+                                            <a href="write.html">킴스큐 오픈소스 프로젝트 운영 지침</a>
+                                        </td>
+                                        <td class="rb-time">
+                                            <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015-10-20 09:24</time>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="checkbox" value=""></th>
+                                        <th class="rb-num" scope="row">4</th>
+                                        <td class="rb-title">
+                                            <span class="label label-default">임시저장</span>
+                                            <span class="rb-category">분류1</span>
+                                            <a href="write.html">php 5.4 이상 환경에서 Rb1 테스트 요청합니다.</a>
+                                        </td>
+                                        <td class="rb-time">
+                                            <time class="timeago" data-toggle="tooltip" datetime="2015-10-28T09:24:17Z">2015-10-28 09:24</time>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="checkbox" value=""></th>
+                                        <th class="rb-num" scope="row">3</th>
+                                        <td class="rb-title">
+                                            <span class="label label-default">임시저장</span>
+                                            <span class="rb-category">분류1</span>
+                                            <a href="write.html">php 5.4 이상 환경에서 Rb1 테스트 요청합니다.</a>
+                                        </td>
+                                        <td class="rb-time">
+                                            <time class="timeago" data-toggle="tooltip" datetime="2015-10-10T09:24:17Z">2015-10-10 09:24</time>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="checkbox" value=""></th>
+                                        <th class="rb-num" scope="row">2</th>
+                                        <td class="rb-title">
+                                            <span class="label label-default">임시저장</span>
+                                            <span class="rb-category">분류1</span>
+                                            <a href="write.html">5.4 이상 환경에서 Rb1 테스트 요청합니다.</a>
+                                        </td>
+                                        <td class="rb-time">
+                                            <time class="timeago" data-toggle="tooltip" datetime="2015-10-1T09:24:17Z">2015-10-1 09:24</time>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="checkbox" value=""></th>
+                                        <th class="rb-num" scope="row">1</th>
+                                        <td class="rb-title">
+                                            <span class="label label-default">임시저장</span>
+                                            <a href="write.html">킴스큐 공식홈페이지 광장이용 가이드라인킴스큐 공식홈페이지 광장이용</a>
+                                        </td>
+                                        <td class="rb-time">
+                                            <time class="timeago" data-toggle="tooltip" datetime="2012-10-20T09:24:17Z">2012-10-20 09:24</time>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
                         </div>
                         <!-- / blog-body -->
 
                         <div class="rb-blog-footer">
- 
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                    <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                 </ul>
+                            </nav>
+
+                            <div class="rb-buttons">
+                                <button class="btn btn-default"><i class="fa fa-trash-o fa-fw"></i> 삭제하기</button>
+                            </div>
                         </div>
 
                     </section>
@@ -80,7 +170,7 @@
                             <a class="list-group-item" href="write.html">
                                 <i class="fa fa-pencil fa-fw"></i> 포스트 작성
                             </a>
-                            <a class="list-group-item" href="list-my-all.html">
+                            <a class="list-group-item active" href="list-my-all.html">
                                 <span class="badge">1</span> 
                                 <i class="fa fa-folder-o fa-fw"></i> 전체 보관함
                             </a>
@@ -98,9 +188,10 @@
                     <!-- 블로그 관리자 패널 -->
                     <div class="panel panel-default">
                         <div class="list-group">
-                            <a class="list-group-item active" href="settings.html"><i class="fa fa-cog fa-fw"></i> 설정</a>
+                            <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i> 설정</a>
                         </div>
                     </div>
+
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">About</h3>
@@ -221,10 +312,6 @@
         <script type="text/javascript">
 
             $(document).ready(function() {
-                
-                $('#popover-permCheck').on('shown.bs.modal', function () {
-                    $('#popover-permCheck-pw').focus();
-                })
 
                 $("time.timeago").timeago();
             });
