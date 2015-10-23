@@ -186,9 +186,13 @@
                     </div>
 
                     <!-- 블로그 관리자 패널 -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">관리자 전용</h3>
+                        </div>
                         <div class="list-group">
-                            <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i> 설정</a>
+                            <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i> 블로그 설정</a>
+                            <a class="list-group-item" href="settings2.html"><i class="fa fa-wrench fa-fw"></i> 블로그 꾸미기</a>
                         </div>
                     </div>
 
@@ -231,6 +235,9 @@
                             <a href="list.html" class="list-group-item"><span class="badge">11</span> 전체보기</a>
                             <a href="list-cate.html" class="list-group-item"><span class="badge">1</span> 운영팀소식</a>
                         </div>
+                      <div class="panel-footer text-center">
+                            <a href="#">카테고리 추가</a>
+                        </div>
                     </div>
 
                     <div class="panel panel-default">
@@ -255,10 +262,27 @@
                             <h3 class="panel-title">Tag</h3>
                         </div>
                         <div class="panel-body">
-                            태그 클라우드 적용예정
+                            <div id="tagcloud">
+                                <a href="tag.html" rel="7">Tag 1</a>
+                                <a href="tag.html" rel="3">Tag 2</a>
+                                <a href="tag.html" rel="10">Tag 3</a>
+                                <a href="tag.html" rel="5">Tag 4</a>
+                                <a href="tag.html" rel="1">Tag 5</a>
+                            </div>
                         </div>
                         <div class="panel-footer text-center">
                             <a href="tag.html">전체보기</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default rb-rss">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">RSS</h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href=""><i class="fa fa-rss-square fa-fw"></i>RSS 2.0</a>
+                            <a href=""><i class="fa fa-rss-square fa-fw"></i>RSS 1.0</a>
+                            <a href=""><i class="fa fa-rss fa-fw"></i>ATOM 0.3</a>
                         </div>
                     </div>
                 </div>
@@ -303,6 +327,9 @@
         <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
         <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
 
+        <!-- jquery-tagcloud -->
+        <script src="../../assets/plugins/jquery-tagcloud/jquery.tagcloud.js"></script>
+        
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
 
@@ -314,6 +341,13 @@
             $(document).ready(function() {
 
                 $("time.timeago").timeago();
+
+                // jquery.tagcloud
+                $.fn.tagcloud.defaults = {
+                    size: {start: 14, end: 18, unit: 'px'},
+                    color: {start: '#ccc', end: '#000'}
+                };
+                $('#tagcloud a').tagcloud();
             });
 
         </script>
