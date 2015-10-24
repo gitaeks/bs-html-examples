@@ -155,7 +155,7 @@
   	line-height: 1.5;
   	background-color: #fff;
 	color: #666;
-  	border-radius: 0;
+  	border-radius: 4px;
 }
 
 .widget-actions .btn i {
@@ -258,7 +258,6 @@
 .widget-actions .btn-link {
     padding: 3px 2px;
     color: inherit;
-    border-radius: 0;
 }
 
 /* Btn Circle */
@@ -273,26 +272,6 @@
 
 .widget-actions .btn.btn-circle i {
 	font-size: 11px;
-}
-
-/* Btn Grey Salsa */
-.widget-actions .btn.grey-salsa {
-	border: none;
-	margin-left: 3px;
-	box-shadow: none;
-	/*border-radius: 50px !important;*/
-}
-
-.widget-actions .btn.grey-salsa.active {
-	color: #fafcfb;
-	background: #8e9bae;
-}
-  .widget-actions .grey-salsa.btn:hover,
-  .widget-actions .grey-salsa.btn:focus,
-  .widget-actions .grey-salsa.btn:active,
-  .widget-actions .grey-salsa.btn.active {
-	color: #fafcfb;
-	background: #97a3b4;
 }
 
 /* Btn Red */

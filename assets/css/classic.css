@@ -215,3 +215,10 @@ input[type=radio] {
 		font-size: 12px
 	}
 }
+
+
+/* widget */
+
+.widget-actions .btn {
+    border-radius: 0;
+}
