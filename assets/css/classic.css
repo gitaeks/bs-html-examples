@@ -222,3 +222,27 @@ input[type=radio] {
 .widget-actions .btn {
     border-radius: 0;
 }
+
+
+/*pagination*/
+
+.pagination {
+    font-family: arial;
+}
+.pagination>li>a, 
+.pagination>li>span {
+    padding: 5px 7px;
+    color: #222;
+    font-weight: bold;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    color: #FF5B01;
+    cursor: default;
+    background-color: transparent;
+    font-weight: bold;
+}
