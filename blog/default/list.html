@@ -15,6 +15,9 @@
         <!-- Bootstrap-select -->
         <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
 
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+        
         <!-- Common-style -->
         <link rel="stylesheet" href="../../assets/css/default.css">
 
@@ -339,6 +342,9 @@
         <!-- Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+        <!-- FastClick: For mobile devices -->
+        <script src="../../assets/plugins/fastclick-1.0.6/fastclick.js"></script>
+
         <!-- jquery-timeago -->
         <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
         <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
@@ -358,6 +364,10 @@
         <script type="text/javascript">
 
             $(document).ready(function() {
+
+                $(function() {
+                    FastClick.attach(document.body);
+                });
 
                 $("time.timeago").timeago();
 
