@@ -23,6 +23,11 @@
 
         <!-- Blog-style -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- nivo-lightbox -->
+        <link rel="stylesheet" href="../../assets/plugins/nivo-lightbox-1.2.0/nivo-lightbox.css">
+        <link rel="stylesheet" href="../../assets/plugins/nivo-lightbox-1.2.0/themes/default/default.css">
+
     </head>
 
     <body>
@@ -109,7 +114,18 @@
                             <p>PHP의 버전이 5.0으로 업그레이드 되고, MySQL 4.1이 소개 되면서 PHP와 MySQL의 연결하는 방식에 있어 기본연결 방식(original MySQL extension)보다 개선된 연결 방식(MySQLi 또는 PDO)의 사용을 권장하고 있습니다.</p>
                             <p>PHP 5.4 이상 버전부터는  MySQL 기본 연결방식과 관련하여 Rb에서 경고문이 출력 됩니다.(현재,Rb1/Rb2는 php 5.2 버전에 최적화되어 있음)</p>
 
-                            <p><img class="img-responsive" src="http://placehold.it/650x400?text=사진" alt="..."></p>
+                            <p>
+                                <a href="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" title="Singapore from the air (Andrew Tan 2011)" class="lightbox" data-lightbox-gallery="gallery1">
+                                    <img class="img-responsive" src="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" alt="...">
+                                </a>
+                            </p>
+                            <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
+                            <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
+                            <p>
+                                <a href="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" title="forest mood (halina-anna)" class="lightbox" data-lightbox-gallery="gallery1">
+                                    <img class="img-responsive" src="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" alt="...">
+                                </a>
+                            </p>
                             <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
                             <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
                         </div>
@@ -398,6 +414,9 @@
         <!-- smooth-scroll : https://github.com/cferdinandi/smooth-scroll -->
         <script src="../../assets/plugins/smooth-scroll-3.3/smooth-scroll.js"></script>
 
+        <!-- nivo-lightbox : https://github.com/gilbitron/Nivo-Lightbox -->
+        <script src="../../assets/plugins/nivo-lightbox-1.2.0/nivo-lightbox.min.js"></script>
+
         <!-- jquery-tagcloud -->
         <script src="../../assets/plugins/jquery-tagcloud/jquery.tagcloud.js"></script>
 
@@ -409,6 +428,8 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
+
+                $('.lightbox').nivoLightbox();
 
                 if($.cookie('TEXT_SIZE')) {
                     $('.rb-blog-view').addClass($.cookie('TEXT_SIZE')); 
