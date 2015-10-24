@@ -328,11 +328,11 @@
 	margin-top: -21px
 }
 
-.widget-heading+.list-group .list-group-item {
+.widget.widget-bordered .widget-heading+.list-group .list-group-item {
 	border-left: none;
 	border-right: none
 }
 
-.widget-heading+.list-group .list-group-item:last-child {
+.widget.widget-bordered .widget-heading+.list-group .list-group-item:last-child {
 	border-bottom: none;
 }
