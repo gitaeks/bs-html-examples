@@ -1,0 +1,332 @@
+@charset "utf-8";
+/*!
+ * Bootstrap template 
+ * Version: 1.0
+ * Author: gitaeks
+ * Homepage: http://gitaeks.github.io/
+ * Licensed under MIT
+ * Based on Bootstrap v3.3.5
+*/
+
+/**
+ * 목차:
+ *
+ * 1 - Utility 유틸리티
+ * 2 - widget 위젯
+ * ----------------------------------------------------------------------------
+ */
+
+ /**
+ * 1 - Utility 유틸리티
+ * ----------------------------------------------------------------------------
+ */
+
+.rb-margin-top-10 {
+    margin-top: 10px;
+}
+.rb-margin-top-15 {
+    margin-top: 15px;
+}
+.rb-margin-top-20 {
+    margin-top: 20px;
+}
+.rb-margin-top-25 {
+    margin-top: 25px;
+}
+.rb-margin-top-30 {
+    margin-top: 30px;
+}
+
+.rb-margin-bottom-10 {
+    margin-bottom: 10px;
+}
+.rb-margin-bottom-15 {
+    margin-bottom: 15px;
+}
+.rb-margin-bottom-20 {
+    margin-bottom: 20px;
+}
+.rb-margin-bottom-25 {
+    margin-bottom: 25px;
+}
+.rb-margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+
+/**
+ * 2 - widget 위젯
+ * ----------------------------------------------------------------------------
+ */
+
+.widget {
+	background: #fff;
+	padding: 15px 0;
+}
+
+.widget.widget-bordered,
+.widget.widget-gray {
+	padding: 15px;
+}
+
+.widget.widget-listgroup {
+	padding-bottom: 0
+}
+
+.widget.widget-gray {
+	background: #f7f7f7;
+}
+
+.widget.widget-bordered {
+	border: 1px solid #eee;
+}
+
+/* Widget Heading */
+
+.widget-heading {
+	padding: 0;
+  	min-height: 40px;
+  	border-bottom: 1px solid #eee;
+  	margin-bottom: 18px;
+}
+
+/* widget-title */
+
+.widget-title {
+	float: left;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.widget-title.widget-title-green .subject,
+.widget-title.widget-title-green i {
+	color: #4db3a2;
+	font-weight: 200;
+}
+
+.widget-title.widget-title-red .subject,
+.widget-title.widget-title-red i {
+	color: #e26a6a;
+	font-weight: 200;
+}
+
+.widget-title.widget-title-purple .subject,
+.widget-title.widget-title-purple i {
+	color: #8775a7;
+	font-weight: 400;
+}
+
+.widget-title i {
+	color: #777;
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 3px;
+}
+
+.widget-title .subject {
+	color: #666;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.widget-title .helper {
+	padding: 0;
+	margin: 0;
+	line-height: 13px;
+	color: #9eacb4;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+/* widget-actions */
+.widget-actions {
+	float: right;
+  	display: inline-block;
+}
+
+.widget-actions a {
+	margin-left: 3px;
+}
+
+.widget-actions .btn {
+	padding: 3px 9px;
+	font-size: 13px;
+  	line-height: 1.5;
+  	background-color: #fff;
+	color: #666;
+  	border-radius: 0;
+}
+
+.widget-actions .btn i {
+	font-size: 12px;
+}
+
+.widget-actions .btn-default {
+	padding: 3px 9px;
+	font-size: 13px;
+  	line-height: 1.5;
+  	background-color: #fff;
+  	border-color: #ccc;
+}
+
+.widget-actions .btn-default:hover {
+	background: #f2f2f2;
+}
+
+/* Pagination */
+.widget-actions .pagination {
+	margin: -3px 0 0;
+}
+
+.widget-actions .pagination > li > a,
+.widget-actions .pagination > li > span {
+	padding: 4px 10px;
+	font-size: 12px;
+	color: #8775a7;
+	background: #f7f7f7;
+}
+
+.widget-actions .pagination > li:hover > a,
+.widget-actions .pagination > li.active > a,
+.widget-actions .pagination > li.active:hover > a {
+	color: #fff;
+	background: #8775a7;
+	border-color: #8775a7;
+}
+
+/* Inputs */
+.widget-inputs {
+	float: right;
+	display: inline-block;
+	padding: 4px 0;
+	margin-top: -10px;
+}
+
+.widget-inputs .input-inline {
+	width: 240px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Tab */
+.widget-heading > .nav-tabs {
+	background: none;
+	margin: 0;
+	float: right;
+	display: inline-block;
+	border: 0;
+}
+
+.widget-heading > .nav-tabs > li {
+	background: none;
+	margin: 0;
+	border: 0;
+}
+
+.widget-heading > .nav-tabs > li > a {
+	background: none;
+	border: 0;
+	padding: 2px 10px 13px;
+	color: #444;
+}
+
+.widget-heading > .nav-tabs > li.active,
+.widget-heading > .nav-tabs > li.active:hover {
+  	border-bottom: 4px solid #f3565d;
+  	position: relative;
+  }
+
+  .widget-heading > .nav-tabs > li:hover {
+  	border-bottom: 4px solid #f29b9f;
+  }
+
+.widget-heading > .nav-tabs > li.active > a,
+.widget-heading > .nav-tabs > li:hover > a {
+	color: #333;
+	background: #fff;
+	border: 0;
+}
+
+/* Btn Link */
+.widget-actions .btn-link {
+    padding: 3px 2px;
+    color: inherit;
+    border-radius: 0;
+}
+
+/* Btn Circle */
+.widget-actions .btn.btn-circle {
+	width: 28px;
+	height: 28px;
+	padding: 3px 7px;
+	border-radius: 60px;
+  	border-color: #ccc;
+	text-align: center;
+}
+
+.widget-actions .btn.btn-circle i {
+	font-size: 11px;
+}
+
+/* Btn Grey Salsa */
+.widget-actions .btn.grey-salsa {
+	border: none;
+	margin-left: 3px;
+	box-shadow: none;
+	/*border-radius: 50px !important;*/
+}
+
+.widget-actions .btn.grey-salsa.active {
+	color: #fafcfb;
+	background: #8e9bae;
+}
+  .widget-actions .grey-salsa.btn:hover,
+  .widget-actions .grey-salsa.btn:focus,
+  .widget-actions .grey-salsa.btn:active,
+  .widget-actions .grey-salsa.btn.active {
+	color: #fafcfb;
+	background: #97a3b4;
+}
+
+/* Btn Red */
+.widget-actions .btn.btn-red.active,
+.widget-actions .btn.btn-red:hover {
+	color: #fff;
+	box-shadow: none;
+	background: #e26a6a;
+	border-color: #e26a6a;
+}
+
+/* Btn purple */
+.widget-actions .btn.btn-purple.active,
+.widget-actions .btn.btn-purple:hover {
+	color: #fff;
+	box-shadow: none;
+	background: #8775a7;
+	border-color: #8775a7;
+}
+
+/* list-group */
+.widget>.list-group {
+	margin-top: -18px;
+    margin-bottom: 0;
+}
+
+.widget.widget-bordered>.list-group {
+	margin-left: -15px;
+	margin-right: -15px
+}
+
+.widget-heading+.list-group {
+	margin-top: -21px
+}
+
+.widget-heading+.list-group .list-group-item {
+	border-left: none;
+	border-right: none
+}
+
+.widget-heading+.list-group .list-group-item:last-child {
+	border-bottom: none;
+}
