@@ -309,6 +309,9 @@
         <!-- Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+        <!-- FastClick: For mobile devices -->
+        <script src="../../assets/plugins/fastclick-1.0.6/fastclick.js"></script>
+
         <!-- Bootstrap-selcct js -->
         <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
 
@@ -322,10 +325,17 @@
         <script src="./script.js"></script>
 
         <script type="text/javascript">
-            $('#popover-permCheck').on('shown.bs.modal', function () {
-                $('#popover-permCheck-pw').focus();
-            })
 
+            $(document).ready(function() {
+
+                $(function() {
+                    FastClick.attach(document.body);
+                });
+
+                $('#popover-permCheck').on('shown.bs.modal', function () {
+                    $('#popover-permCheck-pw').focus();
+                })
+            });
         </script>
 
 
