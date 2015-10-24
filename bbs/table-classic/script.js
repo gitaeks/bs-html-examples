@@ -23,4 +23,11 @@ $(document).ready(function() {
         });
     });
 
+    //$("body").on("click", function(e) {
+        //$('[data-profile="popover"]').each(function() {
+            //$(this).is(a.target) || 0 !== $(this).has(a.target).length || 0 !== $(".popover").has(a.target).length || $(this).popover("hide")
+        //})
+    //})
+
+
 });
