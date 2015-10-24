@@ -336,3 +336,14 @@
 .widget.widget-bordered .widget-heading+.list-group .list-group-item:last-child {
 	border-bottom: none;
 }
+
+/* table */
+.widget-heading+.table {
+	margin-top: -19px
+}
+.widget.widget-bordered {
+	padding-bottom: 0
+}
+.widget.widget-bordered .table {
+	margin-bottom: 0
+}
