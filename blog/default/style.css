@@ -337,6 +337,12 @@
     font-size: 16px;
 }
 
+@media (max-width: 767px) {
+    .rb-blog-view .rb-image {
+        margin-left: -15px;
+        margin-right: -15px
+    }
+}
 
 /********** blog-footer **********/
 
