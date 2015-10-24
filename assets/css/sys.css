@@ -85,7 +85,7 @@
 
 .widget-heading {
 	padding: 0;
-  	min-height: 40px;
+  	min-height: 35px;
   	border-bottom: 1px solid #eee;
   	margin-bottom: 18px;
 }
@@ -207,6 +207,12 @@
 	width: 240px;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+@media (max-width: 375px) {
+	.widget-inputs .input-inline {
+		width: 150px;
+	}
 }
 
 /* Tab */
