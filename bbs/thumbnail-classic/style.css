@@ -24,6 +24,16 @@
  * ----------------------------------------------------------------------------
  */
 
+.rb-bbs-heading:before {
+    display: table;
+    content: " ";
+}
+.rb-bbs-heading:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
  /* popover */
 .rb-bbs .popover.rb-profile  {
     min-width: 310px;
@@ -91,9 +101,15 @@
     padding: 5px 0
 }
 .rb-bbs-list .rb-bbs-heading .rb-search-result {
+    float: left;
     line-height: 30px;
     color: #c0c0c0
 }
+
+.rb-bbs-list .rb-bbs-heading .rb-actions {
+    float: right
+}
+
 
 /********** bbs-body **********/
 
@@ -267,20 +283,23 @@
     border-top: 1px solid #ddd;
     text-align: center
 }
+
 .rb-bbs-list .rb-bbs-footer .rb-pagination {
-    padding: 25px 0;
+    padding: 0;
     text-align: center
 }
 .rb-bbs-list .rb-bbs-footer .pagination {
     margin: 0
 }
 .rb-bbs-list .rb-bbs-footer .rb-buttons {
-    padding: 25px 0;
+    padding: 0;
+    text-align: right
 }
 
 /*bbs search*/
 .rb-bbs-list .rb-bbs-footer .rb-search {
-    margin: 25px 0;
+    margin-top: 25px;
+    margin-bottom: 25px
 }
 .rb-bbs-list .rb-bbs-footer .rb-search .input-group-btn.bootstrap-select {
     width: 100px
@@ -302,7 +321,11 @@
     .rb-bbs .rb-bbs-heading .rb-search-result {
         font-size: 11px
     }
+    .rb-bbs-list .rb-bbs-footer .rb-actions {
+        margin-top: 15px
+    }
 }
+
 
 
 
