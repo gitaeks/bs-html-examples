@@ -101,10 +101,21 @@
   	margin-bottom: 18px;
 }
 
+.widget-heading:before {
+    display: table;
+    content: " ";
+}
+.widget-heading:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
 /* widget-title */
 
 .widget-title {
 	float: left;
+	margin-top: 5px;
 	display: inline-block;
 	font-size: 18px;
 	line-height: 18px;
