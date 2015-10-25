@@ -200,7 +200,13 @@
     text-align: center
 }
 .rb-blog-list .table td.rb-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    white-space: nowrap;
     text-align: left;
+    max-width: 0
 }
 .rb-blog-list .table th {
     font-weight: normal;
