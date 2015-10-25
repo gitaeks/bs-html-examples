@@ -477,6 +477,7 @@
     margin: 40px 0
 }
 
+
 @media (max-width: 639px) {
 
 
@@ -484,9 +485,6 @@
         float: left;
         margin-left: -60px;
         margin-top: -5px
-    }
-    .rb-blog-view .rb-blog-heading .rb-resizer {
-        margin-top: -10px
     }
 }
 
