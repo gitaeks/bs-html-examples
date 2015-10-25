@@ -378,11 +378,11 @@
     content: '|';
 }
 
-.rb-bbs-view .rb-bbs-heading .btn-toolbar {
+.rb-bbs-view .rb-bbs-heading .rb-actions {
+    float: right;
     padding-top: 7px
 }
 .rb-bbs-view .rb-bbs-heading .rb-buttons {
-    float: right;
     margin-top: 3px;
     margin-right: 5px
 }
@@ -393,9 +393,7 @@
 }
 
 /*font-resizer*/
-.rb-bbs-view .rb-bbs-heading .rb-resizer {
-    float: right;
-}
+
 .rb-bbs-view .rb-bbs-heading .rb-resizer a {
     margin-left: -1px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -542,16 +540,18 @@
 
 @media (max-width: 639px) {
 
+    .rb-bbs-view .rb-bbs-heading .btn-toolbar,
     .rb-bbs-view .rb-bbs-heading .rb-meta {
         float: none;
-
     }
+
     .rb-bbs-view .rb-bbs-heading .rb-buttons {
         float: left;
         margin-left: -60px;
         margin-top: -5px
     }
     .rb-bbs-view .rb-bbs-heading .rb-resizer {
+        float: right;
         margin-top: -10px
     }
 }
