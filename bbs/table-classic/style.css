@@ -527,6 +527,7 @@
         margin-top: -5px
     }
     .rb-bbs-view .rb-bbs-heading .rb-resizer {
+        float: right;
         margin-top: -10px
     }
 }
