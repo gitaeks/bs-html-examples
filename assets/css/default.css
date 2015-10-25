@@ -172,9 +172,9 @@ input[type=radio] {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
     .btn-toolbar .btn-group {
-        margin-bottom: 10px
+        margin-bottom: 7px
     }
     .btn-group-sm>.btn, 
     .btn-sm {

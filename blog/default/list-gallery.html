@@ -57,19 +57,28 @@
                     <section class="rb-blog rb-blog-list">
 
                         <div class="rb-blog-heading btn-toolbar">
-                            <h2 class="rb-title">
-                               <span class="glyphicon glyphicon-folder-close"></span>
-                                운영팀소식
-                            </h2>
-   
-                            <div class="btn-group btn-group-sm rb-actions" data-toggle="buttons">
+                            <div class="btn-group btn-group-sm rb-sort" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="sort" id="sort4" autocomplete="off"> 공유순
+                                </label>
+                            </div>
+                            <div class="btn-group btn-group-sm rb-viewtype" data-toggle="buttons">
                                 <label class="btn btn-default active" data-toggle="tooltip" title="미디어형">
                                     <input type="radio" name="viewskin" id="viewskin2" autocomplete="off" checked=""> <i class="fa fa-th-list fa-lg"></i>
                                 </label>
                                 <label class="btn btn-default" data-toggle="tooltip" title="박스형">
                                     <input type="radio" name="viewskin" id="viewskin1" autocomplete="off"> <i class="fa fa-th fa-lg"></i>
                                 </label>
-                                <label class="btn btn-default" data-toggle="tooltip" title="리스트형">
+                                <label class="btn btn-default" data-toggle="tooltip" title="테이블형">
                                     <input type="radio" name="viewskin" id="viewskin3" autocomplete="off"> <i class="fa fa-bars fa-lg"></i>
                                 </label>
                                 <label class="btn btn-default" data-toggle="tooltip" title="갤러리형">
@@ -79,11 +88,14 @@
                                     <input type="radio" name="viewskin" id="viewskin5" autocomplete="off"> <i class="fa fa-map-marker fa-lg"></i>
                                 </label>
                             </div>
-
                         </div>
 
                         <!-- blog-body -->
                         <div class="rb-blog-body">
+
+
+
+
 
                         </div>
                         <!-- / blog-body -->
@@ -107,6 +119,40 @@
 
                 </div>
                 <div class="rb-blog-aside col-sm-4 hidden-print" role="navigation">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">홍길동님의 포스트</h3>
+                        </div>
+                        <div class="list-group">
+                            <a class="list-group-item" href="write.html">
+                                <i class="fa fa-pencil fa-fw"></i> 포스트 작성
+                            </a>
+                            <a class="list-group-item" href="list-my-all.html">
+                                <span class="badge">1</span> 
+                                <i class="fa fa-folder-o fa-fw"></i> 전체 보관함
+                            </a>
+                            <a class="list-group-item" href="list-my-temp.html">
+                                <span class="badge">1</span> 
+                                <i class="fa fa-folder-o fa-fw"></i> 임시보관함
+                            </a>
+                            <a class="list-group-item" href="list-my-confirm.html">
+                                <span class="badge">3</span> 
+                                <i class="fa fa-folder-o fa-fw"></i> 승인함
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 블로그 관리자 패널 -->
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">관리자 전용</h3>
+                        </div>
+                        <div class="list-group">
+                            <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i> 블로그 설정</a>
+                            <a class="list-group-item" href="settings2.html"><i class="fa fa-wrench fa-fw"></i> 블로그 꾸미기</a>
+                        </div>
+                    </div>
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -197,6 +243,7 @@
                             <a href=""><i class="fa fa-rss fa-fw"></i>ATOM 0.3</a>
                         </div>
                     </div>
+
                 </div>
             </div>
             <!-- / 템플릿 시작 -->
@@ -232,12 +279,12 @@
         <!-- Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- Bootstrap-selcct js -->
-        <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
-
         <!-- jquery-timeago -->
         <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
         <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
+
+        <!-- jquery.shorten -->
+        <script src="../../assets/plugins/jquery-shorten-1.0.0/jquery.shorten.js"></script>
 
         <!-- jquery-tagcloud -->
         <script src="../../assets/plugins/jquery-tagcloud/jquery.tagcloud.js"></script>
@@ -254,14 +301,20 @@
 
                 $("time.timeago").timeago();
 
+                $(".rb-description").shorten({
+                    showChars: 110,
+                    moreText: 'more',
+                    lessText: ''
+                });
+
                 // jquery.tagcloud
                 $.fn.tagcloud.defaults = {
                     size: {start: 14, end: 18, unit: 'px'},
                     color: {start: '#ccc', end: '#000'}
                 };
                 $('#tagcloud a').tagcloud();
-            });
 
+            });
         </script>
 
 
