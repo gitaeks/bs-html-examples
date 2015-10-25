@@ -277,6 +277,8 @@
 
 .rb-blog-view .rb-blog-heading {
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 .rb-blog-view .rb-blog-heading .rb-title {
@@ -285,17 +287,10 @@
     font-weight: bold;
 }
 
-@media (min-width: 480px) {
-    .rb-blog-view .rb-blog-heading .rb-meta {
-        float: left;
-        display: inline-block;
-    }
-
-    .rb-blog-view .rb-blog-heading .rb-actions {
-        float: right;
-        display: inline-block;
-    }
+.rb-blog-view .rb-blog-heading .rb-meta ul {
+    margin-bottom: 0
 }
+
 
 .rb-blog-view .rb-blog-heading .rb-meta {
     margin-bottom: 15px;
@@ -311,6 +306,19 @@
 .rb-blog-view .rb-blog-heading .rb-meta li {
     padding-right: 5px;
     padding-left: 5px
+}
+
+@media (min-width: 480px) {
+    .rb-blog-view .rb-blog-heading .rb-meta {
+        float: left;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    .rb-blog-view .rb-blog-heading .rb-actions {
+        float: right;
+        display: inline-block;
+    }
 }
 
 /*font-resizer*/
