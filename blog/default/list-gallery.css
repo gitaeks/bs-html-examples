@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.rb-blog-item:after {
+.rb-list-gallery .rb-blog-item:after {
     content: ".";
     display: block;
     height: 0;
@@ -29,22 +29,22 @@
     font-size: 0;
     line-height:0;
 }
-.rb-sticker {
+.rb-list-gallery .rb-sticker {
     position: absolute;
     top: 0;
     left: 0;
     width: 63px;
     height: 63px;
 }
-.rb-sticker-new {
-    background: url(./images/new.png) no-repeat;
+.rb-list-gallery .rb-sticker-new {
+    background: url(./_images/new.png) no-repeat;
     left: auto;
     right: 0;
 }
-.rb-img-wrapper {
+.rb-list-gallery .rb-img-wrapper {
     position: relative;
 }
-.rb-img-wrapper .rb-overlay {
+.rb-list-gallery .rb-img-wrapper .rb-overlay {
     background: rgba(0,0,0,0.3);
     position: absolute;
     left: 0;
@@ -54,10 +54,10 @@
     height: 100%;
     text-align: center;
 }
-.rb-blog-item:hover>.rb-img-wrapper> .rb-overlay {
+.rb-list-gallery .rb-blog-item:hover>.rb-img-wrapper> .rb-overlay {
     display: block;
 }
-.rb-img-wrapper .rb-overlay .btn {
+.rb-list-gallery .rb-img-wrapper .rb-overlay .btn {
     padding: 3px 10px;
     color: #fff;
     border: 1px #fff solid;
@@ -70,12 +70,12 @@
     font-size: 12px;    
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
-.rb-blog-item .btn:hover {
+.rb-list-gallery .rb-blog-item .btn:hover {
     background: #e84d1c;
     border-color: #c8c8c8;
 }
 
-.rb-blog-item .rb-title {
+.rb-list-gallery .rb-blog-item .rb-title {
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -83,13 +83,13 @@
     font-weight: 300;
 }
 
-.rb-blog-item .rb-time {
+.rb-list-gallery .rb-blog-item .rb-time {
     color: #a8aeb3;
     font-size: 13px;
     float: left;
     padding-top: 1px;
 }
-.rb-blog-item .rb-comment {
+.rb-list-gallery .rb-blog-item .rb-comment {
     float: right;
     color: #a8aeb3;
     border: 1px #ededed solid;
@@ -97,7 +97,7 @@
     text-transform: uppercase;
 }
 
-.rb-blog-item .rb-comment:hover {
+.rb-list-gallery .rb-blog-item .rb-comment:hover {
     color: #fff;
     background: #e84d1c;
     border-color: #e84d1c;
@@ -105,6 +105,6 @@
 
 /* blog-footer */
 
-.rb-blog-list .rb-blog-footer {
+.rb-list-gallery .rb-blog-list .rb-blog-footer {
     margin-top: 30px;
 }
