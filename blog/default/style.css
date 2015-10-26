@@ -57,6 +57,11 @@
     margin: 0
 }
 
+.rb-blog-list .rb-blog-heading .rb-title .breadcrumb {
+    margin: 0;
+    background-color: transparent;
+}
+
 @media (min-width: 480px) {
     .rb-blog-list .rb-blog-heading .rb-title,
     .rb-blog-list .rb-blog-heading .rb-sort {
@@ -244,7 +249,7 @@
 /********** blog-footer **********/
 
 .rb-blog-list .rb-blog-footer {
-    margin-top: 15px;
+    margin-top: 0;
     border-top: 1px solid #ddd;
     text-align: center
 }
