@@ -48,27 +48,6 @@
             <!-- 템플릿 시작 -->
 
             <div class="row">
-                <div class="col-md-6 rb-margin-bottom-30">
-                    <!-- BEGIN widget widget-->
-                    <div class="widget widget-listgroup">
-                        <div class="widget-heading">
-                            <div class="widget-title">
-                                <span class="subject">최근게시물</span>
-                                <span class="helper"></span>
-                            </div>
-                            <div class="widget-actions">
-                                <a href="">
-                                    더보기 
-                                </a>
-                            </div>
-                        </div>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal"><span class="badge">11</span> 전체보기</a>
-                            <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal"><span class="badge">1</span> 운영팀소식</a>
-                        </div>
-                    </div>
-                    <!-- END widget widget-->
-                </div>
 
                 <div class="col-md-6 rb-margin-bottom-30">
                     <!-- BEGIN widget widget-->
@@ -85,8 +64,8 @@
                             </div>
                         </div>
                         <div class="list-group">
-                            <a href="" class="list-group-item rb-ellipsis" data-toggle="modal" data-target="#myModal"><span class="badge">11</span> 직원에게 책임 전가하는 홈플러스 임원들의 사라진 리더십직원에게 책임 전가하는 홈플러스 임원들의 사라진 리더십</a>
-                            <a href="" class="list-group-item rb-ellipsis" data-toggle="modal" data-target="#myModal"><span class="badge">1</span> 귀성길 떠나기 전 꼭 확인해봐야 할 자동차 점검 꿀팁귀성길 떠나기 전 꼭 확인해봐야 할 자동차 점검 꿀팁</a>
+                            <a href="" class="list-group-item rb-ellipsis" data-toggle="modal" data-target="#postModal" data-whatever="직원에게 책임 전가하는 홈플러스 임원들의 사라진 리더십"><span class="badge">11</span> 직원에게 책임 전가하는 홈플러스 임원들의 사라진 리더십직원에게 책임 전가하는 홈플러스 임원들의 사라진 리더십</a>
+                            <a href="" class="list-group-item rb-ellipsis" data-toggle="modal" data-target="#postModal" data-whatever="귀성길 떠나기 전 꼭 확인해봐야 할 자동차 점검 꿀팁"><span class="badge">1</span> 귀성길 떠나기 전 꼭 확인해봐야 할 자동차 점검 꿀팁귀성길 떠나기 전 꼭 확인해봐야 할 자동차 점검 꿀팁</a>
                         </div>
                     </div>
                     <!-- END widget widget-->
@@ -95,7 +74,7 @@
 
 
             <!-- 모달시작 -->
-            <div class="modal fade" id="myModal">
+            <div class="modal fade" id="postModal">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -465,8 +444,15 @@
         <script type="text/javascript">
 
             $(document).ready(function() {
-
-
+                $('#postModal').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget) // Button that triggered the modal
+                    var recipient = button.data('whatever') // Extract info from data-* attributes
+                    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                    var modal = $(this)
+                    modal.find('.modal-title').text(recipient)
+                    modal.find('.modal-body input').val(recipient)
+                })
             });
         </script>
 
