@@ -408,8 +408,29 @@
     border-top: 1px solid #eee
 }
 
-.rb-blog-footer .btn-toolbar {
-    margin: 30px 0
+.rb-blog-footer .rb-toolbar {
+    margin: 30px 0 20px
+}
+.rb-blog-footer .rb-toolbar:before,
+.rb-blog-footer .rb-toolbar:after {
+    display: table;
+    content: " ";
+}
+.rb-blog-footer .rb-toolbar:after {
+    clear: both;
+}
+
+.rb-blog-footer .rb-toolbar .btn-group {
+    margin-bottom: 10px
+}
+
+@media (min-width: 768px) {
+    .rb-blog-footer .rb-toolbar .rb-share {
+        float: left;
+    }
+    .rb-blog-footer .rb-toolbar .rb-buttons {
+        float: right;
+    }
 }
 
 /*pager*/

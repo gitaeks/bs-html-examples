@@ -124,17 +124,16 @@
                             <p>PHP의 버전이 5.0으로 업그레이드 되고, MySQL 4.1이 소개 되면서 PHP와 MySQL의 연결하는 방식에 있어 기본연결 방식(original MySQL extension)보다 개선된 연결 방식(MySQLi 또는 PDO)의 사용을 권장하고 있습니다.</p>
                             <p>PHP 5.4 이상 버전부터는  MySQL 기본 연결방식과 관련하여 Rb에서 경고문이 출력 됩니다.(현재,Rb1/Rb2는 php 5.2 버전에 최적화되어 있음)</p>
 
+
                             <p class="rb-image">
-                                <a href="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" title="Singapore from the air (Andrew Tan 2011)" class="lightbox" data-lightbox-gallery="gallery1">
-                                    <img class="img-responsive" src="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" alt="...">
-                                </a>
+
+                                <img class="img-responsive" src="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" alt="Singapore from the air (Andrew Tan 2011)">
+
                             </p>
                             <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
                             <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
                             <p class="rb-image">
-                                <a href="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" title="forest mood (halina-anna)" class="lightbox" data-lightbox-gallery="gallery1">
-                                    <img class="img-responsive" src="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" alt="...">
-                                </a>
+                                <img class="img-responsive" src="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" alt="forest mood (halina-anna)">
                             </p>
                             <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
                             <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
@@ -177,31 +176,33 @@
                                </dd>
                             </dl>
  
-                            <div class="btn-toolbar" role="toolbar">
-                                <div class="btn-group btn-group-sm">
-                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="페이스북 공유"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="트위터 공유"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="구글+ 공유"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="mailto:?subject=킴스큐 오픈소스 프로젝트 운영 지침&amp;body=Check out this post:%20http://www.abc.com/blog/192680" onclick="return confirm('메일로 본 게시물의 링크를 보내시겠습니까??');" class="btn btn-default" data-toggle="tooltip" title="메일 공유"><i class="fa fa-envelope fa-lg"></i></a>
+                            <div class="rb-toolbar" role="toolbar">
+                                <div class="rb-share">
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default" data-toggle="tooltip" title="페이스북 공유"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="" class="btn btn-default" data-toggle="tooltip" title="트위터 공유"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="" class="btn btn-default" data-toggle="tooltip" title="구글+ 공유"><i class="fa fa-google-plus fa-lg"></i></a>
+                                        <a href="mailto:?subject=킴스큐 오픈소스 프로젝트 운영 지침&amp;body=Check out this post:%20http://www.abc.com/blog/192680" onclick="return confirm('메일로 본 게시물의 링크를 보내시겠습니까??');" class="btn btn-default" data-toggle="tooltip" title="메일 공유"><i class="fa fa-envelope fa-lg"></i></a>
+                                    </div>
                                 </div>
+                                <div class="rb-buttons">
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="list.html" class="btn btn-default">목록으로</a>
+                                    </div>
 
-                                <div class="btn-group btn-group-sm pull-right">
-                                    <a href="list.html" class="btn btn-default">목록으로</a>
-                                </div>
-
-                                <div class="btn-group btn-group-sm pull-right">
-                                    <a href="" class="btn btn-default">복사</a>
-                                    <a href="" class="btn btn-default">이동</a>
-                                </div>
-                                <div class="btn-group btn-group-sm pull-right">
-                                    <a href="" class="btn btn-default">수정</a>
-                                    <a href="" class="btn btn-default">삭제</a>
-                                </div>
-                                <div class="btn-group btn-group-sm pull-right">
-                                    <a href="" class="btn btn-default">답변</a>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default">복사</a>
+                                        <a href="" class="btn btn-default">이동</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default">수정</a>
+                                        <a href="" class="btn btn-default">삭제</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default">답변</a>
+                                    </div>
                                 </div>
                             </div>
-
 
                             <div class="rb-tabs">
                                 <ul class="nav nav-tabs">
@@ -271,7 +272,16 @@
 
             $(document).ready(function() {
 
-                $('.lightbox').nivoLightbox();
+                $(function() {
+                    $(".rb-bbs-body img").each(function() {
+                    var a = $('<a/>').attr('href', this.src);
+                    $(a).addClass('lightbox');
+                    $(a).attr('title', this.alt);
+                    $(a).attr('data-lightbox-gallery', "postview");
+                    $(this).addClass('img-responsive').wrap(a);
+                    $('.lightbox').nivoLightbox();
+                    });
+                });
 
                 if($.cookie('TEXT_SIZE')) {
                     $('.rb-bbs-view').addClass($.cookie('TEXT_SIZE')); 
@@ -303,6 +313,9 @@
                         }
                     });
                 });
+
+
+
 
             }); 
 
