@@ -7,7 +7,8 @@ body {
     background-color: #F25A29;
     border-color: #DDDDDD;
 }
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-link {
     color: #FBD1C3;
 }
 
@@ -43,7 +44,6 @@ body {
   border-bottom:1px #ccc solid;
 }
 .social-box a{
-  font-weight:bold;
   font-size:18px;
   padding:8px;
 }
