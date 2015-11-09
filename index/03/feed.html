@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>welcome-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap-select -->
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
+
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+        
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/default.css">
+
+        <!-- Blog-style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > Blog</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/blog/default" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <!-- 템플릿 시작 -->
+
+            <div class="row">
+                <div class="rb-blog-main col-sm-8" role="main">
+
+                    <section class="rb-blog rb-blog-list">
+
+                        <div class="rb-blog-heading btn-toolbar">
+                            <div class="btn-group btn-group-sm rb-sort" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="sort" id="sort1" autocomplete="off" checked=""> 등록순
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="sort" id="sort2" autocomplete="off"> 조회순
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="sort" id="sort3" autocomplete="off"> 추천순
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="sort" id="sort4" autocomplete="off"> 공유순
+                                </label>
+                            </div>
+                            <div class="btn-group btn-group-sm rb-viewtype" data-toggle="buttons">
+                                <label class="btn btn-default active" data-toggle="tooltip" title="미디어형">
+                                    <input type="radio" name="viewskin" id="viewskin2" autocomplete="off" checked=""> <i class="fa fa-th-list fa-lg"></i>
+                                </label>
+                                <label class="btn btn-default" data-toggle="tooltip" title="박스형">
+                                    <input type="radio" name="viewskin" id="viewskin1" autocomplete="off"> <i class="fa fa-th fa-lg"></i>
+                                </label>
+                                <label class="btn btn-default" data-toggle="tooltip" title="테이블형">
+                                    <input type="radio" name="viewskin" id="viewskin3" autocomplete="off"> <i class="fa fa-bars fa-lg"></i>
+                                </label>
+                                <label class="btn btn-default" data-toggle="tooltip" title="갤러리형">
+                                    <input type="radio" name="viewskin" id="viewskin4" autocomplete="off"> <i class="fa fa-picture-o fa-lg"></i>
+                                </label>
+                                <label class="btn btn-default" data-toggle="tooltip" title="지도형">
+                                    <input type="radio" name="viewskin" id="viewskin5" autocomplete="off"> <i class="fa fa-map-marker fa-lg"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- blog-body -->
+                        <div class="rb-blog-body">
+                            <ul class="media-list">
+                                <li class="media rb-blog-item">
+                                    <div class="media-left">
+                                        <a href="view.html">
+                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90?text=사진" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading rb-title">
+                                            <a href="view.html">킴스큐 공식블로그를 시작합니다.</a>
+                                        </h4>
+                                        <p class="rb-description">안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
+                                        <ul class="rb-meta list-inline">
+                                            <li>
+                                                <span class="glyphicon glyphicon-calendar"></span> 
+                                                <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015.10.20 12:11</time>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-user"></span> 벽돌공장
+                                            </li>
+                                            <li>
+                                                <a href="list.html" data-toggle="tooltip" title="분류">
+                                                    <span class="glyphicon glyphicon-folder-close"></span> 운영팀소식
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="view.html#comment" data-toggle="tooltip" title="댓글">
+                                                    <span class="glyphicon glyphicon-comment"></span> 23
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="media rb-blog-item">
+                                    <div class="media-left">
+                                        <a href="view.html">
+                                        <img class="media-object img-thumbnail" src="http://placehold.it/130x90?text=사진" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading rb-title">
+                                            <a href="view.html">킴스큐 공식블로그를 시작합니다.</a>
+                                        </h4>
+                                        <p class="rb-description">안녕하세요. 킴스큐 운영팀 입니다. Rb 업데이트, 마켓,라이브 및 참여자 소식등을 전하는 공식채널로서 킴스큐 공식블로그를 운영합니다.</p>
+                                        <ul class="rb-meta list-inline">
+                                            <li>
+                                                <span class="glyphicon glyphicon-calendar"></span> 
+                                                <time class="timeago" data-toggle="tooltip" datetime="2015-10-20T09:24:17Z">2015.10.20 12:11</time>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-user"></span> 벽돌공장
+                                            </li>
+                                            <li>
+                                                <a href="list.html" data-toggle="tooltip" title="분류">
+                                                    <span class="glyphicon glyphicon-folder-close"></span> 운영팀소식
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="view.html#comment" data-toggle="tooltip" title="댓글">
+                                                    <span class="glyphicon glyphicon-comment"></span> 23
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- / blog-body -->
+
+                        <div class="rb-blog-footer">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                 </ul>
+                            </nav>
+                        </div>
+
+                    </section>
+
+
+                </div>
+                <div class="rb-blog-aside col-sm-4 hidden-print" role="navigation">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">홍길동님의 포스트</h3>
+                        </div>
+                        <div class="list-group">
+                            <a class="list-group-item" href="write.html">
+                                <i class="fa fa-pencil fa-fw"></i> 포스트 작성
+                            </a>
+                            <a class="list-group-item" href="list-my-all.html">
+                                <span class="badge">1</span> 
+                                <i class="fa fa-folder-o fa-fw"></i> 전체 보관함
+                            </a>
+                            <a class="list-group-item" href="list-my-temp.html">
+                                <span class="badge">1</span> 
+                                <i class="fa fa-folder-o fa-fw"></i> 임시보관함
+                            </a>
+                            <a class="list-group-item" href="list-my-confirm.html">
+                                <span class="badge">3</span> 
+                                <i class="fa fa-folder-o fa-fw"></i> 승인함
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 블로그 관리자 패널 -->
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">관리자 전용</h3>
+                        </div>
+                        <div class="list-group">
+                            <a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i> 블로그 설정</a>
+                            <a class="list-group-item" href="settings2.html"><i class="fa fa-wrench fa-fw"></i> 블로그 꾸미기</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">About</h3>
+                        </div>
+                        <div class="panel-body text-center rb-avatar">
+                            <p><img src="http://placehold.it/130x130/" alt="..." class="img-circle"></p>
+                            <p>킴스큐 공식블로그</p>    
+                        </div>
+                        <div class="panel-footer">
+                            <span>Rb 업데이트, 마켓,라이브 및 참여자 소식등 모든 소식을 전합니다.</span>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Search</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form action="" method="get">
+                                <div class="input-group">
+                                    <input type="text" name="" class="form-control" value="">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Categories</h3>
+                        </div>
+                        <div class="list-group">
+                            <a href="list.html" class="list-group-item"><span class="badge">11</span> 전체보기</a>
+                            <a href="list-cate.html" class="list-group-item"><span class="badge">1</span> 운영팀소식</a>
+                        </div>
+                      <div class="panel-footer text-center">
+                            <a href="#">카테고리 추가</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Archive</h3>
+                        </div>
+                        <div class="list-group">
+                            <a href="list.html" class="list-group-item">2015년 10월</a>
+                            <a href="list.html" class="list-group-item">2015년 09월</a>
+                            <a href="list.html" class="list-group-item">2015년 08월</a>
+                            <a href="list.html" class="list-group-item">2015년 07월</a>
+                            <a href="list.html" class="list-group-item"><span class="badge">1</span> 2015년 06월</a>
+                            <a href="list.html" class="list-group-item">2015년 05월</a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="archive.html">전체보기</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Tag</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="tagcloud">
+                                <a href="tag.html" rel="7">Tag 1</a>
+                                <a href="tag.html" rel="3">Tag 2</a>
+                                <a href="tag.html" rel="10">Tag 3</a>
+                                <a href="tag.html" rel="5">Tag 4</a>
+                                <a href="tag.html" rel="1">Tag 5</a>
+                            </div>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="tag.html">전체보기</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default rb-rss">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">RSS</h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href=""><i class="fa fa-rss-square fa-fw"></i>RSS 2.0</a>
+                            <a href=""><i class="fa fa-rss-square fa-fw"></i>RSS 1.0</a>
+                            <a href=""><i class="fa fa-rss fa-fw"></i>ATOM 0.3</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- / 템플릿 시작 -->
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+        <!-- Modal-Profile -->
+        <div class="modal fade" id="modal-profile" tabindex="-1" role="dialog" aria-labelledby="modal-profile">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">홍길동</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- jquery-timeago -->
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/jquery.timeago.js"></script>
+        <script src="../../assets/plugins/jquery-timeago-1.4.3/locales/jquery.timeago.ko.js"></script>
+
+        <!-- jquery.shorten -->
+        <script src="../../assets/plugins/jquery-shorten-1.0.0/jquery.shorten.js"></script>
+
+        <!-- jquery-tagcloud -->
+        <script src="../../assets/plugins/jquery-tagcloud/jquery.tagcloud.js"></script>
+
+        <!-- Common js -->
+        <script src="../../assets/js/common.js"></script>
+
+        <!-- Blog js -->
+        <script src="./script.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                $("time.timeago").timeago();
+
+                $(".rb-description").shorten({
+                    showChars: 110,
+                    moreText: 'more',
+                    lessText: ''
+                });
+
+                // jquery.tagcloud
+                $.fn.tagcloud.defaults = {
+                    size: {start: 14, end: 18, unit: 'px'},
+                    color: {start: '#ccc', end: '#000'}
+                };
+                $('#tagcloud a').tagcloud();
+
+            });
+        </script>
+
+
+
+    </body>
+</html>
