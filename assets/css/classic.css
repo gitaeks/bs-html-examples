@@ -79,8 +79,11 @@ body {
     border-top: #FFFFFF solid 1px;
 }
 
+/* form-control */
+
 .form-control {
-    border-radius: 1px
+    margin-bottom: 5px;
+    border-radius: 1px;
 }
 
 /*input*/
@@ -254,4 +257,39 @@ input[type=radio] {
 .pagination>.active>span:focus, 
 .pagination>.active>span:hover {
     border-color: inherit;
+}
+
+
+/* feedback messages */
+
+.rb-feedback.rb-feedback-default {
+    font-size: 15px;
+    padding: 1em 1.3em;
+    z-index: 2000;
+    color: #fff;
+    text-align: center;
+    min-width: 190px;
+    width: auto;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: rgba(15,21,31,.85);
+}
+.rb-feedback.rb-position-default {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+}
+
+@media (max-width: 768px) {
+    .rb-feedback.rb-position-default {
+        bottom: 15%;
+        left: 30%;
+        transform: translateX(-15%);
+        -ms-transform: translateX(-15%); /* IE 9 */
+        -webkit-transform: translateX(-15%); /* Chrome, Safari, Opera */
+        border-radius: 30px;
+    }
 }
