@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>BBS-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap-select -->
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
+        
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+
+        <!-- nivo-lightbox -->
+        <link rel="stylesheet" href="../../assets/plugins/nivo-lightbox-1.2.0/nivo-lightbox.css">
+        <link rel="stylesheet" href="../../assets/plugins/nivo-lightbox-1.2.0/themes/default/default.css">
+        
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/classic.css">
+
+        <!-- BBS-style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/table-classic" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 col-lg-offset-1">
+
+                    <!-- 템플릿 시작 -->
+                    <section class="rb-bbs rb-bbs-view">
+
+                        <div class="rb-bbs-heading">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a role="button" data-profile="popover">
+                                        <img class="media-object" src="../../assets/img/noavatar-blue.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">킴스큐 오픈소스 프로젝트 운영 지침</h4>
+                                    <div class="rb-meta">
+                                        <ul class="list-inline">
+                                            <li>관리자</li>
+                                            <li class="rb-divider"></li>
+                                            <li>2015.06.05 16:39</li>
+                                            <li class="rb-divider"></li>
+                                            <li>조회 0</li>
+                                        </ul>
+                                    </div>                                    
+                                    <div class="rb-actions btn-toolbar">
+                                        <div class="btn-group rb-buttons" role="group" aria-label="...">
+                                            <a href="" class="btn btn-link btn-xs"><i class="fa fa-meh-o fa-lg fa-fw"></i> 신고</a>
+                                            <a href="" class="btn btn-link btn-xs"><i class="fa fa-print fa-lg fa-fw"></i> 인쇄</a>
+                                            <a href="" class="btn btn-link btn-xs"><i class="fa fa-star-o fa-lg fa-fw"></i> 스크랩</a>
+                                        </div>
+                                        <div class="btn-group btn-group-xs rb-resizer" role="group" aria-label="...">
+                                            <a class="rb-small btn btn-default hidden-xs">A</a>
+                                            <a class="rb-medium btn btn-default">A</a>
+                                            <a class="rb-large btn btn-default">A</a>
+                                            <a class="rb-larger btn btn-default">A</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="rb-bbs-body">
+                            <p>
+                            안녕하세요. 킴스큐 운영팀 입니다.
+                            rb2를 릴리즈 하며 kimsQ의 모든 소스코드는 github.com 을 통해서 관리하고 있습니다.
+                            관련하여 운영 가이드를 공지합니다.
+                            </p>
+
+                            <p>
+                            https://github.com/kimsQ/rb/wiki 
+                            </p>
+
+                            <p>
+                            꾸준한 학습과 시행착오의 과정을 통해 이제는 익숙졌지만, Git과 Github.com을  통한 소스코드 관리와 협업은 저희 코어개발팀/운영팀에게도 생소하고 어려운 과정이었습니다.
+                            </p>
+
+                            <p>
+                            초반 학습에 대한 진입장벽이 만만치 않지만 저희의 경험으로도 체계적이며 효율적이고 강력한 오픈소스 프로젝트 운영 도구임에는 틀림이 없다고 판단하고 있습니다.
+                            </p>
+
+                            <p>
+                            또한 이러한 오픈소스 프로젝트 운영은 국외는 물론 국내에서도 표준적인 방법으로 정착 되고 있습니다.
+                            </p>
+
+                            <p>
+                            일반 참여자의 참여방법은 두가지 입니다.
+                            </p>
+                            <p>PHP의 버전이 5.0으로 업그레이드 되고, MySQL 4.1이 소개 되면서 PHP와 MySQL의 연결하는 방식에 있어 기본연결 방식(original MySQL extension)보다 개선된 연결 방식(MySQLi 또는 PDO)의 사용을 권장하고 있습니다.</p>
+                            <p>PHP 5.4 이상 버전부터는  MySQL 기본 연결방식과 관련하여 Rb에서 경고문이 출력 됩니다.(현재,Rb1/Rb2는 php 5.2 버전에 최적화되어 있음)</p>
+
+                            <img src="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" alt="000당 홍길동 의원이 2일 본지와의 인터뷰에서 총선 승리의 전략을 이야기하고 있다. ⓒ00일보">
+   
+                            <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
+                            <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
+
+                            <img  src="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" alt="민간 평화단체 ㈔하늘문화세계평화광복(HWPL)이 주최한 ‘9.18 종교대통합 만국회의 1주년 기념식’이 지난 9월 18일 서울 올림픽공원 평화의 문에서 열린 가운데 참석자들이 기념 촬영을 하고 있다. 이번 행사에는 각국 전·현직 대통령·총리, 주요 국제법 전문가, 92개국 종교·청년·여성 지도자 등 회원 5만 7000여명이 모였다. (사진제공: HWPL)">
+
+
+
+                            <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
+                            <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
+                        </div>
+                        <div class="rb-bbs-footer">
+ 
+                            <dl class="dl-horizontal rb-tag">
+                                <dt>태그</dt>
+                                <dd>
+                                    <ul class="list-inline">
+                                        <li>#<a href="">킴스큐</a></li>
+                                        <li>#<a href="">개발자센터</a></li>
+                                        <li>#<a href="">커뮤니티</a></li>
+                                        <li>#<a href="">임시홈페이지</a></li>
+                                        <li>#<a href="">킴스큐</a></li>
+                                        <li>#<a href="">개발자센터</a></li>
+                                        <li>#<a href="">커뮤니티</a></li>
+                                    </ul>
+
+                                </dd>
+                            </dl>
+ 
+                            <dl class="dl-horizontal rb-attach">
+                                <dt>첨부</dt>
+                                <dd>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="">STP-SWOT 분석-2010.05.hwp</a> 
+                                            <span class="rb-size">446.1KB</span>
+                                            <span class="rb-down" data-toggle="tooltip" title="다운로드 수">0</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="">킴스큐 소개서.pdf</a> 
+                                            <span class="rb-size">446.1KB</span>
+                                            <span class="rb-down" data-toggle="tooltip" title="다운로드 수">0</span>
+                                        </li>
+                                    </ul>
+                               </dd>
+                            </dl>
+ 
+                            <div class="rb-toolbar" role="toolbar">
+                                <div class="rb-share">
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default" data-toggle="tooltip" title="페이스북 공유"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="" class="btn btn-default" data-toggle="tooltip" title="트위터 공유"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="" class="btn btn-default" data-toggle="tooltip" title="구글+ 공유"><i class="fa fa-google-plus fa-lg"></i></a>
+                                        <a href="mailto:?subject=킴스큐 오픈소스 프로젝트 운영 지침&amp;body=Check out this post:%20http://www.abc.com/blog/192680" onclick="return confirm('메일로 본 게시물의 링크를 보내시겠습니까??');" class="btn btn-default" data-toggle="tooltip" title="메일 공유"><i class="fa fa-envelope fa-lg"></i></a>
+                                    </div>
+                                </div>
+                                <div class="rb-buttons">
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="list.html" class="btn btn-default">목록으로</a>
+                                    </div>
+
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default">복사</a>
+                                        <a href="" class="btn btn-default">이동</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default">수정</a>
+                                        <a href="" class="btn btn-default">삭제</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="" class="btn btn-default">답변</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rb-tabs">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#comment" data-toggle="tab">댓글 <span class="badge">0</span></a></li>
+                                    <li><a href="#trackback" data-toggle="tab">엮인글  <span class="badge">0</span></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="comment">
+                                        댓글 목록 
+                                    </div>
+                                    <div class="tab-pane" id="trackback">
+                                        트래백 목록
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- 템플릿 끝 -->
+                    
+
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+        <!-- Modal-Profile -->
+        <div class="modal fade" id="modal-profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">홍길동</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- feedback messages -->
+        <div class="rb-feedback rb-feedback-default rb-position-default" style="display: none">
+            <span></span>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- nivo-lightbox : https://github.com/gilbitron/Nivo-Lightbox -->
+        <script src="../../assets/plugins/nivo-lightbox-1.2.0/nivo-lightbox.min.js"></script>
+
+        <!-- Common js -->
+        <script src="../../assets/js/common.js"></script>
+
+        <!-- bbs js 
+        <script src="./script.js"></script>-->
+
+        <!-- jquery-cookie : https://github.com/carhartl/jquery-cookie -->
+        <script src="../../assets/plugins/jquery-cookie-1.3.1/jquery.cookie.js"></script>
+
+        <!-- jquery-text-resizer : http://mariojvargas.com/projects/jquery-text-resizer-plugin/ -->
+        <script src="../../assets/plugins/jquery-textresizer-1.1.0/jquery.textresizer.min.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                // option : auto caption 
+                $(function() {
+                    $(".rb-bbs-body img").each(function() {
+                        $(this).addClass('rb-media');
+                        $(this).imageCaption();
+                    });
+                });
+
+                // option : auto lightbox(nivoLightbox)
+                $(function() {
+                    $(".rb-bbs-body img").each(function() {
+                        var a = $('<a/>').attr('href', this.src);
+                        $(a).addClass('lightbox');
+                        $(a).attr('title', this.alt);
+                        $(a).attr('data-lightbox-gallery', "postview");
+                        $(this).addClass('img-responsive').wrap(a);
+                        $('.lightbox').nivoLightbox();
+                    });
+                });
+
+
+                $(function() {
+
+                    $(".rb-resizer a").textresizer({
+                        target: ".rb-bbs-view",
+                        type: "cssClass",
+                        sizes: [ 
+                            "rb-text-small", 
+                            "rb-text-medium", 
+                            "rb-text-large", 
+                            "rb-text-larger" 
+                        ],
+                        selectedIndex: 1
+                    });
+
+                    $('.rb-resizer a').click(function() {
+                        feedback.show("글자크기가 변경되었습니다."); 
+                        return false;
+                    });
+                });
+
+
+                // popover
+                $(function() {
+                    $('[data-profile="popover"]').popover({
+                        placement : 'auto',
+                        html: 'true',
+                        trigger: 'click',
+                        container: '.rb-bbs',
+                        content: '<div class="media"><a class="pull-left" href="#" data-toggle="modal" data-target="#modal-profile"><img class="media-object" src="../../assets/img/noavatar-blue.png"></a><div class="media-body"><h4 class="media-heading"><a href="#" data-toggle="modal" data-target="#modal-profile">홍길동 (대한이)</a></h4><p class="text-muted"><small>가입일 : 2009.06.12 (2312일전)<br>마지막접속 : 2015.10.12 (0일전)<br>포인트 : 11,966 , 등급 : 비기너++ 10</small></p><p class="rb-relation">함께아는 친구 <strong>16명</strong></p></div></div>',
+                        template: '<div class="popover rb-profile" role="tooltip"><div class="arrow"></div><div class="popover-content"></div><div class="popover-footer text-right"><div class="btn-group" role="group" aria-label="..."><div class="btn-group btn-group-sm" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-check"></i> 친구 <span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#">친구 끊기</a></li></ul></div><div class="btn-group btn-group-sm" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-check"></i> 팔로잉 <span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li><a href="#">팔로잉 취소</a></li></ul></div><button type="button" class="btn btn-default btn-sm">메시지</button></div></div></div>'
+                    });
+
+                    // http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/
+                    $('body').on('click', function (e) {
+                        $('[data-profile="popover"]').each(function () {
+                            //the 'is' for buttons that trigger popups
+                            //the 'has' for icons within a button that triggers a popup
+                            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                                $(this).popover('hide');
+                            }
+                        });
+                    });
+                });
+
+            }); 
+
+
+        </script>
+    </body>
+</html>

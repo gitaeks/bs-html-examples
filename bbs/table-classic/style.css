@@ -429,16 +429,18 @@
 .rb-bbs-view .rb-media {
     margin-bottom: 30px
 }
-.rb-bbs-view .rb-media .rb-caption {
+.rb-bbs-view .rb-media figcaption {
     margin-top: 10px;
     font-size: 14px;
     color: #777;
     line-height: 1.6;
 }
-.rb-bbs-view .rb-media .rb-caption:before {
+.rb-bbs-view .rb-media figcaption:before {
     padding-right: 7px;
     content: '▲'
 }
+
+
 
 
 /********** bbs-footer **********/
