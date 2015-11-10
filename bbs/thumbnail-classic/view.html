@@ -45,7 +45,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/thumbnail-classic" target="_blank">View on GitHub</a></li>
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/table-classic" target="_blank">View on GitHub</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -83,11 +83,11 @@
                                             <a href="" class="btn btn-link btn-xs"><i class="fa fa-print fa-lg fa-fw"></i> 인쇄</a>
                                             <a href="" class="btn btn-link btn-xs"><i class="fa fa-star-o fa-lg fa-fw"></i> 스크랩</a>
                                         </div>
-                                        <div class="btn-group rb-resizer" role="group" aria-label="...">
-                                            <span class="rb-font-xs"><a class="btn btn-default btn-xs hidden-xs">A</a></span>
-                                            <span class="rb-font-sm"><a class="btn btn-default btn-xs">A</a></span>
-                                            <span class="rb-font-md"><a class="btn btn-default btn-xs">A</a></span>
-                                            <span class="rb-font-lg"><a class="btn btn-default btn-xs">A</a></span>
+                                        <div class="btn-group btn-group-xs rb-resizer" role="group" aria-label="...">
+                                            <a class="rb-small btn btn-default hidden-xs">A</a>
+                                            <a class="rb-medium btn btn-default">A</a>
+                                            <a class="rb-large btn btn-default">A</a>
+                                            <a class="rb-larger btn btn-default">A</a>
                                         </div>
                                     </div>
                                 </div>
@@ -124,18 +124,19 @@
                             <p>PHP의 버전이 5.0으로 업그레이드 되고, MySQL 4.1이 소개 되면서 PHP와 MySQL의 연결하는 방식에 있어 기본연결 방식(original MySQL extension)보다 개선된 연결 방식(MySQLi 또는 PDO)의 사용을 권장하고 있습니다.</p>
                             <p>PHP 5.4 이상 버전부터는  MySQL 기본 연결방식과 관련하여 Rb에서 경고문이 출력 됩니다.(현재,Rb1/Rb2는 php 5.2 버전에 최적화되어 있음)</p>
 
-                            <p class="rb-image">
-                                <a href="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" title="Singapore from the air (Andrew Tan 2011)" class="lightbox" data-lightbox-gallery="gallery1">
-                                    <img class="img-responsive" src="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" alt="...">
-                                </a>
-                            </p>
+
+                            <div class="rb-media">
+                                <img class="img-responsive" src="http://farm4.staticflickr.com/3712/9032543579_1217e6566b_b.jpg" alt="000당 홍길동 의원이 2일 본지와의 인터뷰에서 총선 승리의 전략을 이야기하고 있다. ⓒ00일보">
+                                <p class="rb-caption">000당 홍길동 의원이 2일 본지와의 인터뷰에서 총선 승리의 전략을 이야기하고 있다. ⓒ00일보</p>
+                            </div>
+
                             <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
                             <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
-                            <p class="rb-image">
-                                <a href="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" title="forest mood (halina-anna)" class="lightbox" data-lightbox-gallery="gallery1">
-                                    <img class="img-responsive" src="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" alt="...">
-                                </a>
-                            </p>
+                            <div class="rb-media">
+                                <img class="img-responsive" src="http://farm4.staticflickr.com/3818/9036037912_83576fe5ab_b.jpg" alt="forest mood (halina-anna)">
+                                <p class="rb-caption">민간 평화단체 ㈔하늘문화세계평화광복(HWPL)이 주최한 ‘9.18 종교대통합 만국회의 1주년 기념식’이 지난 9월 18일 서울 올림픽공원 평화의 문에서 열린 가운데 참석자들이 기념 촬영을 하고 있다. 이번 행사에는 각국 전·현직 대통령·총리, 주요 국제법 전문가, 92개국 종교·청년·여성 지도자 등 회원 5만 7000여명이 모였다. (사진제공: HWPL)</p>
+                            </div>
+
                             <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
                             <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
                         </div>
@@ -221,10 +222,8 @@
                             </div>
 
                         </div>
-
-
-
-                    </section><!-- 템플릿 끝 -->
+                    </section>
+                    <!-- 템플릿 끝 -->
                     
 
                 </div>
@@ -254,6 +253,11 @@
             </div>
         </div>
 
+        <!-- feedback messages -->
+        <div class="rb-feedback rb-feedback-default rb-position-default" style="display: none">
+            <span></span>
+        </div>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -269,42 +273,68 @@
         <!-- bbs js 
         <script src="./script.js"></script>-->
 
-        <!-- jQuery Text Resizer : http://trevordavis.net/blog/simple-jquery-text-resizer/ -->
-        <script type="text/javascript" src="../../assets/js/jquery-cookie.js"></script>
+        <!-- jquery-cookie : https://github.com/carhartl/jquery-cookie -->
+        <script src="../../assets/plugins/jquery-cookie-1.3.1/jquery.cookie.js"></script>
+
+        <!-- jquery-text-resizer : http://mariojvargas.com/projects/jquery-text-resizer-plugin/ -->
+        <script src="../../assets/plugins/jquery-textresizer-1.1.0/jquery.textresizer.min.js"></script>
+
         <script type="text/javascript">
 
             $(document).ready(function() {
 
-                $('.lightbox').nivoLightbox();
-
-                if($.cookie('TEXT_SIZE')) {
-                    $('.rb-bbs-view').addClass($.cookie('TEXT_SIZE')); 
-                }
-                $('.rb-resizer a').click(function() {
-                    var textSize = $(this).parent().attr('class');
-                    $('.rb-bbs-view').removeClass('rb-font-xs rb-font-sm rb-font-md rb-font-lg').addClass(textSize);
-                    $.cookie('TEXT_SIZE',textSize, { path: '/', expires: 10000 });
-                    return false;
+                $(function() {
+                    $(".rb-bbs-body img").each(function() {
+                    var a = $('<a/>').attr('href', this.src);
+                    $(a).addClass('lightbox');
+                    $(a).attr('title', this.alt);
+                    $(a).attr('data-lightbox-gallery', "postview");
+                    $(this).addClass('img-responsive').wrap(a);
+                    $('.lightbox').nivoLightbox();
+                    });
                 });
+
+                $(function() {
+
+                    $(".rb-resizer a").textresizer({
+                        target: ".rb-bbs-view",
+                        type: "cssClass",
+                        sizes: [ 
+                            "rb-text-small", 
+                            "rb-text-medium", 
+                            "rb-text-large", 
+                            "rb-text-larger" 
+                        ],
+                        selectedIndex: 1
+                    });
+
+                    $('.rb-resizer a').click(function() {
+                        feedback.show("글자크기가 변경되었습니다."); 
+                        return false;
+                    });
+                });
+                
 
                 // popover
-                $('[data-profile="popover"]').popover({
-                    placement : 'auto',
-                    html: 'true',
-                    trigger: 'click',
-                    container: '.rb-bbs',
-                    content: '<div class="media"><a class="pull-left" href="#" data-toggle="modal" data-target="#modal-profile"><img class="media-object" src="../../assets/img/noavatar-blue.png"></a><div class="media-body"><h4 class="media-heading"><a href="#" data-toggle="modal" data-target="#modal-profile">홍길동 (대한이)</a></h4><p class="text-muted"><small>가입일 : 2009.06.12 (2312일전)<br>마지막접속 : 2015.10.12 (0일전)<br>포인트 : 11,966 , 등급 : 비기너++ 10</small></p><p class="rb-relation">함께아는 친구 <strong>16명</strong></p></div></div>',
-                    template: '<div class="popover rb-profile" role="tooltip"><div class="arrow"></div><div class="popover-content"></div><div class="popover-footer text-right"><div class="btn-group" role="group" aria-label="..."><div class="btn-group btn-group-sm" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-check"></i> 친구 <span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#">친구 끊기</a></li></ul></div><div class="btn-group btn-group-sm" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-check"></i> 팔로잉 <span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li><a href="#">팔로잉 취소</a></li></ul></div><button type="button" class="btn btn-default btn-sm">메시지</button></div></div></div>'
-                });
+                $(function() {
+                    $('[data-profile="popover"]').popover({
+                        placement : 'auto',
+                        html: 'true',
+                        trigger: 'click',
+                        container: '.rb-bbs',
+                        content: '<div class="media"><a class="pull-left" href="#" data-toggle="modal" data-target="#modal-profile"><img class="media-object" src="../../assets/img/noavatar-blue.png"></a><div class="media-body"><h4 class="media-heading"><a href="#" data-toggle="modal" data-target="#modal-profile">홍길동 (대한이)</a></h4><p class="text-muted"><small>가입일 : 2009.06.12 (2312일전)<br>마지막접속 : 2015.10.12 (0일전)<br>포인트 : 11,966 , 등급 : 비기너++ 10</small></p><p class="rb-relation">함께아는 친구 <strong>16명</strong></p></div></div>',
+                        template: '<div class="popover rb-profile" role="tooltip"><div class="arrow"></div><div class="popover-content"></div><div class="popover-footer text-right"><div class="btn-group" role="group" aria-label="..."><div class="btn-group btn-group-sm" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-check"></i> 친구 <span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#">친구 끊기</a></li></ul></div><div class="btn-group btn-group-sm" role="group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-check"></i> 팔로잉 <span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li><a href="#">팔로잉 취소</a></li></ul></div><button type="button" class="btn btn-default btn-sm">메시지</button></div></div></div>'
+                    });
 
-                // http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/
-                $('body').on('click', function (e) {
-                    $('[data-profile="popover"]').each(function () {
-                        //the 'is' for buttons that trigger popups
-                        //the 'has' for icons within a button that triggers a popup
-                        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-                            $(this).popover('hide');
-                        }
+                    // http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/
+                    $('body').on('click', function (e) {
+                        $('[data-profile="popover"]').each(function () {
+                            //the 'is' for buttons that trigger popups
+                            //the 'has' for icons within a button that triggers a popup
+                            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                                $(this).popover('hide');
+                            }
+                        });
                     });
                 });
 
