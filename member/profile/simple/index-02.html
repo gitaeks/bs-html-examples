@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <title>Profile-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../../assets/css/sys.css">
+
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../../assets/css/default.css">
+
+
+         <link rel="stylesheet" href="./style.css">
+
+
+        <!-- bootstrap-tagsinput : https://github.com/bootstrap-tagsinput/bootstrap-tagsinput -->
+        <link rel="stylesheet" href="../../../assets/plugins/bootstrap-tagsinput-0.7.1/bootstrap-tagsinput.css">
+
+        <style type="text/css">
+
+
+        </style>
+
+    </head>
+
+    <body class="fuelux">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > Feed</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/member/profile/simple" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- 템플릿 시작 -->
+<section class="rb-profile">
+
+    <header class="rb-header" style="background-image: url(../_assets/img/profile-bg.jpg)">
+
+        <div class="rb-inner">
+            <div class="rb-card">
+                <img class="rb-avatar img-circle" src="../_assets/img/avatar-break.jpg">
+                <h3 class="rb-title">홍길동</h3>
+                <p class="rb-text">
+                    소비자가 마음편히 소비할 수 있을 때까지, ‘나’의 삶이 바뀌어 세상을 바꿀 때 까지 함께 하겠습니다!
+                </p>
+                <ul class="rb-tags list-inline"> 
+                    <li><a href="#"><span class="label">유통</span></a></li>
+                    <li><a href="#"><span class="label">소프트웨어 엔지니어</span></a></li>
+                </ul>
+            </div>
+
+            <div class="rb-networks">
+                <ul class="rb-follow list-inline">
+                    <li class="rb-connect">
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-check fa-fw"></span> 친구 
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">친구 끊기</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-check fa-fw"></span> 팔로잉 
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">팔로우 취소</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="rb-follower">
+                        <a href="#">
+                             <strong>팔로워</strong>
+                             <span class="badge">123</span>
+                         </a>
+                    </li>
+                    <li class="rb-following">
+                        <a href="#">
+                             <strong>팔로잉</strong>
+                             <span class="badge">12</span>
+                         </a>
+                    </li>
+                </ul>
+                <ul class="rb-link list-inline">
+                    <li class="rb-facebook" data-toggle="tooltip" data-placement="top" title="페이스북">
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="sr-only">facebook</span>
+                        </a>
+                    </li>
+                    <li class="rb-twitter" data-toggle="tooltip" data-placement="top" title="트위터">
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="rb-linkedin" data-toggle="tooltip" data-placement="top" title="링크드인">
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+        <nav class="rb-nav">
+            <ol class="clearfix">
+                <li class="active">
+                    <a href="#">타임라인</a>
+                </li>
+                <li>
+                    <a href="#">정보</a>
+                </li>
+                <li>
+                    <a href="#">미디어</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div> 
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- 템플릿 끝 -->
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Common js -->
+        <script src="../../../assets/js/common.js"></script>
+
+
+        <script>
+
+        </script>
+
+
+
+    </body>
+</html>
