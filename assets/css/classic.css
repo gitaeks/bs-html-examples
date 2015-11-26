@@ -293,3 +293,32 @@ input[type=radio] {
         border-radius: 30px;
     }
 }
+
+
+
+/**
+ * fueluxcustom style
+ * ----------------------------------------------------------------------------
+ */
+
+/*checkbox*/
+.fuelux .checkbox-custom:before {
+    border-radius: 0;
+    color: #4D89C1
+}
+.fuelux .checkbox-custom.checked:before {
+    background: transparent;
+    border-color: #4D89C1;
+}
+
+/*radio*/
+.fuelux .radio-custom:before {
+    color: #4D89C1
+}
+.fuelux .radio-custom.checked:before {
+    background: transparent;
+    border-color: #4D89C1;
+}
+.fuelux .radio-custom.checked:after {
+    background: #4D89C1;
+}
