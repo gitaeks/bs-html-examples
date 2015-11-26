@@ -70,7 +70,7 @@
         </div>
 
        
-        <div id="ajax-modal" class="modal fade" tabindex="-1" data-width="760" data-focus-on="input:first" style="display: none;"></div>
+        <div id="ajax-modal" class="modal fade" tabindex="-1" data-width="760" data-focus-on="input:first" data-backdrop="static"></div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -88,30 +88,49 @@
 
         <script type="text/javascript">
 
-          $(function(){
-            $.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner = 
-              '<div class="loading-spinner" style="width: 200px; margin-left: -100px;">' +
-                '<div class="progress progress-striped active">' +
-                  '<div class="progress-bar" style="width: 100%;"></div>' +
-                '</div>' +
-              '</div>';
-            $.fn.modalmanager.defaults.resize = true;
-            $('[data-source]').each(function(){
-              var $this = $(this),
-                $source = $($this.data('source'));
-              var text = [];
-              $source.each(function(){
-                var $s = $(this);
-                if ($s.attr('type') == 'text/javascript'){
-                  text.push($s.html().replace(/(\n)*/, ''));
-                } else {
-                  text.push($s.clone().wrap('<div>').parent().html());
-                }
-              });
-              
+            $(function(){
+                $.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner = 
+                    '<div class="loading-spinner">' +
+                        '<div class="rb-fading-circle">' +
+                            '<div class="rb-circle1 rb-circle"></div>' +
+                            '<div class="rb-circle2 rb-circle"></div>' +
+                            '<div class="rb-circle3 rb-circle"></div>' +
+                            '<div class="rb-circle4 rb-circle"></div>' +
+                            '<div class="rb-circle5 rb-circle"></div>' +
+                            '<div class="rb-circle6 rb-circle"></div>' +
+                            '<div class="rb-circle7 rb-circle"></div>' +
+                            '<div class="rb-circle8 rb-circle"></div>' +
+                            '<div class="rb-circle9 rb-circle"></div>' +
+                            '<div class="rb-circle10 rb-circle"></div>' +
+                            '<div class="rb-circle11 rb-circle"></div>' +
+                            '<div class="rb-circle12 rb-circle"></div>' +
+                        '</div>' +
+                        '<div class="rb-text">Loading...</div>' +
+                    '</div>';
+                $.fn.modalmanager.defaults.resize = true;
 
+                $.fn.modal.defaults.maxHeight = function(){
+                    return $(window).height() - 165; 
+                }
+
+                $('[data-source]').each(function(){
+                    var $this = $(this),
+                    $source = $($this.data('source'));
+
+                    var text = [];
+
+                    $source.each(function(){
+                        var $s = $(this);
+                        if ($s.attr('type') == 'text/javascript'){
+                            text.push($s.html().replace(/(\n)*/, ''));
+                        } else {
+                            text.push($s.clone().wrap('<div>').parent().html());
+                        }
+                    });
+                });
             });
-          });
+
+
         </script>
 
         <script type="text/javascript">
@@ -125,7 +144,7 @@
                 $modal.load('modal_ajax_test.html', '', function(){
                 $modal.modal();
                 });
-              }, 1000);
+              }, 500);
             });
              
             $modal.on('click', '.update', function(){
@@ -137,8 +156,10 @@
                     .prepend('<div class="alert alert-info fade in">' +
                       '수정되었습니다!<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                     '</div>');
-              }, 1000);
+              }, 500);
             });
+
+
         </script>
 
 

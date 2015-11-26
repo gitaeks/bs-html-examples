@@ -70,7 +70,7 @@
         </div>
 
        
-        <div id="ajax-modal" class="modal fade hide" tabindex="-1" data-width="760"></div>
+        <div id="ajax-modal" class="modal fade hide" tabindex="-1" data-width="760" data-focus-on="input:first"></div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -88,65 +88,60 @@
 
         <script type="text/javascript">
 
+            $(function(){
 
+                $.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner = 
+                    '<div class="loading-spinner" style="width: 200px; margin-left: -100px;">' +
+                        '<i class="fa fa-spinner fa-spin"></i>' +
+                    '</div>';
 
-          $(function(){
-            $.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner = 
-              '<div class="loading-spinner" style="width: 200px; margin-left: -100px;">' +
-                '<div class="progress progress-striped active">' +
-                  '<div class="progress-bar" style="width: 100%;"></div>' +
-                '</div>' +
-              '</div>';
-            $.fn.modalmanager.defaults.resize = true;
-            $('[data-source]').each(function(){
-              var $this = $(this),
-                $source = $($this.data('source'));
-              var text = [];
-              $source.each(function(){
-                var $s = $(this);
-                if ($s.attr('type') == 'text/javascript'){
-                  text.push($s.html().replace(/(\n)*/, ''));
-                } else {
-                  text.push($s.clone().wrap('<div>').parent().html());
-                }
-              });
-              
+                $.fn.modalmanager.defaults.resize = true;
 
+                $('[data-source]').each(function(){
+                    var $this = $(this),
+                    $source = $($this.data('source'));
+
+                    var text = [];
+
+                    $source.each(function(){
+                        var $s = $(this);
+                        if ($s.attr('type') == 'text/javascript'){
+                            text.push($s.html().replace(/(\n)*/, ''));
+                        } else {
+                            text.push($s.clone().wrap('<div>').parent().html());
+                        }
+                    });
+                });
             });
-          });
+
         </script>
 
         <script type="text/javascript">
+
             var $modal = $('#ajax-modal');
-             
+
             $('.demo').on('click', function(){
-              // create the backdrop and wait for next modal to be triggered
-              $('body').modalmanager('loading');
-             
-              setTimeout(function(){
-                $modal.load('modal_ajax_test.html', '', function(){
-                $modal.modal();
+                // create the backdrop and wait for next modal to be triggered
+                $('body').modalmanager('loading');
+
+                setTimeout(function(){
+                    $modal.load('modal_ajax_test.html', '', function(){
+                    $modal.modal();
                 });
-              }, 1000);
+            }, 100000);
             });
              
             $modal.on('click', '.update', function(){
-              $modal.modal('loading');
-              setTimeout(function(){
-                $modal
-                  .modal('loading')
-                  .find('.modal-body')
+                $modal.modal('loading');
+                setTimeout(function(){
+                    $modal
+                    .modal('loading')
+                    .find('.modal-body')
                     .prepend('<div class="alert alert-info fade in">' +
-                      '수정되었습니다!<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                        '수정되었습니다!<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                     '</div>');
-              }, 1000);
+                }, 1000);
             });
-
-            $.fn.modal.defaults.maxHeight = function(){
-                // subtract the height of the modal header and footer
-                return $(window).height() - 165; 
-            }
-            
         </script>
 
 
