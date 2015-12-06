@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>chatbox-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/classic.css">
+
+        <!-- BBS-style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/chat/chatbox" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 col-lg-offset-1">
+
+                    <!-- 템플릿 시작 -->
+
+                    <h3>채팅목록</h3>  
+
+
+                    <div class="rb-display-users list-group" style="width: 300px">
+
+                        <a href="#" class="rb-chat usr list-group-item" 
+                            data-chat-id="cha1" 
+                            data-chat-fname="Sadi" 
+                            data-chat-lname="Orlaf" 
+                            data-chat-status="busy" 
+                            data-chat-alertmsg="Sadi Orlaf is in a meeting. Please do not disturb!" 
+                            data-chat-alertshow="true"> 
+                            <i></i>Sadi Orlaf
+                        </a>
+
+                        <a href="#" class="rb-chat usr list-group-item" 
+                            data-chat-id="cha2" 
+                            data-chat-fname="Jessica" 
+                            data-chat-lname="Dolof" 
+                            data-chat-status="online" 
+                            data-chat-alertmsg="" 
+                            data-chat-alertshow="false"> 
+                            <i></i>Jessica Dolof
+                        </a>
+
+                        <a href="#" class="rb-chat usr list-group-item" 
+                            data-chat-id="cha3" 
+                            data-chat-fname="길동" 
+                            data-chat-lname="홍" 
+                            data-chat-status="busy" 
+                            data-chat-alertmsg="홍길동님은 회의중입니다. 방해하지마세요!" 
+                            data-chat-alertshow="true"> 
+                            <i></i>홍길동
+                        </a>
+
+                        <a href="#" class="rb-chat usr list-group-item" 
+                            data-chat-id="cha4" 
+                            data-chat-fname="기택" 
+                            data-chat-lname="권" 
+                            data-chat-status="online" 
+                            data-chat-alertmsg="" 
+                            data-chat-alertshow="false"> 
+                            <i></i>권기택
+                        </a>
+
+                        <a href="#" class="rb-chat usr list-group-item" 
+                            data-chat-id="cha5" 
+                            data-chat-fname="영주" 
+                            data-chat-lname="김" 
+                            data-chat-status="online"
+                            data-chat-alertmsg=""
+                            data-chat-alertshow="false"> 
+                            <i></i>김영주
+                        </a>
+
+                        <a href="#" class="rb-chat usr list-group-item" 
+                            data-chat-id="cha6" 
+                            data-chat-fname="하윤" 
+                            data-chat-lname="권" 
+                            data-chat-status="away"> 
+                            <i></i>권하윤
+                        </a>
+
+                        <a href="#" class="rb-chat usr offline list-group-item" 
+                            data-chat-id="cha7" 
+                            data-chat-fname="효은" 
+                            data-chat-lname="유" 
+                            data-chat-status="incognito"> 
+                            <i></i>유효은 (offline)
+                        </a>
+
+                    </div>
+
+
+                    <hr>
+                    <div id="log"></div>
+
+                    <!-- 템플릿 끝 -->
+                    
+
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- jquery-ui -->
+        <script type="text/javascript" src="../../assets/plugins/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+
+
+        <script type="text/javascript">
+            var boxList = [],
+                showList = [],
+                nameList = [],
+                idList = [],
+                chatbox_config = {
+                    width: 200,
+                    gap: 35
+                }
+
+            if ($.fn.extend({}), 
+            jQuery.fn.doesExist = function() {},
+            $.navAsAjax || $("")) {}
+
+        </script>
+
+        <!-- jquery.ui.chatbox -->
+        <script type="text/javascript" src="../../assets/plugins/jquery.ui.chatbox-1.0.0/smart.chat.ui.js"></script>
+        <script type="text/javascript" src="../../assets/plugins/jquery.ui.chatbox-1.0.0/smart.chat.manager.js"></script>
+
+        <!-- Common js -->
+        <script src="../../assets/js/common.js"></script>
+
+    </body>
+</html>
