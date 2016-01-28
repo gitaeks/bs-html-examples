@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>chatbox-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- jquery-ui -->
+        <link rel="stylesheet" href="../../assets/plugins/jquery-ui-1.11.4/jquery-ui.css" type="text/css">
+
+        <!-- jquery.ui.chatbox -->
+        <link rel="stylesheet" href="../../assets/plugins/jquery.ui.chatbox-1.0.0/jquery.ui.chatbox.css">
+
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/classic.css">
+
+        <!-- BBS-style -->
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/chat/chatbox" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 col-lg-offset-1">
+
+                    <!-- 템플릿 시작 -->
+
+                    <h3>채팅박스 추가</h3>  
+
+                    <a id="link_add" href="#" class="btn btn-default">Add Chatbox</a>
+
+                    <div id="chat_box"></div>
+                    <hr>
+                    <div id="log"></div>
+
+                    <!-- 템플릿 끝 -->
+                    
+
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- jquery-ui -->
+        <script type="text/javascript" src="../../assets/plugins/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+
+        <!-- jquery.ui.chatbox -->
+        <script type="text/javascript" src="../../assets/plugins/jquery.ui.chatbox-1.0.0/jquery.ui.chatbox.js"></script>
+        <script type="text/javascript" src="../../assets/plugins/jquery.ui.chatbox-1.0.0/chatboxManager.js"></script>
+        
+        <!-- Common js -->
+        <script src="../../assets/js/common.js"></script>
+
+        <script type="text/javascript">
+              $(document).ready(function(){
+
+              var counter = 0;
+              var idList = new Array();
+
+              var broadcastMessageCallback = function(from, msg) {
+                  for(var i = 0; i < idList.length; i ++) {
+                      chatboxManager.addBox(idList[i]);
+                      $("#" + idList[i]).chatbox("option", "boxManager").addMsg(from, msg);
+                  }
+              }
+
+
+              // chatboxManager is excerpt from the original project
+              // the code is not very clean, I just want to reuse it to manage multiple chatboxes
+              chatboxManager.init({messageSent : broadcastMessageCallback});
+
+              $("#link_add").click(function(event, ui) {
+                  counter ++;
+                  var id = "box" + counter;
+                  idList.push(id);
+                  chatboxManager.addBox(id, 
+                                          {dest:"dest" + counter, // not used in demo
+                                           title:"box" + counter,
+                                           first_name:"First" + counter,
+                                           last_name:"Last" + counter
+                                           //you can add your own options too
+                                          });
+                  event.preventDefault();
+              });
+
+              });
+        </script>
+
+
+    </body>
+</html>
