@@ -641,6 +641,14 @@
     border: none;
 }
 
+.rb-bbs-write .editor-toolbar.fullscreen {
+    z-index: 999999;
+}
+.rb-bbs-write .editor-toolbar a.active {
+    display: inline-block;
+    margin-right: 5px
+}
+
 /*file-input*/
 
 .modal .rb-fileinput {

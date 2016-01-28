@@ -12,9 +12,7 @@
         <!-- Font-Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- Bootstrap-select -->
-        <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
-        
+
         <!-- system-style -->
         <link rel="stylesheet" href="../../assets/css/sys.css">
 
@@ -129,6 +127,13 @@
                                 <img src="images/nyc3-500px.jpg" width="500" height="667" data-highres="images/nyc3-highres.jpg">
                             </div>
 
+                            <hr>
+
+                            <div class="photoset-grid-custom" style="visibility: hidden;">
+                                <img src="images/print1-500px.jpg" data-highres="images/print1-highres.jpg">
+                                <img src="images/print2-500px.jpg" data-highres="images/print2-highres.jpg">
+                                <img src="images/print3-500px.jpg" data-highres="images/print3-highres.jpg">
+                            </div>
 
                             <p>
                             또한 이러한 오픈소스 프로젝트 운영은 국외는 물론 국내에서도 표준적인 방법으로 정착 되고 있습니다.
@@ -298,18 +303,28 @@
         <script type="text/javascript">
 
 
-            $('.photoset-grid-basic').photosetGrid();
+            $('.photoset-grid-basic').photosetGrid({
+                gutter: '5px',
+            });
+            $('.photoset-grid-custom').photosetGrid({
+              // Set the gutter between columns and rows
+              gutter: '5px',
+              // Manually set the grid layout
+              layout: '21',
+              // Wrap the images in links
+              highresLinks: true,
+              // Asign a common rel attribute
+              rel: 'print-gallery',
 
+              onInit: function(){},
+              onComplete: function(){
+                // Show the grid after it renders
+                $('.photoset-grid-custom').attr('style', '');
+              }
+            });
 
             $(document).ready(function() {
 
-                // option : auto caption 
-                $(function() {
-                    $(".rb-bbs-body img").each(function() {
-                        $(this).addClass('rb-media');
-                        $(this).imageCaption();
-                    });
-                });
 
                 // option : auto lightbox(nivoLightbox)
                 $(function() {
@@ -319,7 +334,7 @@
                         $(a).attr('title', this.alt);
                         $(a).attr('data-lightbox-gallery', "postview");
                         $(this).addClass('img-responsive').wrap(a);
-                        $('.lightbox').nivoLightbox();
+                        // $('.lightbox').nivoLightbox();
                     });
                 });
 

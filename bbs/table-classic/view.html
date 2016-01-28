@@ -19,8 +19,8 @@
         <link rel="stylesheet" href="../../assets/css/sys.css">
 
         <!-- nivo-lightbox -->
-        <link rel="stylesheet" href="../../assets/plugins/nivo-lightbox-1.2.0/nivo-lightbox.css">
-        <link rel="stylesheet" href="../../assets/plugins/nivo-lightbox-1.2.0/themes/default/default.css">
+        <link rel="stylesheet" href="../../assets/plugins/ekko-lightbox-3.3.3/ekko-lightbox.css">
+        <link rel="stylesheet" href="../../assets/plugins/ekko-lightbox-3.3.3/themes/dark.css">
         
         <!-- Common-style -->
         <link rel="stylesheet" href="../../assets/css/classic.css">
@@ -264,8 +264,8 @@
         <!-- Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- nivo-lightbox : https://github.com/gilbitron/Nivo-Lightbox -->
-        <script src="../../assets/plugins/nivo-lightbox-1.2.0/nivo-lightbox.min.js"></script>
+        <!-- ekko-lightbox : https://github.com/ashleydw/lightbox-->
+        <script src="../../assets/plugins/ekko-lightbox-3.3.3/ekko-lightbox.min.js"></script>
 
         <!-- Common js -->
         <script src="../../assets/js/common.js"></script>
@@ -288,11 +288,15 @@
                     var a = $('<a/>').attr('href', this.src);
                     $(a).addClass('lightbox');
                     $(a).attr('title', this.alt);
-                    $(a).attr('data-lightbox-gallery', "postview");
+                    $(a).attr('data-toggle', "lightbox");
                     $(this).addClass('img-responsive').wrap(a);
-                    $('.lightbox').nivoLightbox();
                     });
                 });
+
+            $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            }); 
 
                 $(function() {
 
