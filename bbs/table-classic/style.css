@@ -698,6 +698,12 @@
 .rb-bbs-write .rb-attach .list-group-item {
     background-color: #FAFAFA
 }
+
+.rb-bbs-write .rb-attach .list-group-item .progress {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
 .rb-bbs-write .rb-attach .list-group-item .rb-size {
     padding: 2px 5px;
     font-size: 11px;
