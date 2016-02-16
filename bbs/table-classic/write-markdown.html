@@ -122,6 +122,12 @@
                                         </div>
                                     </div>
 
+                                    <p>
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-attach">
+                                      (임시) 첨부 목록
+                                    </button>
+                                    </p>
+
                                     <div class="rb-attach">
                                         <ul class="list-group rb-attach-photo">
 
@@ -506,6 +512,128 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
+
+        <!-- Modal-attach-list -->
+        <div class="modal fade" id="modal-attach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-paperclip"></i> 첨부목록</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills" role="tablist">
+                            <li role="presentation" class="active"><a href="#modal-attach-photo" arole="tab" data-toggle="tab">사진</a></li>
+                            <li role="presentation"><a href="#modal-attach-file" role="tab" data-toggle="tab">파일</a></li>
+                            <li role="presentation"><a href="#modal-attach-video" role="tab" data-toggle="tab">동영상</a></li>
+                            <li role="presentation"><a href="#modal-attach-link" role="tab" data-toggle="tab">링크</a></li>
+                            <li role="presentation"><a href="#modal-attach-map" role="tab" data-toggle="tab">위치</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content rb-attach">
+                            <div role="tabpanel" class="tab-pane active" id="modal-attach-photo">
+                                <ul class="list-group rb-attach-photo">
+
+                                    <li class="list-group-item">
+                                        <span class="pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                            </div>
+                                        </span>
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" src="http://placehold.it/48x48/" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <span class="label label-default">대표</span>
+                                                <a href="">국화.jpg</a>
+                                                <span class="rb-size">446.1KB</span> 
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                            </div>
+                                        </span>
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" src="http://placehold.it/48x48/" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="">사막.jpg</a>
+                                                <span class="rb-size">446.1KB</span> 
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="modal-attach-file">
+                                <ul class="list-group rb-attach-file">
+                                    <li class="list-group-item">
+                                        <i class="fa fa-floppy-o fa-fw"></i> 
+                                        <a href="" class="list-group-item-text">STP-SWOT 분석-2010.05.hwp</a> 
+                                        <span class="rb-size">446.1KB</span>
+                                        <div class="btn-group btn-group-xs pull-right">
+                                            <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item rb-hidden">
+                                        <span class="label label-default">숨김</span> 
+                                        <i class="fa fa-floppy-o fa-fw"></i> 
+                                        <a href="" class="list-group-item-text">131227-포상 공감대상자 명단(공개검증).xlsx</a> 
+                                        <span class="rb-size">446.1KB</span>
+                                        <div class="btn-group btn-group-xs pull-right">
+                                            <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fa fa-floppy-o fa-fw"></i> 
+                                        <a href="" class="list-group-item-text">공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서.pdf</a> 
+                                        <span class="rb-size">446.1KB</span> 
+                                        <div class="btn-group btn-group-xs pull-right">
+                                            <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fa fa-floppy-o fa-fw"></i> 
+                                        <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.zip</a> 
+                                        <span class="rb-size">446.1KB</span>
+                                        <div class="btn-group btn-group-xs pull-right">
+                                            <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fa fa-floppy-o fa-fw"></i> 
+                                        <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.docx</a> 
+                                        <span class="rb-size">446.1KB</span> 
+                                        <div class="btn-group btn-group-xs pull-right">
+                                            <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="modal-attach-video">
+                                비디오 목록
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="modal-attach-link">
+                                링크목록
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="modal-attach-map">
+                                위치목록
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -536,6 +664,30 @@
                     delay: 1000,
                 },
                 spellChecker: false,
+                // toolbar: ["bold", "italic", "heading", "|", "quote"],
+                toolbar: ["bold", "italic", "heading","|",
+                    "code",
+                    "quote",
+                    "unordered-list",
+                    "ordered-list",
+                     "|", 
+                     "link",
+                     "image",
+                     "table",
+                     "horizontal-rule",
+                    {
+                        name: "custom",
+                        // action: ,
+                        className: "fa fa-paperclip",
+                        title: "첨부목록",
+                    },
+                    "|", 
+                    "preview",
+                    "side-by-side",
+                    "fullscreen",
+                    "|",
+                    "guide"
+                ],
 
             });
 

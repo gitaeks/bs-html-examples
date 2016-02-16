@@ -695,8 +695,13 @@
 }
 
 /*attach list*/
+.modal .rb-attach .list-group-item,
 .rb-bbs-write .rb-attach .list-group-item {
     background-color: #FAFAFA
+}
+
+.modal .rb-attach {
+    padding: 15px 0
 }
 
 .rb-bbs-write .rb-attach .list-group-item .progress {
@@ -704,6 +709,7 @@
     margin-bottom: 10px
 }
 
+.modal .rb-attach .list-group-item .rb-size,
 .rb-bbs-write .rb-attach .list-group-item .rb-size {
     padding: 2px 5px;
     font-size: 11px;
@@ -715,28 +721,36 @@
     text-shadow: 0 1px 0 #fff;
     font-family: Helvetica, arial;
 }
+.modal .rb-attach .list-group-item a,
 .rb-bbs-write .rb-attach .list-group-item a {
     color: #666
 }
+.modal .rb-attach .list-group-item .list-group-item-text,
 .rb-bbs-write .rb-attach .list-group-item .list-group-item-text {
     line-height: 1.7;
 }
+.modal .rb-attach .list-group-item.rb-hidden .list-group-item-text,
 .rb-bbs-write .rb-attach .list-group-item.rb-hidden .list-group-item-text {
     color: #B7B7B7;
 }
+.modal .rb-attach .list-group-item.rb-hidden .btn,
 .rb-bbs-write .rb-attach .list-group-item.rb-hidden .btn {
     color: #666;
 }
 
+.modal .rb-attach-photo,
 .rb-bbs-write .rb-attach-photo {
     margin-bottom: 0
 }
+.modal .rb-attach-photo .list-group-item,
 .rb-bbs-write .rb-attach-photo .list-group-item {
     line-height: 48px
 }
+.modal .rb-attach-photo .list-group-item .media,
 .rb-bbs-write .rb-attach-photo .list-group-item .media {
     margin-top: 0;
 }
+.modal .rb-attach-file,
 .rb-bbs-write .rb-attach-file {
     margin-top: -1px
 }
