@@ -137,7 +137,7 @@
                                             <li class="list-group-item">
                                                 <span class="pull-right">
                                                     <div class="btn-group btn-group-xs">
-                                                        <a href="" class="btn btn-default" title="삭제" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                                        <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
                                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                             <span class="caret"></span>
                                                             <span class="sr-only">Toggle Dropdown</span>
@@ -164,7 +164,7 @@
                                             <li class="list-group-item">
                                                 <span class="pull-right">
                                                     <div class="btn-group btn-group-xs">
-                                                        <a href="" class="btn btn-default" title="삭제" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                                        <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
                                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                             <span class="caret"></span>
                                                             <span class="sr-only">Toggle Dropdown</span>
@@ -197,7 +197,7 @@
                                                 <a href="" class="list-group-item-text">STP-SWOT 분석-2010.05.hwp</a> 
                                                 <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="삭제"><i class="fa fa-times"></i></a>
+                                                    <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -220,7 +220,7 @@
                                                 <a href="" class="list-group-item-text">131227-포상 공감대상자 명단(공개검증).xlsx</a> 
                                                 <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="삭제"><i class="fa fa-times"></i></a>
+                                                    <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -242,7 +242,7 @@
                                                 <a href="" class="list-group-item-text">공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서.pdf</a> 
                                                 <span class="rb-size">446.1KB</span> 
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="삭제"><i class="fa fa-times"></i></a>
+                                                    <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -264,7 +264,7 @@
                                                 <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.zip</a> 
                                                 <span class="rb-size">446.1KB</span>
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" title="삭제" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                                    <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -286,7 +286,7 @@
                                                 <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.docx</a> 
                                                 <span class="rb-size">446.1KB</span> 
                                                 <div class="btn-group btn-group-xs pull-right">
-                                                    <a href="" class="btn btn-default" data-toggle="tooltip" title="삭제"><i class="fa fa-times"></i></a>
+                                                    <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -535,7 +535,8 @@
                     uniqueId: "",
                     delay: 1000,
                 },
-                spellChecker: false
+                spellChecker: false,
+
             });
 
             // Bootstrap-selcct - http://silviomoreto.github.io/bootstrap-select/
@@ -555,6 +556,20 @@
                 modal.find('.modal-body input').val(filename)
                 modal.find('.modal-body textarea').val(caption)
             })
+
+
+            $('[data-toggle=clipboard]').tooltip({
+                container: 'body',
+                trigger: 'hover',
+                title : '삽입코드 복사'
+            });
+
+            $('[data-toggle=clipboard]').on('click',function(){
+                $(this).attr('data-original-title', '복사되었습니다.')
+                $(this).tooltip('show');
+                $(this).attr('data-original-title', '삽입코드 복사')
+            });
+
         </script>
 
 
