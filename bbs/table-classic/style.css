@@ -839,3 +839,16 @@
 .portlet .tabbable-line > .tab-content {
   padding-bottom: 0;
 }
+
+.CodeMirror {
+    border-bottom-left-radius:0;
+    border-bottom-right-radius: 0;
+}
+.rb-attach-buttons {
+    margin-top: -34px;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+}
+.rb-attach-buttons .btn {
+    color: #68727C
+}

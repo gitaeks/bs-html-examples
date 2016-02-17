@@ -114,11 +114,13 @@
                                             <textarea class="form-control"  rows="15"></textarea>
                                         </div>
                                         <div class="rb-attach-buttons well well-sm">
-                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-photo"><i class="fa fa-picture-o fa-lg fa-fw"></i> 사진추가</a>
-                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-file"><i class="fa fa-paperclip fa-lg fa-fw"></i> 파일추가</a>
-                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-link"><i class="fa fa-globe fa-lg fa-fw"></i> 링크추가</a>
-                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-map"><i class="fa fa-map-marker fa-lg fa-fw"></i> 위치추가</a>
-                                            <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-video"><i class="fa fa-youtube-play fa-lg fa-fw"></i> 동영상 추가</a>
+                                            <div class="btn-group btn-group" role="group" aria-label="...">
+                                                <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-photo"><i class="fa fa-picture-o fa-lg fa-fw"></i> 사진추가</a>
+                                                <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-file"><i class="fa fa-paperclip fa-lg fa-fw"></i> 파일추가</a>
+                                                <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-link"><i class="fa fa-globe fa-lg fa-fw"></i> 링크추가</a>
+                                                <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-map"><i class="fa fa-map-marker fa-lg fa-fw"></i> 위치추가</a>
+                                                <a href="" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-attach-video"><i class="fa fa-youtube-play fa-lg fa-fw"></i> 동영상 추가</a>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -627,7 +629,6 @@
                                 위치목록
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -688,6 +689,10 @@
                     "|",
                     "guide"
                 ],
+
+                insertTexts: {
+                    image2: ["![캡션입니다. ](http://", ")"],
+                },
 
             });
 
