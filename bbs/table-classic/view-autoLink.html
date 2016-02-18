@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>BBS-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+        
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/classic.css">
+
+        <!-- BBS-style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/table-classic" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 col-lg-offset-1">
+
+                    <!-- 템플릿 시작 -->
+                    <section class="rb-bbs rb-bbs-view">
+
+                        <div class="rb-bbs-heading">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a role="button" data-profile="popover">
+                                        <img class="media-object" src="../../assets/img/noavatar-blue.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">킴스큐 오픈소스 프로젝트 운영 지침</h4>
+                                    <div class="rb-meta">
+                                        <ul class="list-inline">
+                                            <li>관리자</li>
+                                            <li class="rb-divider"></li>
+                                            <li>2015.06.05 16:39</li>
+                                            <li class="rb-divider"></li>
+                                            <li>조회 0</li>
+                                        </ul>
+                                    </div>                                    
+                                    <div class="rb-actions btn-toolbar">
+                                        <div class="btn-group rb-buttons" role="group" aria-label="...">
+                                            <a href="" class="btn btn-link btn-xs"><i class="fa fa-meh-o fa-lg fa-fw"></i> 신고</a>
+                                            <a href="" class="btn btn-link btn-xs"><i class="fa fa-print fa-lg fa-fw"></i> 인쇄</a>
+                                            <a href="" class="btn btn-link btn-xs"><i class="fa fa-star-o fa-lg fa-fw"></i> 스크랩</a>
+                                        </div>
+                                        <div class="btn-group btn-group-xs rb-resizer" role="group" aria-label="...">
+                                            <a class="rb-small btn btn-default hidden-xs">A</a>
+                                            <a class="rb-medium btn btn-default">A</a>
+                                            <a class="rb-large btn btn-default">A</a>
+                                            <a class="rb-larger btn btn-default">A</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="rb-bbs-body">
+                            ar
+                            <p>
+                            안녕하세요. 킴스큐 운영팀 입니다.
+                            rb2를 릴리즈 하며 kimsQ의 모든 소스코드는 github.com 을 통해서 관리하고 있습니다.
+                            관련하여 운영 가이드를 공지합니다.
+                            </p>
+
+                            <p>
+                            https://github.com/kimsQ/rb/wiki 
+                            </p>
+
+                           <p><a href="http://www.example.com">http://www.example.com</a></p>
+
+                           <p>https://github.com/</p>
+
+
+                            <p>관련하여 오늘 케르님의 rb1 코드제안이 있었습니다.</p>
+                            <p>PHP 5.4 이상과 Rb1 설치된 테스트 환경이 가능하신 분께서는 아래의 패치에 대한 테스트 후 피드백 요청 드립니다.</p>
+                        </div>
+
+                    </section>
+                    <!-- 템플릿 끝 -->
+                    
+
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script type="text/javascript">
+
+        // jquery.autolink.js
+        jQuery(function($) {
+            var re = /(?:(?=(?:http|https):)([a-zA-Z][-+.a-zA-Z\d]*):(?:((?:[-_.!~*'()a-zA-Z\d;?:@&=+$,]|%[a-fA-F\d]{2})(?:[-_.!~*'()a-zA-Z\d;\/?:@&=+$,\[\]]|%[a-fA-F\d]{2})*)|(?:(?:\/\/(?:(?:(?:((?:[-_.!~*'()a-zA-Z\d;:&=+$,]|%[a-fA-F\d]{2})*)@)?(?:((?:(?:(?:[a-zA-Z\d](?:[-a-zA-Z\d]*[a-zA-Z\d])?)\.)*(?:[a-zA-Z](?:[-a-zA-Z\d]*[a-zA-Z\d])?)\.?|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\[(?:(?:[a-fA-F\d]{1,4}:)*(?:[a-fA-F\d]{1,4}|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(?:(?:[a-fA-F\d]{1,4}:)*[a-fA-F\d]{1,4})?::(?:(?:[a-fA-F\d]{1,4}:)*(?:[a-fA-F\d]{1,4}|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))?)\]))(?::(\d*))?))?|((?:[-_.!~*'()a-zA-Z\d$,;:@&=+]|%[a-fA-F\d]{2})+))|(?!\/\/))(\/(?:[-_.!~*'()a-zA-Z\d:@&=+$,]|%[a-fA-F\d]{2})*(?:;(?:[-_.!~*'()a-zA-Z\d:@&=+$,]|%[a-fA-F\d]{2})*)*(?:\/(?:[-_.!~*'()a-zA-Z\d:@&=+$,]|%[a-fA-F\d]{2})*(?:;(?:[-_.!~*'()a-zA-Z\d:@&=+$,]|%[a-fA-F\d]{2})*)*)*)?)(?:\?((?:[-_.!~*'()a-zA-Z\d;\/?:@&=+$,\[\]]|%[a-fA-F\d]{2})*))?)(?:\#((?:[-_.!~*'()a-zA-Z\d;\/?:@&=+$,\[\]]|%[a-fA-F\d]{2})*))?)/img;
+
+            function makeHTML(textNode) {
+                var source = textNode.data;
+                return source.replace(re, function() {
+                    var url = arguments[0];
+                    var a = $('<a></a>').attr({'href': url, 'target': '_blank'}).text(url);
+                    return url.match(/^https?:\/\/$/) ? url : $('<div></div>').append(a).html();
+                });
+            };
+
+            function eachText(node, callback) {
+                $.each(node.childNodes, function() {
+                    if (this.nodeType != 8 && this.nodeName != 'A') {
+                        this.nodeType != 1 ? callback(this) : eachText(this, callback);
+                    }
+                });
+            };
+
+            $.fn.autolink = function() {
+                return this.each(function() {
+                    var queue = [];
+                    eachText(this, function(e) {
+                        var html = makeHTML(e);
+                        if (html != e.data) {
+                            queue.push([e, makeHTML(e)]);
+                        }
+                    });
+                    $.each(queue, function(i, x) {
+                        $(x[0]).replaceWith(x[1]);
+                    });
+                });
+            };
+        });
+
+        // autolink 적용
+        jQuery(function($) {
+            $(document.body).autolink();
+        });
+
+
+        </script>
+    </body>
+</html>
