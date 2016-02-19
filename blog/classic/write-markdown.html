@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+        <title>blog-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap-select -->
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-select-1.7.4/css/bootstrap-select.min.css">
+
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+        
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/classic.css">
+
+        <link href="../../assets/plugins/simplemde/1.9.0/simplemde.min.css" rel="stylesheet">
+
+
+        <style type="text/css">
+            .rb-editor {
+                border: none;
+                box-shadow: none;
+            }
+            .editor-toolbar a {
+                font-size: 18px;
+            }
+            .editor-toolbar.fullscreen {
+                z-index: 1010;
+                background: #f5f5f5;
+                color: #555;
+            }
+            .editor-toolbar.fullscreen a {
+                display: inline-block;
+                margin-right: 5px;
+            }
+
+            .editor-toolbar,
+            .editor-toolbar-buttons,
+            .editor-title,
+            .CodeMirror,
+
+            .editor-toolbar.fullscreen .fa-arrows-alt {
+                display: none;
+            }
+            .rb-editor-body.active .editor-title,
+            .rb-editor-body.active .editor-toolbar-buttons,
+            .editor-toolbar.fullscreen,
+            .CodeMirror.CodeMirror-fullscreen {
+                display: block;
+            }
+
+            .editor-toolbar.disabled-for-preview a:not(.no-disable) {
+                background: #eee;
+                color: #999!important
+            }
+            .editor-title {
+                position: absolute;
+                top: 50px;
+                left: 20%;
+                right: 0
+            }
+
+            .rb-editor-body.active .editor-toolbar-buttons {
+                position: absolute;
+                top: 8px;
+                right: 30px;
+                z-index: 1040
+            }
+
+            .editor-title .form-control {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                box-shadow: none;
+            }
+
+            .rb-editor .editor-meta,
+            .rb-editor .editor-preview-side,
+            .rb-editor .CodeMirror-fullscreen {
+                bottom: 30px;
+            }
+
+            .editor-preview-side {
+                border: none;
+            }
+
+            .editor-statusbar {
+                display: none;
+                width: 100%;
+                height: 30px;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                box-sizing: border-box;
+                background: #f5f5f5;
+                border: 0;
+                border-top: 1px solid #ddd;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                z-index: 19;  
+            }
+
+            .rb-editor-body.active .editor-statusbar {
+                display: block;
+                opacity: 1;
+            }
+
+
+            .editor-meta {
+                display: none;
+            }
+
+            .rb-editor-body.active .editor-meta  {
+                display: block;
+                background: #f5f5f5;
+                position: fixed!important;
+                top: 50px;
+                left: 0.00%;
+                height: 100%;
+                width: 20%;
+                z-index: 9;
+                border-right: 1px solid #ddd
+            }
+
+            .editor-preview-side,
+            .CodeMirror-sided {
+                width: 40%!important;
+            }
+
+            .CodeMirror-fullscreen {
+                background: #fff;
+                position: fixed!important;
+                left: 20%;
+                right: 0;
+                bottom: 0;
+                height: auto;
+                z-index: 9;
+                border-top: none;
+                border-left: none;
+                border-bottom: none;
+            }
+
+            .editor-preview-active-side,
+            .CodeMirror-fullscreen {
+                top: 96px;
+            }
+
+.editor-meta .panel {
+    margin-bottom: 0;
+    border-left: none;
+    border-right: none
+}
+.editor-meta .panel-group .panel {
+    margin-top: -1px;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.editor-meta .panel-group .panel-heading {
+    padding: 0;
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+}
+
+.editor-meta .panel-group .panel-heading a {
+    display: block;
+    padding: 15px;
+    color: #444;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.editor-meta .panel-group .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #999;
+}
+
+.editor-meta .panel-group .panel-heading a:hover {
+    text-decoration: none;
+    background-color: #FAF8F8
+}
+
+.editor-meta .panel-group .panel-heading a:focus {
+    text-decoration: none;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.editor-meta .panel-group .panel-heading .collapsed {
+    background-color: #f5f5f5;
+    color: #777;
+    font-weight: normal;
+}
+
+.editor-meta .panel-group .panel-heading .fa-chevron {
+    color: #999
+}
+
+.editor-meta .panel-group .panel-heading .collapsed .fa-chevron:before {
+    content: "\f078";
+}
+.editor-meta .panel-group .panel-heading .fa-chevron:before {
+    content: "\f077";
+}
+
+
+/*attach list*/
+
+.rb-editor .editor-meta > .list-group-item {
+    background-color: #FAFAFA
+}
+
+.rb-editor .editor-meta .list-group-item .rb-size {
+    padding: 2px 5px;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1;
+    color: #999;
+    background-color: #eee;
+    border-radius: 20px;
+    text-shadow: 0 1px 0 #fff;
+    font-family: Helvetica, arial;
+}
+
+.rb-editor .editor-meta .list-group-item a {
+    color: #666
+}
+
+.rb-editor .editor-meta .list-group-item .list-group-item-text {
+    line-height: 1.7;
+}
+
+.rb-editor .editor-meta .list-group-item.rb-hidden .list-group-item-text {
+    color: #B7B7B7;
+}
+
+.rb-editor .editor-meta .list-group-item.rb-hidden .btn {
+    color: #666;
+}
+
+.rb-editor .rb-attach-photo {
+    margin-bottom: 0
+}
+.rb-editor .rb-attach-photo .list-group-item {
+    line-height: 48px
+}
+.rb-editor .rb-attach-photo .list-group-item .media {
+    margin-top: 0;
+}
+.rb-editor .editor-meta-file {
+    margin-top: -1px
+}
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/bbs/table-classic" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <button class="btn btn-default" data-plugin="simplemde">글쓰기</button>
+
+            <form>
+                <div class="rb-editor">
+                    <div class="rb-editor-body">
+                        <textarea class="form-control" rows="1" style="display: none"></textarea>
+                        <div class="editor-toolbar-buttons">
+                            <a href="list.html" class="btn btn-link">취소</a>
+                            <button class="btn btn-link" data-dismiss="simplemde"><i class="fa fa-arrow-left fa-fw"></i> 간단작성</button>
+                            <button class="btn btn-default" type="submit"><i class="fa fa-floppy-o fa-fw"></i> 저장</button>
+                            
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-check fa-fw"></i> 발행</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">예약발행</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">삭제</a></li>
+                              </ul>
+                            </div>
+
+                        </div>
+                        <div class="editor-title">
+                            <input type="text" class="form-control input-lg" placeholder="제목을 입력해주세요">
+                        </div>
+                        <div class="editor-meta">
+
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+
+
+                                <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img class="media-object" src="http://placehold.it/36x36/" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <h4 class="media-heading">블로그 제목</h4>
+                                    <span class="label label-warning">임시저장 중</span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-photo">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#attach-photo" aria-expanded="false" aria-controls="attach-photo">
+                                      <i class="fa fa-picture-o fa-fw"></i> 사진추가 <span class="badge">7</span>  <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="attach-photo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-photo">
+
+                                    <ul class="list-group rb-attach-photo">
+                                        <li class="list-group-item">
+                                            <span class="pull-right">
+                                                <div class="btn-group btn-group-xs">
+                                                    <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                        <li><a href="#">대표이미지 설정</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-photo-meta" data-filename="국화"  data-filetype="jpg" data-caption="국화 사진 캡션 입니다.">정보수정</a></li>
+                                                        <li><a href="#">삭제</a></li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="http://placehold.it/48x48/" alt="">
+                                                </a>
+                                                <div class="media-body">
+                                                    <span class="label label-default">대표</span>
+                                                    <a href="">국화.jpg</a>
+                                                    <span class="rb-size">446.1KB</span> 
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="pull-right">
+                                                <div class="btn-group btn-group-xs">
+                                                    <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                        <li><a href="#">대표이미지 설정</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal-attach-photo-meta" data-filename="사막"  data-filetype="gif" data-caption="사막사진 캡션 입니다.">정보수정</a></li>
+                                                        <li><a href="#">삭제</a></li>
+                                                        <li class="divider"></li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="http://placehold.it/48x48/" alt="">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="">사막.jpg</a>
+                                                    <span class="rb-size">446.1KB</span> 
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button type="button" class="btn btn-link btn-block"><i class="fa fa-upload fa-fw"></i> 업로드</button>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                              </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-file">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#attach-file" aria-expanded="false" aria-controls="attach-file">
+                                      <i class="fa fa-file fa-fw"></i> 파일첨부 <span class="badge">7</span>  <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="attach-file" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-file">
+
+                                    <!-- 첨부파일 시작 -->
+                                    <ul class="list-group rb-attach rb-attach-file">
+                                        <li class="list-group-item">
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="" class="list-group-item-text">STP-SWOT 분석-2010.05.hwp</a> 
+                                            <span class="rb-size">446.1KB</span>
+                                            <div class="btn-group btn-group-xs pull-right">
+                                                <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="STP-SWOT 분석-2010.05"  data-filetype="hwp" data-caption="캡션 입니다.">정보수정</a></li>
+                                                    <li><a href="#">본문삽입</a></li>
+                                                    <li><a href="#">숨김</a></li>
+                                                    <li><a href="#">삭제</a></li>
+                                                    <li class="divider"></li>
+                                                    <li role="presentation" class="dropdown-header">순서조정</li>
+                                                    <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
+                                                    <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item rb-hidden">
+                                            <span class="label label-default">숨김</span> 
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="" class="list-group-item-text">131227-포상 공감대상자 명단(공개검증).xlsx</a> 
+                                            <span class="rb-size">446.1KB</span>
+                                            <div class="btn-group btn-group-xs pull-right">
+                                                <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="31227-포상 공감대상자 명단(공개검증)"  data-filetype="xlsx" data-caption="캡션 입니다.">정보수정</a></li>
+                                                    <li><a href="#">본문삽입</a></li>
+                                                    <li><a href="#">보이기</a></li>
+                                                    <li><a href="#">삭제</a></li>
+                                                    <li class="divider"></li>
+                                                    <li role="presentation" class="dropdown-header">순서조정</li>
+                                                    <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
+                                                    <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="" class="list-group-item-text">공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서.pdf</a> 
+                                            <span class="rb-size">446.1KB</span> 
+                                            <div class="btn-group btn-group-xs pull-right">
+                                                <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="공유저작물 개방형 협업 기반 조성 및 포털서비스 운영 제안서"  data-filetype="pdf" data-caption="캡션 입니다.">정보수정</a></li>
+                                                    <li><a href="#">본문삽입</a></li>
+                                                    <li><a href="#">숨김</a></li>
+                                                    <li><a href="#">삭제</a></li>
+                                                    <li class="divider"></li>
+                                                    <li role="presentation" class="dropdown-header">순서조정</li>
+                                                    <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
+                                                    <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.zip</a> 
+                                            <span class="rb-size">446.1KB</span>
+                                            <div class="btn-group btn-group-xs pull-right">
+                                                <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령"  data-filetype="zip" data-caption="캡션 입니다.">정보수정</a></li>
+                                                    <li><a href="#">본문삽입</a></li>
+                                                    <li><a href="#">숨김</a></li>
+                                                    <li><a href="#">삭제</a></li>
+                                                    <li class="divider"></li>
+                                                    <li role="presentation" class="dropdown-header">순서조정</li>
+                                                    <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
+                                                    <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-floppy-o fa-fw"></i> 
+                                            <a href="" class="list-group-item-text">사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령.docx</a> 
+                                            <span class="rb-size">446.1KB</span> 
+                                            <div class="btn-group btn-group-xs pull-right">
+                                                <button type="button" class="btn btn-default" data-toggle="clipboard" data-clipboard-text="![](http://)"><i class="fa fa-code fa-lg"></i></button>
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal-attach-file-meta" data-filename="사업계획서(웹_접근성_품질인증기관_지정관련)_작성_요령"  data-filetype="docx" data-caption="캡션 입니다.">정보수정</a></li>
+                                                    <li><a href="#">본문삽입</a></li>
+                                                    <li><a href="#">숨김</a></li>
+                                                    <li><a href="#">삭제</a></li>
+                                                    <li class="divider"></li>
+                                                    <li role="presentation" class="dropdown-header">순서조정</li>
+                                                    <li><a href="#"><i class="fa fa-caret-up fa-lg"></i> 위로</a></li>
+                                                    <li><a href="#"><i class="fa fa-caret-down fa-lg"></i> 아래로</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button type="button" class="btn btn-link btn-block"><i class="fa fa-upload fa-fw"></i> 업로드</button>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                              </div>
+
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-link">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#attach-link" aria-expanded="true" aria-controls="attach-link">
+                                      <i class="fa fa-globe fa-fw"></i> 링크 <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="attach-link" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-link">
+                                  <div class="panel-body">
+                                    <p><button type="button" class="btn btn-link btn-block" data-toggle="modal" data-target="#modal-attech-link">추가하기</button></p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-link">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#attach-video" aria-expanded="true" aria-controls="attach-video">
+                                      <i class="fa fa-file-video-o fa-fw"></i> 동영상 <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="attach-video" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-link">
+                                  <div class="panel-body">
+                                    <p><button type="button" class="btn btn-link btn-block" data-toggle="modal" data-target="#modal-attech-video">추가하기</button></p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-link">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#attach-map" aria-expanded="true" aria-controls="attach-map">
+                                      <i class="fa fa-map-marker fa-fw"></i> 위치 <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="attach-map" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-link">
+                                  <div class="panel-body">
+                                    <p><button type="button" class="btn btn-link btn-block" data-toggle="modal" data-target="#modal-attech-map">추가하기</button></p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-category">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#meta-category" aria-expanded="true" aria-controls="meta-category">
+                                      <i class="fa fa-folder-open fa-fw"></i> 카테고리 <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="meta-category" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-category">
+                                  <div class="panel-body">
+                                    <select class="selectpicker" title='선택하세요'>
+                                        <option data-subtext="(1)">카테고리1</option>
+                                        <option data-subtext="(23)">카테고리2</option>
+                                        <option data-subtext="(21)">카테고리3</option>
+                                        <option data-subtext="(11)">카테고리4</option>
+                                        <option data-subtext="(3)">카테고리5</option>
+                                        <option data-subtext="(2)">카테고리6</option>
+                                    </select> 
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-featured">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#meta-featured" aria-expanded="false" aria-controls="meta-featured">
+                                      <i class="fa fa-align-left fa-fw"></i> 요약  <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="meta-featured" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-featured">
+                                  <div class="panel-body">
+                                    <textarea class="form-control" rows="5">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard </textarea>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-tag">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#meta-tag" aria-expanded="true" aria-controls="meta-tag">
+                                      <i class="fa fa-tags fa-fw"></i> 태그 <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="meta-tag" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-tag">
+                                  <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-share">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#meta-share" aria-expanded="false" aria-controls="meta-share">
+                                      <i class="fa fa-share-alt fa-fw"></i> 공유  <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="meta-share" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-share">
+                                  <div class="panel-body">
+
+                                    <p>소셜미디어 서비스 공유</p>
+
+
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        공유버튼 출력
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        좋아요 버튼 출력
+                                      </label>
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading-options">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#post-options" aria-expanded="false" aria-controls="collapseThree">
+                                      <i class="fa fa-ellipsis-h fa-fw"></i> 기타설정  <i class="fa fa-chevron pull-right"></i>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="post-options" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-options">
+                                  <div class="panel-body">
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        공지글 설정
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        비밀글 설정
+                                      </label>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-attech-link" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">링크추가</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-attech-video" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">동영상 추가</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-attech-map" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">위치 추가</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap-selcct js -->
+        <script src="../../assets/plugins/bootstrap-select-1.7.4/js/bootstrap-select.min.js"></script>
+
+        <!-- Common js -->
+        <script src="../../assets/js/common.js"></script>
+
+        <!-- bbs js -->
+        <script src="./script.js"></script>
+
+
+        <!-- simplemde-markdown-editor: https://github.com/NextStepWebs/simplemde-markdown-editor -->
+        <script src="../../assets/plugins/simplemde/1.9.0/simplemde.min.js"></script>
+
+
+        <script type="text/javascript">
+
+            $('[data-plugin=simplemde]').on('click',function(){
+                    simplemde.toggleSideBySide();
+                     $('.rb-editor-body').addClass('active');
+                     $(".editor-toolbar a").attr("data-toggle","tooltip");
+            });
+
+            $('[data-dismiss=simplemde]').on('click',function(){
+                    simplemde.toggleFullScreen();
+            });
+
+            var simplemde = new SimpleMDE({
+                element: $(".rb-editor-body textarea")[0],
+                autosave: {
+                    enabled: true,
+                    uniqueId: "",
+                    delay: 1000,
+                },
+                placeholder: "내용을 입력해주세요...",
+                spellChecker: false,
+                // toolbar: ["bold", "italic", "heading", "|", "quote"],
+                toolbar: ["bold", "italic", "heading","|",
+                    "code",
+                    "quote",
+                    "unordered-list",
+                    "ordered-list",
+                     "|", 
+                     "link",
+                     "image",
+                     "table",
+                     "horizontal-rule",
+                    "|", 
+                    "preview",
+                    "side-by-side",
+                    "fullscreen",
+                    "|",
+                    "guide"
+                ],
+
+            });
+
+
+            // 첨부파일 메타정보 수정 http://getbootstrap.com/javascript/#modals-related-target
+            $('.rb-modal-attach-meta').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var filename = button.data('filename') // Extract info from data-* attributes
+                var filetype = button.data('filetype') // Extract info from data-* attributes
+                var caption = button.data('caption') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this)
+                modal.find('.modal-body .input-group-addon').text('.'+filetype)
+                modal.find('.modal-body input').val(filename)
+                modal.find('.modal-body textarea').val(caption)
+            })
+
+
+
+            $('[data-toggle=clipboard]').tooltip({
+                container: 'body',
+                trigger: 'hover',
+                title : '삽입코드 복사'
+            });
+
+            $('[data-toggle=clipboard]').on('click',function(){
+                $(this).attr('data-original-title', '복사되었습니다.')
+                $(this).tooltip('show');
+                $(this).attr('data-original-title', '삽입코드 복사')
+            });
+        </script>
+
+
+
+
+
+    </body>
+</html>
