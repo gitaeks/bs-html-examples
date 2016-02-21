@@ -316,7 +316,8 @@ html, body {
 
 .rb-editor .rb-attach-photo .list-group-item,
 .rb-editor .rb-attach-file .list-group-item {
-    padding-right: 65px
+    padding-right: 65px;
+    background-color: #fff
 }
 
 .rb-editor .rb-attach-photo .list-group-item .btn-group,
