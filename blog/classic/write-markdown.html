@@ -48,8 +48,6 @@
 
         <div class="container">
 
-            <button class="btn btn-default" data-plugin="simplemde">고급 작성모드</button>
-
             <form>
                 <div class="rb-editor">
                     <div class="rb-editor-body">
@@ -671,7 +669,7 @@
 
         <script type="text/javascript">
 
-            $('[data-plugin=simplemde]').on('click',function(){
+           $( document ).ready(function() {
                     simplemde.toggleSideBySide();
                      $('.rb-editor-body').addClass('active');
                      // $('.editor-preview-active').addClass('rb-article');
