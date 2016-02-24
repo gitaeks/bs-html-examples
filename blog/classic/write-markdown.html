@@ -20,6 +20,8 @@
 
         <link rel="stylesheet" href="../../assets/plugins/simplemde/1.9.0/simplemde.min.css">
 
+        <link rel="stylesheet" href="../../assets/plugins/bootstrap-tagsinput/0.7.1/bootstrap-tagsinput.css">
+
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./article.css">
 
@@ -151,7 +153,8 @@
                                         </div>
                                         <div id="meta-tag" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-tag">
                                             <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                                                <input type="text" class="form-control" id="meta-tag-content" data-role="tagsinput" value="Amsterdam,Washington,Sydney,Beijing,Cairo">
+                                                <span id="helpBlock" class="help-block">콤마(,)로 구분하여 입력해 주세요.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -657,6 +660,8 @@
         <!-- bootstrap-maxlength : https://github.com/mimo84/bootstrap-maxlength/ -->
         <script src="../../assets/plugins/bootstrap-maxlength/1.5.5/bootstrap-maxlength.min.js"></script>
 
+        <!-- bootstrap-tagsinput : https://github.com/bootstrap-tagsinput/bootstrap-tagsinput -->
+        <script src="../../assets/plugins/bootstrap-tagsinput/0.7.1/bootstrap-tagsinput.min.js"></script>
 
 
         <script type="text/javascript">
@@ -861,6 +866,11 @@
             threshold: 10,
             warningClass: "label label-info",
             limitReachedClass: "label label-danger"
+        });
+
+        // bootstrap-tagsinput : https://github.com/bootstrap-tagsinput/bootstrap-tagsinput
+        $('#meta-tag-content').tagsinput({
+            maxChars: 8
         });
 
 

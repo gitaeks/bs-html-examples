@@ -341,6 +341,16 @@ html, body {
     position: fixed;
 }
 
+
+/*bootstrap-tagsinput*/
+.bootstrap-tagsinput {
+    width: 100%
+}
+.bootstrap-tagsinput .tag {
+    font-size: 100%
+}
+
+
 /*Bootstrap Button Select : http://bootsnipp.com/snippets/yvAp8*/
 
 .btn-select {
