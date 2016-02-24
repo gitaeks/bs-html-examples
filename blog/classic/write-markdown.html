@@ -173,7 +173,7 @@
                                         </div>
                                         <div id="meta-description" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-description">
                                             <div class="panel-body">
-                                                <textarea class="form-control" rows="5">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard </textarea>
+                                                <textarea class="form-control" rows="5" id="meta-description-content"  maxlength="155"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -654,6 +654,10 @@
         <!-- bootstrap-treeview : https://github.com/jonmiles/bootstrap-treeview -->
         <script src="../../assets/plugins/bootstrap-treeview/1.2.0/bootstrap-treeview.min.js"></script>
 
+        <!-- bootstrap-maxlength : https://github.com/mimo84/bootstrap-maxlength/ -->
+        <script src="../../assets/plugins/bootstrap-maxlength/1.5.5/bootstrap-maxlength.min.js"></script>
+
+
 
         <script type="text/javascript">
 
@@ -850,6 +854,14 @@
 
         });
 
+
+        // bootstrap-maxlength : https://github.com/mimo84/bootstrap-maxlength/
+        $('#meta-description-content').maxlength({
+            alwaysShow: true,
+            threshold: 10,
+            warningClass: "label label-info",
+            limitReachedClass: "label label-danger"
+        });
 
 
         </script>
