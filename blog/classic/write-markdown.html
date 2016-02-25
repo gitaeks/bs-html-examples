@@ -102,7 +102,7 @@
                                 </ul>
                             </a>
                         </div>
-                        <div class="editor-meta rb-form">
+                        <div class="editor-meta">
 
                             <ul class="nav nav-pills nav-justified" role="tablist">
                                 <li role="presentation" class="active">
@@ -184,7 +184,7 @@
                                     <div class="panel panel-default">
 
                                         <div class="panel-heading" role="tab" id="heading-share">
-                                            <a class="media collapsed" role="button" data-toggle="collapse" data-parent="#meta-accordion" href="#meta-share">
+                                            <a class="media collapsed" role="button" data-toggle="collapse" data-parent="#meta-accordion" href="#post-share">
                                                 <div class="media-left media-middle">
                                                     <i class="media-object fa fa-share-alt fa-lg"></i> 
                                                 </div>
@@ -197,21 +197,16 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div id="meta-share" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-share">
+                                        <div id="post-share" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-share">
                                             <div class="panel-body">
                                                 <p>소셜미디어 서비스 공유</p>
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" value="">
-                                                        공유버튼 출력
+                                                        <input type="checkbox" value="" checked>
+                                                        링크공유 버튼 출력
                                                     </label>
                                                 </div>
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" value="">
-                                                        좋아요 버튼 출력
-                                                    </label>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -220,7 +215,7 @@
                                         <div class="panel-heading" role="tab" id="heading-format">
                                             <a class="media collapsed" role="button" data-toggle="collapse" data-parent="#meta-accordion" href="#post-format">
                                                 <div class="media-left media-middle">
-                                                    <i class="media-object fa fa-check-square-o fa-lg"></i> 
+                                                    <i class="media-object fa fa-puzzle-piece fa-lg"></i> 
                                                 </div>
                                                 <div class="media-body">
                                                     <h4 class="media-heading">컨텐츠 포맷</h4>
@@ -235,38 +230,69 @@
                                             <div class="panel-body">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                        기본형
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="" checked>
+                                                        <i class="fa fa-align-left"></i> 기본형
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                        이미지
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="">
+                                                        <i class="fa fa-picture-o"></i> 이미지
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                        비디오
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="">
+                                                        <i class="fa fa-file-video-o"></i> 비디오
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                        인용문
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="">
+                                                        <i class="fa fa-quote-left"></i> 인용문
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                        링크형
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="">
+                                                        <i class="fa fa-globe"></i> 링크형
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="heading-author">
+                                            <a class="media collapsed" role="button" data-toggle="collapse" data-parent="#meta-accordion" href="#post-author">
+                                                <div class="media-left media-middle">
+                                                    <i class="media-object fa fa-user fa-lg"></i> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">필자</h4>
+                                                    홍길동 (test@redblock.co.kr)
+                                                </div>
+                                                <div class="media-right media-middle">
+                                                    <i class="fa fa-chevron"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="post-author" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-author">
+                                            <div class="panel-body">
+    
+
+                                                <div class="form-group">
+                                                    <label>필자</label>
+                                                    <select name="author" class="form-control">
+                                                        <option value="100" selected="selected">관리자 (live@kimsq.com)</option>
+                                                        <option value="147">홍길동 (test@redblock.co.kr)</option>
+                                                    </select>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading-options">
                                             <a class="media collapsed" role="button" data-toggle="collapse" data-parent="#meta-accordion" href="#post-options">
@@ -284,18 +310,36 @@
                                         </div>
                                         <div id="post-options" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-options">
                                             <div class="panel-body">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" value="">
-                                                        공지글 설정
-                                                    </label>
+
+
+                                                <div class="form-group">
+                                                    <label>게시물 속성</label>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            공지글 설정
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            비밀글 설정
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="" checked>
+                                                            댓글포함
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="" checked>
+                                                            좋아요(추천) 버튼 출력
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" value="">
-                                                        비밀글 설정
-                                                    </label>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -858,7 +902,6 @@
             }
 
         });
-
 
         // bootstrap-maxlength : https://github.com/mimo84/bootstrap-maxlength/
         $('#meta-description-content').maxlength({
