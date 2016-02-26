@@ -489,7 +489,7 @@
                                                 </li>
                                             </ul>
                                             <div class="panel-body">
-                                                <button type="button" class="btn btn-link btn-block" data-role="attach-handler-photo" data-type="photo">
+                                                <button type="button" class="btn btn-link btn-block" data-role="attach-handler-photo" data-type="photo" data-loading-text="업로드 중...">
                                                     <i class="fa fa-upload fa-fw"></i> 업로드
                                                 </button>
                                             </div>
@@ -626,12 +626,12 @@
                                                         </ul>
                                                     </div>
                                                 </li>
-                                                <li class="list-group-item">
-                                                    <button type="button" class="btn btn-link btn-block" data-role="attach-handler-file" data-type="file">
-                                                        <i class="fa fa-upload fa-fw"></i> 업로드
-                                                    </button>
-                                                </li>
                                             </ul>
+                                            <div class="panel-body">
+                                                <button type="button" class="btn btn-link btn-block" data-role="attach-handler-file" data-type="photo" data-loading-text="업로드 중...">
+                                                    <i class="fa fa-upload fa-fw"></i> 업로드
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -992,6 +992,22 @@
             maxChars: 8
         });
 
+
+        $('[data-role=attach-handler-photo]').on('click', function () {
+            var btn = $(this);
+            btn.button('loading');
+            setTimeout(function () {
+                btn.button('reset');
+            }, 1000)
+        })
+
+        $('[data-role=attach-handler-file]').on('click', function () {
+            var btn = $(this);
+            btn.button('loading');
+            setTimeout(function () {
+                btn.button('reset');
+            }, 1000)
+        })
 
         </script>
 
