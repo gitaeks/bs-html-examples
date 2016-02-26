@@ -59,23 +59,62 @@
                             <h1>블로그 제목</h1>
                         </div>
                         <div class="editor-toolbar-buttons">
-                            <a href="list.html" class="btn btn-link">취소</a>
-                            <button class="btn btn-link" data-dismiss="simplemde">간단작성</button>
-                            <button class="btn btn-default" type="button"><i class="fa fa-floppy-o fa-fw"></i> 저장</button>
-                            
+
+                            <span class="label label-default">10분전 저장 됨</span>
+                            <a href="list.html" class="btn btn-link" title="저장하기 않고 목록으로 이동" data-toggle="tooltip">취소</a>
+
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default"><i class="fa fa-floppy-o fa-fw"></i> 저장</button>
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">저장 후 임시보관함 이동</a></li>
+                                <li><a href="#">저장 후 목록 이동</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">삭제하기</a></li>
+                              </ul>
+                            </div>
+
                             <!-- Split button -->
                             <div class="btn-group">
-                              <button type="button" class="btn btn-primary"><i class="fa fa-check fa-fw"></i> 발행</button>
+                              <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane fa-fw"></i> 발행</button>
                               <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="caret"></span>
                                 <span class="sr-only">Toggle Dropdown</span>
                               </button>
                               <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="#">예약발행</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">예약발행 설정</a></li>
+                              </ul>
+                            </div>
+
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-check fa-fw"></i> 승인요청</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">예약발행 설정</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">삭제</a></li>
+                                <li><a href="#">삭제하기</a></li>
+                              </ul>
+                            </div>
+
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-clock-o fa-fw"></i> 발행  <span class="badge">예약</span></button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">예약발행 취소</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">2016-02-26 13:15 발행 예약</li>
+                                <li><a href="#">예약발행 설정</a></li>
                               </ul>
                             </div>
                         </div>
@@ -293,6 +332,39 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="heading-publish">
+                                            <a class="media collapsed" role="button" data-toggle="collapse" data-parent="#meta-accordion" href="#post-publish">
+                                                <div class="media-left media-middle">
+                                                    <i class="media-object fa fa-user fa-lg"></i> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">발행</h4>
+                                                    즉시발행
+                                                </div>
+                                                <div class="media-right media-middle">
+                                                    <i class="fa fa-chevron"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="post-publish" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-author">
+                                            <div class="panel-body">
+    
+
+                                                <div class="form-group">
+                                                    <label>예약설정</label>
+                                                    <select name="author" class="form-control">
+                                                        <option value="100" selected="selected">관리자 (live@kimsq.com)</option>
+                                                        <option value="147">홍길동 (test@redblock.co.kr)</option>
+                                                    </select>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading-options">
                                             <a class="media collapsed" role="button" data-toggle="collapse" data-parent="#meta-accordion" href="#post-options">
@@ -415,10 +487,12 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="list-group-item">
-                                                    <button type="button" class="btn btn-link btn-block"><i class="fa fa-upload fa-fw"></i> 업로드</button>
-                                                </li>
                                             </ul>
+                                            <div class="panel-body">
+                                                <button type="button" class="btn btn-link btn-block" data-role="attach-handler-photo" data-type="photo">
+                                                    <i class="fa fa-upload fa-fw"></i> 업로드
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -553,7 +627,9 @@
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item">
-                                                    <button type="button" class="btn btn-link btn-block"><i class="fa fa-upload fa-fw"></i> 업로드</button>
+                                                    <button type="button" class="btn btn-link btn-block" data-role="attach-handler-file" data-type="file">
+                                                        <i class="fa fa-upload fa-fw"></i> 업로드
+                                                    </button>
                                                 </li>
                                             </ul>
                                         </div>
