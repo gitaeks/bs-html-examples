@@ -122,27 +122,36 @@
                             <input type="text" class="form-control input-lg" placeholder="제목을 입력해주세요">
                         </div>
                         <div class="editor-emulator">
-                            <button class="btn btn-link" type="button" data-toggle="button" title="데스크탑 보기"><i class="fa fa-desktop fa-lg"></i></button>
-                            <button class="btn btn-link" type="button" title="세로방향"><i class="fa fa-repeat fa-lg"></i></button>
-                            <button class="btn btn-link" type="button" disabled="disabled" title="화면 초기화"><i class="fa fa-ban fa-lg"></i></button>
+                            
+                            <div class="btn-group" data-toggle="buttons" data-preview="orientation" style="display: none">
+                                <label class="btn btn-default active" data-orientation="portrait">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 세로방향
+                                </label>
+                                <label class="btn btn-default" data-orientation="landscape">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 가로방향
+                                </label>
+                            </div>
+
+                            <button class="btn btn-link" type="button" data-preview="reset" data-toggle="tooltip" title="화면 초기화" style="display: none"><i class="fa fa-ban fa-lg"></i></button>
+
                             <a class="btn btn-default btn-select">
-                                <input type="hidden" class="btn-select-input" id="" name="" value="" />
-                                <span class="btn-select-value">모바일 기기를 선택하세요</span>
+                                <span class="btn-select-value">기기를 선택하세요</span>
                                 <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
                                 <ul>
-                                    <li data-value="360*640">Galaxy Note 2/3/4</li>
-                                    <li data-value="400*640">Galaxy Note 1</li>
-                                    <li data-value="360*640">Galaxy S 3/4/5/6</li>
-                                    <li data-value="320*533">Galaxy S 1/2</li>
-                                    <li data-value="414*736">iPhone 6+</li>
-                                    <li data-value="375*667">iPhone 6</li>
-                                    <li data-value="320*568">iPhone 5</li>
-                                    <li data-value="320*480">iPhone 3GS/4</li>
+                                    <li data-preview="emulator" data-width="360" data-height="640">Galaxy Note 2/3/4</li>
+                                    <li data-preview="emulator" data-width="400" data-height="640">Galaxy Note 1</li>
+                                    <li data-preview="emulator" data-width="360" data-height="640">Galaxy S 3/4/5/6</li>
+                                    <li data-preview="emulator" data-width="320" data-height="533">Galaxy S 1/2</li>
+                                    <li data-preview="emulator" data-width="414" data-height="736">iPhone 6+</li>
+                                    <li data-preview="emulator" data-width="375" data-height="667">iPhone 6</li>
+                                    <li data-preview="emulator" data-width="320" data-height="568">iPhone 5</li>
+                                    <li data-preview="emulator" data-width="360" data-height="480">iPhone 3GS/4</li>
+                                    <li data-preview="emulator" data-width="780" data-height="780" data-emulator="desktop">Desktop</li>
                                 </ul>
                             </a>
-                        </div>
-                        <div class="editor-meta">
 
+                        </div>
+                        <div class="editor-meta rb-scrollbar">
                             <div class="editor-meta-header">
                                 <ul class="nav nav-pills nav-justified" role="tablist">
                                     <li role="presentation" class="active">
@@ -788,12 +797,10 @@
         <script type="text/javascript">
 
            $( document ).ready(function() {
-                    simplemde.toggleSideBySide();
-                     $('.rb-editor-body').addClass('active');
-                     // $('.editor-preview-active').addClass('rb-article');
-                     $('.editor-preview-side').addClass('rb-article');
-                     $(".editor-toolbar a").attr("data-toggle","tooltip");
-
+                simplemde.toggleSideBySide();
+                $('.rb-editor-body').addClass('active');
+                $('.editor-preview-side').addClass('rb-article');
+                $(".editor-toolbar a").attr("data-toggle","tooltip");
             });
 
 
@@ -869,7 +876,6 @@
             $(".btn-select").each(function (e) {
                 var value = $(this).find("ul li.selected").html();
                 if (value != undefined) {
-                    $(this).find(".btn-select-input").val(value);
                     $(this).find(".btn-select-value").html(value);
                 }
             });
@@ -883,7 +889,6 @@
                     var target = $(e.target);
                     target.addClass("selected").siblings().removeClass("selected");
                     var value = target.html();
-                    $(this).find(".btn-select-input").val(value);
                     $(this).find(".btn-select-value").html(value);
                 }
                 ul.hide();
@@ -905,8 +910,50 @@
             }
         });
 
+        $('[data-preview=emulator]').on('click',function(){
+            var p_width =  $(this).data('width'),
+                p_height =  $(this).data('height'),
+                t_width =  p_width + 280;
 
+            $('.editor-preview-side').css("width",p_width).css("height",p_height);
+            $('.CodeMirror-sided').css({ 'width': 'calc(100% - ' + t_width+ 'px)' });
+            $('[data-preview=reset]').css("display","inline-block");
+            $('[data-preview=orientation]').css("display","inline-block");
+            $('[data-orientation=portrait]').attr("data-width",p_width).attr("data-height",p_height).addClass("active");
+            $('[data-orientation=landscape]').attr("data-width",p_height).attr("data-height",p_width).removeClass("active");
+        });
 
+        $('[data-emulator=desktop]').on('click',function(){
+            $('[data-preview=orientation]').css("display","none");
+        });
+
+        $('[data-orientation=landscape]').on('click',function(){
+            var p_width =  $(this).data('width'),
+                p_height =  $(this).data('height'),
+                t_width =  p_width + 280;
+
+            $('.editor-preview-side').css("width",p_width).css("height",p_height);
+            $('.CodeMirror-sided').css({ 'width': 'calc(100% - ' + t_width+ 'px)' });
+        });
+
+        $('[data-orientation=portrait]').on('click',function(){
+            var p_width =  $(this).data('width'),
+                p_height =  $(this).data('height'),
+                t_width =  p_width + 280;
+
+            $('.editor-preview-side').css("width",p_width).css("height",p_height);
+            $('.CodeMirror-sided').css({ 'width': 'calc(100% - ' + t_width+ 'px)' });
+        });
+
+        $('[data-preview=reset]').on('click',function(){
+            $('.editor-preview-side').css("width","calc(50% - 140px)").css("height","");
+            $('.CodeMirror-sided').css("width","calc(50% - 140px)").css("height","");
+            $('[data-preview=reset]').css("display","none");
+            $('[data-preview=orientation]').css("display","none");
+            $('.btn-select-value').html("기기를 선택해주세요.");
+            $('[data-orientation=portrait]').addClass("active");
+            $('[data-orientation=landscape]').removeClass("active");
+        });
 
 
         // https://github.com/jonmiles/bootstrap-treeview
@@ -992,7 +1039,6 @@
         $('#meta-tag-content').tagsinput({
             maxChars: 8
         });
-
 
         $('[data-role=attach-handler-photo]').on('click', function () {
             var btn = $(this);
