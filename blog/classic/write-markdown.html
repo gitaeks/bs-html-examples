@@ -123,30 +123,30 @@
                         </div>
                         <div class="editor-emulator">
                             
-                            <div class="btn-group" data-toggle="buttons" data-preview="orientation" style="display: none">
-                                <label class="btn btn-default active" data-orientation="portrait">
+                            <div class="btn-group" data-toggle="buttons" data-role="preview-orientation" style="display: none">
+                                <label class="btn btn-default active" data-role="orientation-portrait">
                                     <input type="radio" name="options" id="option1" autocomplete="off" checked> 세로방향
                                 </label>
-                                <label class="btn btn-default" data-orientation="landscape">
+                                <label class="btn btn-default" data-role="orientation-landscape">
                                     <input type="radio" name="options" id="option2" autocomplete="off"> 가로방향
                                 </label>
                             </div>
 
-                            <button class="btn btn-link" type="button" data-preview="reset" data-toggle="tooltip" title="화면 초기화" style="display: none"><i class="fa fa-ban fa-lg"></i></button>
+                            <button class="btn btn-link" type="button" data-role="preview-reset" data-toggle="tooltip" title="화면 초기화" style="display: none"><i class="fa fa-ban fa-lg"></i></button>
 
                             <a class="btn btn-default btn-select">
                                 <span class="btn-select-value">기기를 선택하세요</span>
                                 <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
                                 <ul>
-                                    <li data-preview="emulator" data-width="360" data-height="640">Galaxy Note 2/3/4</li>
-                                    <li data-preview="emulator" data-width="400" data-height="640">Galaxy Note 1</li>
-                                    <li data-preview="emulator" data-width="360" data-height="640">Galaxy S 3/4/5/6</li>
-                                    <li data-preview="emulator" data-width="320" data-height="533">Galaxy S 1/2</li>
-                                    <li data-preview="emulator" data-width="414" data-height="736">iPhone 6+</li>
-                                    <li data-preview="emulator" data-width="375" data-height="667">iPhone 6</li>
-                                    <li data-preview="emulator" data-width="320" data-height="568">iPhone 5</li>
-                                    <li data-preview="emulator" data-width="360" data-height="480">iPhone 3GS/4</li>
-                                    <li data-preview="emulator" data-width="780" data-height="780" data-emulator="desktop">Desktop</li>
+                                    <li data-role="preview-emulator" data-width="360" data-height="640">Galaxy Note 2/3/4</li>
+                                    <li data-role="preview-emulator" data-width="400" data-height="640">Galaxy Note 1</li>
+                                    <li data-role="preview-emulator" data-width="360" data-height="640">Galaxy S 3/4/5/6</li>
+                                    <li data-role="preview-emulator" data-width="320" data-height="533">Galaxy S 1/2</li>
+                                    <li data-role="preview-emulator" data-width="414" data-height="736">iPhone 6+</li>
+                                    <li data-role="preview-emulator" data-width="375" data-height="667">iPhone 6</li>
+                                    <li data-role="preview-emulator" data-width="320" data-height="568">iPhone 5</li>
+                                    <li data-role="preview-emulator" data-width="360" data-height="480">iPhone 3GS/4</li>
+                                    <li data-role="preview-emulator" data-width="780" data-height="780" data-value="desktop">Desktop</li>
                                 </ul>
                             </a>
 
@@ -856,13 +856,13 @@
             })
 
 
-            $('[data-plugin=clipboard]').tooltip({
+            $('[data-plugin="clipboard"]').tooltip({
                 container: 'body',
                 trigger: 'hover',
                 title : '삽입코드 복사'
             });
 
-            $('[data-plugin=clipboard]').on('click',function(){
+            $('[data-plugin="clipboard"]').on('click',function(){
                 $(this).attr('data-original-title', '복사되었습니다.')
                 $(this).tooltip('show');
                 $(this).attr('data-original-title', '삽입코드 복사')
@@ -910,33 +910,24 @@
             }
         });
 
-        $('[data-preview=emulator]').on('click',function(){
+        $('[data-role="preview-emulator"]').on('click',function(){
             var p_width =  $(this).data('width'),
                 p_height =  $(this).data('height'),
                 t_width =  p_width + 280;
 
             $('.editor-preview-side').css("width",p_width).css("height",p_height);
             $('.CodeMirror-sided').css({ 'width': 'calc(100% - ' + t_width+ 'px)' });
-            $('[data-preview=reset]').css("display","inline-block");
-            $('[data-preview=orientation]').css("display","inline-block");
-            $('[data-orientation=portrait]').attr("data-width",p_width).attr("data-height",p_height).addClass("active");
-            $('[data-orientation=landscape]').attr("data-width",p_height).attr("data-height",p_width).removeClass("active");
+            $('[data-role="preview-reset"]').css("display","inline-block");
+            $('[data-role="preview-orientation"]').css("display","inline-block");
+            $('[data-role="orientation-portrait"]').attr("data-width",p_width).attr("data-height",p_height).addClass("active");
+            $('[data-role="orientation-landscape"]').attr("data-width",p_height).attr("data-height",p_width).removeClass("active");
         });
 
-        $('[data-emulator=desktop]').on('click',function(){
-            $('[data-preview=orientation]').css("display","none");
+        $('[data-value="desktop"]').on('click',function(){
+            $('[data-role="preview-orientation"]').css("display","none");
         });
 
-        $('[data-orientation=landscape]').on('click',function(){
-            var p_width =  $(this).data('width'),
-                p_height =  $(this).data('height'),
-                t_width =  p_width + 280;
-
-            $('.editor-preview-side').css("width",p_width).css("height",p_height);
-            $('.CodeMirror-sided').css({ 'width': 'calc(100% - ' + t_width+ 'px)' });
-        });
-
-        $('[data-orientation=portrait]').on('click',function(){
+        $('[data-role="orientation-landscape"]').on('click',function(){
             var p_width =  $(this).data('width'),
                 p_height =  $(this).data('height'),
                 t_width =  p_width + 280;
@@ -945,14 +936,23 @@
             $('.CodeMirror-sided').css({ 'width': 'calc(100% - ' + t_width+ 'px)' });
         });
 
-        $('[data-preview=reset]').on('click',function(){
+        $('[data-role="orientation-portrait"]').on('click',function(){
+            var p_width =  $(this).data('width'),
+                p_height =  $(this).data('height'),
+                t_width =  p_width + 280;
+
+            $('.editor-preview-side').css("width",p_width).css("height",p_height);
+            $('.CodeMirror-sided').css({ 'width': 'calc(100% - ' + t_width+ 'px)' });
+        });
+
+        $('[data-role="preview-reset"]').on('click',function(){
             $('.editor-preview-side').css("width","calc(50% - 140px)").css("height","");
             $('.CodeMirror-sided').css("width","calc(50% - 140px)").css("height","");
-            $('[data-preview=reset]').css("display","none");
-            $('[data-preview=orientation]').css("display","none");
+            $('[data-role="preview-reset"]').css("display","none");
+            $('[data-role="preview-orientation"]').css("display","none");
             $('.btn-select-value').html("기기를 선택해주세요.");
-            $('[data-orientation=portrait]').addClass("active");
-            $('[data-orientation=landscape]').removeClass("active");
+            $('[data-role="orientation-portrait"]').addClass("active");
+            $('[data-role="orientation-landscape"]').removeClass("active");
         });
 
 
@@ -1040,7 +1040,7 @@
             maxChars: 30
         });
 
-        $('[data-role=attach-handler-photo]').on('click', function () {
+        $('[data-role="attach-handler-photo"]').on('click', function () {
             var btn = $(this);
             btn.button('loading');
             setTimeout(function () {
@@ -1048,7 +1048,7 @@
             }, 1000)
         })
 
-        $('[data-role=attach-handler-file]').on('click', function () {
+        $('[data-role="attach-handler-file"]').on('click', function () {
             var btn = $(this);
             btn.button('loading');
             setTimeout(function () {
