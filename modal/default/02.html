@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <title>BBS-Bootstrap기반 반응형웹 html 템플릿</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- system-style -->
+        <link rel="stylesheet" href="../../assets/css/sys.css">
+
+        <!-- Common-style -->
+        <link rel="stylesheet" href="../../assets/css/default.css">
+
+    </head>
+
+    <body class="fuelux">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html"><i class="fa fa-angle-left"></i> BS-html-examples > BBS</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/gitaeks/bs-html-examples/tree/gh-pages/modal/jschr" target="_blank">View on GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 col-lg-offset-1">
+
+
+                    <!-- 템플릿 시작 -->
+
+
+                    <h2><code>.modal('show')</code> </h2>
+
+                    <!-- 템플릿 끝 -->
+
+
+
+
+
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+            <footer>
+                <hr>
+                <p class="copyright">웹서비스 html 템플릿 maintained by <a href="http://gitaeks.github.io/">gitaeks</a></p>
+                <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            </footer>
+
+        </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+
+
+        $('#myModal').modal('show')
+
+
+        </script>
+
+    </body>
+</html>
